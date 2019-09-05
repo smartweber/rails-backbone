@@ -1,0 +1,168 @@
+<div class="panel-body sh-panel-body1 company-info">
+
+  <div class="row">
+
+    <div class="desktop">
+        <div class="col-sm-24 col-md-4">
+          <div class="company-logo">
+            <% if @logoPresent(): %>
+              <img src="<%- @logoPath() %>" class="img-responsive center-block" alt="" />
+            <% end %>
+          </div>
+        </div>
+
+        <div class="col-sm-24 col-md-15">
+
+          <div class="company-info-table">
+
+            <div class="row display-table">
+              <div class="col-xs-24 col-sm-9 display-cell">
+                <div class="name">
+                  <span><%- @name %></span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-7 display-cell">
+                <div class="value">
+                  <span class="bb-last-price"></span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-8 display-cell bb-change">
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row display-table">
+              <div class="col-xs-8 display-cell">
+                <div class="company-symbol">
+                  <span><%- @abbrWithExchange() %></span>
+                </div>
+              </div>
+
+              <div class="col-xs-10 display-cell">
+                <div class="real-time-price">
+                  <span class="bb-last-trade-time"></span>
+                </div>
+              </div>
+
+              <div class="col-xs-6 display-cell">
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+
+    <div class="mobile col-xs-16">
+        
+      <div class="media clearfix">
+        <div class="media-left">
+              <% if @logoPresent(): %>
+                <img src="<%- @logoPath() %>" alt="" style="width:80px;"/>
+              <% end %>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading" style="position:relative; margin-top:20px;">
+            <div class="name">
+              <span><%- @name %></span>
+            </div>
+            <div class="company-symbol">
+              <span><%- @abbrWithExchange() %></span>
+            </div>
+          </h4>
+        </div>
+        <div class="value pull-left" style="position:relative; margin-left:10px;font-size:42px;">
+          <span class="bb-last-price"></span>
+        </div>
+        <div class="bb-change" style="position:relative; margin-top:6px;font-size:42px;">
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="col-xs-8 col-sm-24 col-md-5" style="position:relative; top: -5px;">
+      <div class="company-track-region">
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+<div class="heading">Basic Stock Information</div>
+<div class="panel-body sh-panel-body1 company-stock-info">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="col-xs-12 col-sm-24">
+        <div class="detail">
+          <span class="detail-title">Prev. Close</span>
+          <span class="bb-prev-close"></span>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-24">
+        <div class="detail">
+          <span class="detail-title">Open</span>
+          <span class="bb-open"></span>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-24">
+        <div class="detail">
+          <span class="detail-title">BID</span>
+          <span class="bb-bid"></span>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-24">
+        <div class="detail">
+          <span class="detail-title">ASK</span>
+          <span class="bb-ask"></span>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-24">
+        <div class="detail">
+          <span class="detail-title">VOL</span>
+          <span class="bb-share-volume"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="col-sm-22">
+        <div class="row bb-regular-range">
+        </div>
+        <div class="row bb-week52-range">
+        </div>
+        <div class="row">
+          <div class="detail">
+            <span class="detail-title">MKT CAP</span>
+            <span class="bb-marketcap"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="detail detail-horizontal">
+        <span class="detail-title">P/E</span>
+        <span class="bb-peratio"></span>
+      </div>
+      <div class="detail detail-horizontal">
+        <span class="detail-title">P/B</span>
+        <span class="bb-pbratio"></span>
+      </div>
+      <div class="detail detail-horizontal">
+        <span class="detail-title">EPS</span>
+        <span class="bb-eps"></span>
+      </div>
+      <div class="detail detail-horizontal">
+        <span class="detail-title">DIV/YIELD</span>
+        <span class="bb-divident"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel-body sh-panel-body1 company-chart company-chart-region">
+</div>

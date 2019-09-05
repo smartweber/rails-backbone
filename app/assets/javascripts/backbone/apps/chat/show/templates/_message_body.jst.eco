@@ -1,0 +1,3 @@
+<div class="sender"><%- @user.name %></div>
+
+<p><%= @body %></p>

@@ -1,0 +1,1515 @@
+<%= render partial: 'shared/header', locals: {display_search: true} %>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6">
+        <!-- User profile box -->
+        <%# render 'shared/user_profile' %>
+
+        <!-- Trending Stocks -->
+        <%= render 'shared/trending_stocks' %>
+
+        <!-- Trending Stocks -->
+        <%= render 'shared/trending_channels' %>
+
+        <!-- Vital Financial Stats -->
+        <%# render 'shared/vital_financial_stats' %>
+
+      </div>
+      <div class="col-lg-14 col-md-12 ">
+        <div class="col-center">
+
+          <div class="flash-messages">
+            <div class="flash-message">Please Confirm Email Address. <a href="#">Resend Confirmation</a></div>
+          </div>
+
+          <div class="well">
+            <div class="sh-tabs">
+              <ul class="nav nav-pills sh-nav-pills nav-justified">
+                <li><a href="#tab1" data-toggle="pill"><span class="icon-newspaper-o"></span> News</a></li>
+                <li class="active"><a href="#tab2" data-toggle="pill"><span class="icon-gauge"></span> Radar</a></li>
+                <li><a href="#tab3" data-toggle="pill"><span class="icon-area-graph"></span> Market movers</a></li>
+                <li><a href="#tab4" data-toggle="pill"><span class="icon-bar-graph"></span> Most volume</a></li>
+              </ul>
+              <div class="tab-content sh-tab-content">
+                <div role="tabpanel" class="tab-pane" id="tab1">
+                  <div class="news-active" id="news-active">
+                    <img src="/assets/news1.jpg" alt=""/>
+                    <div class="captions">
+                      New debate about stock market coming up this Tuesday
+                      <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                        href="#">for more details click here</a></p>
+                    </div>
+                  </div>
+
+                  <div class="news-thumb">
+                    <div id="carousel-news" class="carousel slide" data-ride="carousel"
+                         data-interval="10000">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <div class="thumbnail-news">
+                            <img src="/assets/news1.jpg" alt=""/>
+                            <div>Apple stocks down</div>
+                            <div class="hidden">
+                              News2 title here debate about stock market coming up this Tuesday
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div>
+                          </div>
+                          <div class="thumbnail-news">
+                            <img src="/assets/news2.jpg" alt=""/>
+                            <div>Whitehouse red</div>
+                            <div class="hidden">
+                              New3 some changes
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div>
+                          </div>
+                          <div div class="thumbnail-news">
+                            <img src="/assets/news3.jpg" alt=""/>
+                            <div>some caption</div>
+                            <div class="hidden">
+                              New3 some changes
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div>
+                          </div>
+                          <div class="thumbnail-news">
+                            <img src="/assets/news4.jpg" alt=""/>
+                            <div>some caption</div>
+                            <div class="hidden">
+                              New3 some changes
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="thumbnail-news"><img src="/assets/news5.jpg" alt=""/><div>some caption</div>
+                            <div class="hidden">
+                              New3 some changes
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div></div>
+                          <div class="thumbnail-news"><img src="/assets/news4.jpg" alt=""/><div>some caption</div>
+                            <div class="hidden">
+                              New3 some changes
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div></div>
+                          <div class="thumbnail-news"><img src="/assets/news3.jpg" alt=""/><div>some caption</div>
+                            <div class="hidden">
+                              New3 some changes
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div></div>
+                          <div class="thumbnail-news"><img src="/assets/news1.jpg" alt=""/><div>some caption</div>
+                            <div class="hidden">
+                              New3 some changes
+                              <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                                href="#">for more details click here</a></p>
+                            </div></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#carousel-news" class="btn-prev" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a>
+                    <a href="#carousel-news" class="btn-next" role="button" data-slide="next"><span class="icon-chevron-right"></span></a>
+
+                  </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane active" id="tab2">
+
+                  <ul class="nav nav-pills sh-nav-opaq">
+                    <li class="active">
+                      <a href="#tab1-1" data-toggle="pill" id="btn-radar-tile"><span class="icon-th"></span></a>
+                    </li>
+                    <li>
+                      <a href="#tab1-2" data-toggle="pill" id="btn-radar-list"><span class="icon-align-justify"></span></a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+
+                    <div role="tabpanel" class="tab-pane active" id="tab1-1">
+
+                      <ul class="list-inline sh-nextback" id="sh-tile-action1">
+                        <li><a href="#carousel-radar" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a></li>
+                        <li><a href="#carousel-radar" role="button" data-slide="next"><span class="icon-chevron-right"></span></a></li>
+                      </ul>
+
+                      <div id="carousel-radar" class="carousel sh-carousel slide" data-ride="carousel" data-interval="10000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                          <div class="item active">
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/ebay.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/hp.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/googl.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Facebook</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Oracle</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/twtr.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/tsla.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/msft.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Mobil</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Coca Cola</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="item">
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/ebay.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/hp.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/googl.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Facebook</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Oracle</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/twtr.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/tsla.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/msft.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Mobil</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Coca Cola</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="tab1-2">
+                      <div class="radar-listview scroll-pane">
+                        <table class="table table-striped table-hover">
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- No content for the Radar banner -->
+                    <div class="no-companies-radar-banner">
+                      <span class="icon-gauge"></span>
+
+                      <h3>Start Adding Companies<br> to Your RADAR</h3>
+
+                      <a href="#" class="btn btn-lg btn-primary">Start</a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="tab3">
+
+                  <ul class="nav nav-pills sh-nav-opaq">
+                    <li class="active"><a href="#tab2-1" data-toggle="pill"><span class="icon-th"></span></a></li>
+                    <li><a href="#tab2-2" data-toggle="pill"><span class="icon-align-justify"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab2-1">
+
+                      <ul class="list-inline sh-nextback" id="sh-tile-action1">
+                        <li><a href="#carousel-high" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a></li>
+                        <li><a href="#carousel-high" role="button" data-slide="next"><span class="icon-chevron-right"></span></a></li>
+                      </ul>
+
+                      <div id="carousel-high" class="carousel sh-carousel slide" data-ride="carousel" data-interval="10000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                          <div class="item active">
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/ebay.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/hp.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/googl.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Facebook</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Oracle</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/twtr.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/tsla.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/msft.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Mobil</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Coca Cola</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2-2">
+                      <div class="radar-listview scroll-pane">
+                        <table class="table table-striped table-hover">
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="tab4">
+
+                  <ul class="nav nav-pills sh-nav-opaq">
+                    <li class="active"><a href="#tab3-1" data-toggle="pill"><span class="icon-th"></span></a></li>
+                    <li><a href="#tab3-2" data-toggle="pill"><span class="icon-align-justify"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab3-1">
+
+                      <ul class="list-inline sh-nextback" id="sh-tile-action1">
+                        <li><a href="#carousel-most" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a></li>
+                        <li><a href="#carousel-most" role="button" data-slide="next"><span class="icon-chevron-right"></span></a></li>
+                      </ul>
+
+                      <div id="carousel-most" class="carousel sh-carousel slide" data-ride="carousel" data-interval="10000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                          <div class="item active">
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/ebay.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/hp.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/googl.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Facebook</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Oracle</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Ebay</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/twtr.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>HP</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/tsla.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>134.80</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item with-logo value-up">
+                              <div class="ci-title-wrap"></div>
+
+                              <div class="ci-square-logo">
+                                <img src="/assets/squared-logos/msft.png" class="img-responsive" alt="" />
+                              </div>
+
+                              <div class="ci-value">
+                                <span>45.87</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-down">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Mobil</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-down"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-red.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                            <!-- Company item -->
+                            <div class="company-item no-logo value-up">
+                              <div class="ci-title-wrap">
+                                <div class="ci-title">
+                                  <div class="ci-content">
+                                    <span>Coca Cola</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ci-square-logo">
+                              </div>
+
+                              <div class="ci-value">
+                                <i class="icon-chevron-circle-up"></i> <span>52.50</span>
+                              </div>
+
+                              <div class="company-stats">
+                                <img src="/assets/command-stat-green.png" class="img-responsive" alt="" />
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab3-2">
+                      <div class="radar-listview scroll-pane">
+                        <table class="table table-striped table-hover">
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="/assets/graph12.png" alt=""/></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default sh-panel">
+            <div class="panel-body sh-panel-body1">
+              <div class="form-group-reply">
+                <textarea class="form-control" rows="5" placeholder="Share an idea..."></textarea>
+              </div>
+
+            </div>
+            <div class="panel-footer">
+              <a href="#" class="btn btn-primary pull-right btn-share">Share</a>
+              <ul class="list-inline list-action">
+                <li><a href="#"><span class="icon-paper-plane"></span></a></li>
+                <li><a href="#"><span class="icon-clock-o"></span></a></li>
+                <li><a href="#"><span class="icon-image"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Comments boxes -->
+          <%= render partial: 'shared/comments', locals: {display_image: nil} %>
+
+        </div>
+
+      </div>
+      <div class="col-lg-5 col-md-6">
+
+        <!-- Main Markets -->
+        <%= render 'shared/main_markets' %>
+
+        <!-- Markets Headlines 1 -->
+        <%= render 'shared/markets_headlines_1' %>
+
+        <!-- Markets Headlines 1 -->
+        <%= render 'shared/recommendations_1' %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+
+
+    $(document).keydown(function (e) {
+      if(e.which == 39){ //39 right  .carousel('prev')
+        $('.tab-pane.active .carousel').carousel('next'); // only active tab pane carousel
+      }
+      if(e.which == 37){ //37 left
+        $('.tab-pane.active .carousel').carousel('prev'); // only active tab pane carousel
+      }
+    });
+
+    //news functions
+    $(".thumbnail-news").hover(
+      function() {
+        var selctimg = $( this).find('img').attr('src');
+        $("#news-active").find('img').attr('src', selctimg);
+        var contentdiv =  $( this).find('.hidden').html();
+        console.log(contentdiv)
+        $("#news-active").find('.captions').html(contentdiv);
+
+      }, function() {
+
+      }
+    );
+
+    //enscroll instance
+
+    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+      var activePane = $(e.target).attr('href');
+      //console.log(activePane);
+      $(activePane).find('.scroll-pane').enscroll("destroy");
+      $(activePane).find('.scroll-pane').enscroll({
+        showOnHover: false,
+        verticalTrackClass: 'track3',
+        verticalHandleClass: 'handle3',
+        easingDuration:100
+      });
+
+    })
+
+    // typeahead instance
+    // users
+    var users = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('user'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      local: [
+        { user: 'John Dow' },
+        { user: 'John Malkovich' },
+        { user: 'John Snow' },
+        { user: 'John Dean' },
+        { user: 'John Richardson' }
+      ],
+      limit: 5
+    });
+
+    // companies
+    var companies = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('company'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      local: [
+        { company: 'Apple', symbol: 'AAPL', fullname: 'Apple Inc' },
+        { company: 'Microsoft', symbol: 'MSFT', fullname: 'Microsoft Corp' },
+        { company: 'Oracle', symbol: 'ORCL', fullname: 'Oracle Corp'}
+      ],
+      limit: 5
+    });
+
+    // initialize the bloodhound suggestion engine
+    users.initialize();
+    companies.initialize();
+
+    // instantiate the typeahead UI
+    $('#StockharpSearch').typeahead({
+      highlight: true,
+    },
+    {
+      display: 'company',
+      source: companies.ttAdapter(),
+      templates: {
+        header: '<h4 class="result-set-title">Companies</h4>',
+        // empty: function(data) {
+        //   return '<div class="empty-message">Unable to find any results.</div>';
+        // },
+        suggestion: function(data) {
+          var markup = [
+            '<div class="suggestion company">',
+            '<div class="row display-table">',
+            '<div class="col-xs-6 display-cell">',
+            '<h5 class="symbol">' + data.symbol + '</h5>',
+            '</div>',
+            '<div class="col-xs-6 display-cell">',
+            '<h5>' + data.fullname + '</h5>',
+            '<div class="chage-rate">1.58 (0.81%)</div>',
+            '</div>',
+            '<div class="col-xs-6 display-cell">',
+            '<div class="value">124.40</div>',
+            '<div class="timestamp">12:40:40</div>',
+            '</div>',
+            '<div class="col-xs-6 display-cell">',
+            '<h5>Nasdaq</h5>',
+            '</div>',
+            '</div>',
+            '</div>'
+          ].join('\n');
+
+          return markup;
+        }
+      }
+    },
+    {
+      display: 'user',
+      source: users.ttAdapter(),
+      templates: {
+        header: '<h4 class="result-set-title">People</h4>',
+        // empty: function(data) {
+        //   return '<div class="empty-message">Unable to find any results.</div>';
+        // },
+        suggestion: function(data) {
+          var markup = [
+            '<div class="suggestion">',
+            '<div class="row display-table">',
+            '<div class="col-xs-3 display-cell">',
+            '<span class="avatar"><img src="/assets/avatar.jpg" class="img-responsive"></span>',
+            '</div>',
+            '<div class="col-xs-9 display-cell">',
+            '<span class="username">' + data.user + '</span>',
+            '</div>',
+            '<div class="col-xs-12 display-cell">',
+            '<a href="#" class="btn btn-primary">Add Friend</a>',
+            '<a href="#" class="btn btn-primary">Follow</a>',
+            '</div>',
+            '</div>',
+            '</div>'
+          ].join('\n');
+
+          return markup;
+        }
+      }
+    });
+
+    // Expand collapse
+    $('.list-headlines .list-group-items .list-group-item').slice(4).hide();
+
+    $('.bb-see-more-news').on('click', function(e) {
+      e.preventDefault();
+
+      if ($(this).hasClass('expanded')) {
+        $(this).text('see more').removeClass('expanded');
+        $('.list-headlines .list-group-items .list-group-item').slice(4).hide();
+      } else {
+        $(this).text('collapse').addClass('expanded');
+        $('.list-headlines .list-group-items .list-group-item').slice(0, 7).show();
+      }
+
+    });
+
+  });
+</script>

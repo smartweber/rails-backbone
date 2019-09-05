@@ -1,0 +1,30 @@
+<a href="#" class="logo"></a>
+<h3>LOGIN TO YOUR STOCKHARP ACCOUNT</h3>
+
+<div class="form-group">
+  <input name="user[email]" class="form-control text-center" type="text" placeholder="Username or Email Address" data-validation="email"/>
+</div>
+
+<div class="form-group">
+  <input name="user[password]" class="form-control text-center" type="password" placeholder="Password" data-validation="password"/>
+</div>
+
+<div class="clearfix">
+  <div class="form-group text-left pull-left">
+    <div class="checkbox">
+      <label>
+        <input name="user[remember_me]" value="1" type="checkbox"><span>Stay Signed In</span></label>
+      </label>
+    </div>
+  </div>
+
+  <div class="pull-right text-right">
+    <button type="submit" class="btn btn-primary btn-login">Log in</button><br/>
+    <a href="#" class="link-gray bb-forgot-password-btn"> Forgot your password? </a>
+  </div>
+</div>
+
+
+
+
+

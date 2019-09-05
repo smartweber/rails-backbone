@@ -1,0 +1,13 @@
+<div class="suggestion company">
+  <div class="row display-table">
+    <div class="col-xs-6 display-cell">
+      <h5 class="symbol"><%- s(@abbr).toUpperCase().value() %></h5>
+    </div>
+    <div class="col-xs-10 display-cell">
+      <h5  class="company-name"><%- @name %></h5>
+    </div>
+    <div class="col-xs-8 display-cell">
+      <h5><%- @followers_count %> followers</h5>
+    </div>
+  </div>
+</div>

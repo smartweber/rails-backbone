@@ -1,0 +1,8 @@
+<a href="<%- Routes.company_path(@abbr) %>" class="trending-stock">
+  <div class="bb-essential-data"></div>
+  <div class="trade-title">
+    <%- @name %>
+    <br/>
+    <span>$<%- s(@abbr).toUpperCase().value() %></span>
+  </div>
+</a>

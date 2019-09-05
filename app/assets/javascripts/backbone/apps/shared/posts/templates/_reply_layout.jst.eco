@@ -1,0 +1,8 @@
+<%- @gravatarImageFor @currentUser(), {htmlClass: 'avatar', alt: 'Avatar'} %>
+<div class="form-group form-group-reply">
+  <textarea class="form-control bb-mention-element" rows="2" name="comment[body]" placeholder="Write a comment" data-validation="body"></textarea>
+  <input type="text" name="comment[commentable_id]" class="hidden" value="<%- @commentable_id %>">
+  <input type="text" name="comment[commentable_type]" class="hidden" value="<%- @commentable_type %>">
+  <a href="#" class="btn-image bb-attach-link"><span class="icon-image"></span></a>
+</div>
+<div class="reply-attachments-region"></div>

@@ -1,0 +1,5 @@
+<img src="<%- @user.gravatar_url %>" class="avatar" alt="Avatar">
+<div class="info">
+  <span class="time"><%- @timestampFor @created_at %></span>
+  <strong><%- @user.name %></strong> <%- @content %>
+</div>

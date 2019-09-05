@@ -1,0 +1,6 @@
+<div id="modal-region"></div>
+
+<div class="row">
+  <div id="user-region"></div>
+  <div id="feed-region"></div>
+</div>

@@ -1,0 +1,4 @@
+<li role="presentation" class="active"><a href="#general-tab-region" aria-controls="general-tab-region" role="tab" data-toggle="tab">General</a></li>
+<li role="presentation"><a href="#security-tab-region" aria-controls="security-tab-region" role="tab" data-toggle="tab">Security and Privacy</a></li>
+<li role="presentation"><a href="#blocked-accounts-tab-region" aria-controls="blocked-accounts-tab-region" role="tab" data-toggle="tab">Blocked Accounts</a></li>
+<li role="presentation"><a href="#notifications-tab-region" aria-controls="notifications-tab-region" role="tab" data-toggle="tab">Notifications</a></li>

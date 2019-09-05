@@ -1,0 +1,58 @@
+{
+  "resource": "Likes",
+  "http_method": "POST",
+  "route": "/api/likes",
+  "description": "Create a like",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "like",
+      "name": "likeable_id",
+      "description": "ID of entity to like"
+    },
+    {
+      "required": true,
+      "scope": "like",
+      "name": "likeable_type",
+      "description": "Type of entity to like"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Like id"
+    },
+    {
+      "name": "likeable_id",
+      "description": "Likeable entity id(one that's been liked)"
+    },
+    {
+      "name": "likeable_type",
+      "description": "Likeable entity type"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/likes",
+      "request_body": "{\"like\":{\"likeable_id\":9,\"likeable_type\":\"Comment\"}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 3,\n  \"likeable_id\": 9,\n  \"likeable_type\": \"Comment\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/likes\" -d '{\"like\":{\"likeable_id\":9,\"likeable_type\":\"Comment\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

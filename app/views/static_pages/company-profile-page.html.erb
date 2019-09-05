@@ -1,0 +1,327 @@
+<%= render partial: 'shared/header', locals: {display_search: false} %>
+
+<section class="company-profile">
+  <div class="container">
+    <div class="row">
+      <!-- Left col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- User profile box -->
+        <%# render 'shared/user_profile' %>
+
+        <!-- Trending Stocks -->
+        <%= render 'shared/trending_stocks' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_channels' %>
+
+        <!-- Vital Financial Stats -->
+        <%# render 'shared/vital_financial_stats' %>
+
+      </div>
+
+      <!-- Center col -->
+      <div class="col-lg-14 col-md-12 ">
+        <div class="col-center">
+
+          <!-- Company profile box -->
+          <div class="panel panel-default sh-panel company-key-info">
+            <div class="panel-body sh-panel-body1 company-info">
+
+              <div class="row">
+
+                <div class="col-md-24 col-lg-4">
+                  <div class="company-logo">
+                    <img src="http://placehold.it/160x160?text=Company+Logo" class="img-responsive center-block">
+                  </div>
+                </div>
+
+                <div class="col-md-24 col-lg-16">
+
+                  <div class="company-info-table">
+
+                    <div class="row display-table">
+                      <div class="col-xs-8 display-cell">
+                        <div class="name">
+                          <span>Apple Inc.</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-8 display-cell">
+                        <div class="value">
+                          <span>123.59</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-8 display-cell">
+                        <div class="change-rate">
+                          <span>-0.86(0.69%)</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row display-table">
+                      <div class="col-xs-8 display-cell">
+                        <div class="company-symbol">
+                          <span>nasdaq:aapl</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-8 display-cell">
+                        <div class="real-time-price">
+                          <span>Mar: 18 13:32:23 EST</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-8 display-cell">
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-md-24 col-lg-4">
+                  <div class="track">
+                    <span><a href="#" class="btn btn-primary btn-lg btn-share">Track</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="heading">Basic Stock Information</div>
+
+            <div class="panel-body sh-panel-body1 company-stock-info">
+              <div class="row">
+                  <div class="col-md-12 col-lg-11">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="detail">
+                          <span class="detail-title">Prev. Close</span>
+
+                          <span>124.40</span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="detail">
+                          <span class="detail-title">Range</span>
+
+                          <div class="progress-indicators">
+                            <div class="progress-numbers clearfix">
+                              <span class="lower pull-left">124.58</span>
+                              <span class="higher pull-right">126.23</span>
+                            </div>
+
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+                                <span class="sr-only">55% Complete</span>
+                              </div>
+                            </div>
+
+                            <i class="progress-pointer symbol icon-angle-up" style="left: 51%"></i>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="detail">
+                          <span class="detail-title">Open</span>
+
+                          <span>124.40</span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="detail">
+                          <span class="detail-title">52 Week</span>
+
+                          <div class="progress-indicators">
+                            <div class="progress-numbers clearfix">
+                              <span class="lower pull-left">74.05</span>
+                              <span class="higher pull-right">133.60</span>
+                            </div>
+
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="sr-only">60% Complete</span>
+                              </div>
+                            </div>
+
+                            <i class="progress-pointer symbol icon-angle-up" style="left: 57%"></i>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="detail">
+                          <span class="detail-title">AVG/VOL</span>
+
+                          <span>51.83M / 60.88M</span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="detail">
+                          <span class="detail-title">MKT CAP</span>
+
+                          <span>719.88 B</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-lg-11 col-lg-offset-2">
+
+                    <div class="detail detail-horizontal">
+                      <span class="detail-title">P/E</span>
+
+                      <span>16.45</span>
+                    </div>
+
+                    <div class="detail detail-horizontal">
+                      <span class="detail-title">EPS</span>
+
+                      <span>17.42</span>
+                    </div>
+
+                    <div class="detail detail-horizontal">
+                      <span class="detail-title">DIV/YIELD</span>
+
+                      <span>0.47 / 1.52</span>
+                    </div>
+
+                    <div class="detail detail-horizontal">
+                      <span class="detail-title">SHARES</span>
+
+                      <span>5.82B</span>
+                    </div>
+
+                    <div class="detail detail-horizontal">
+                      <span class="detail-title">BETA</span>
+
+                      <span>0.87</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="panel-body sh-panel-body1 company-chart">
+              <img class="img-responsive" src="http://placehold.it/960x500?text=COMPANY+CHART">
+            </div>
+          </div>
+
+          <!-- Share box -->
+          <div class="panel panel-default sh-panel">
+            <div class="panel-body sh-panel-body1 sign-in-to-share-banner">
+              <h3>Welcome to StockHarp</h3>
+              <p>Sign in to share your idea on <strong>$AAPL</strong> and other stocks.</p>
+
+              <a href="#" class="btn btn-sm btn-primary btn-info">Sign Up</a>
+              <a href="#" class="btn btn-sm btn-primary btn-login">Log in</a>
+            </div>
+          </div>
+
+          <!-- Share box -->
+          <div class="panel panel-default sh-panel">
+            <div class="panel-body sh-panel-body1">
+              <div class="form-group-reply">
+                <textarea class="form-control" rows="5" placeholder="Share an idea..."></textarea>
+              </div>
+
+            </div>
+            <div class="panel-footer">
+              <a href="#" class="btn btn-primary pull-right btn-lg btn-share">Share</a>
+              <ul class="list-inline list-action">
+                <li><a href="#"><span class="icon-image"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Comments box -->
+          <%= render partial: 'shared/comments', locals: {display_image: nil} %>
+
+        </div>
+      </div>
+
+      <!-- Right col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- Main Markets -->
+        <%= render 'shared/main_markets' %>
+
+        <!-- Markets Headlines 1 -->
+        <%# render 'shared/markets_headlines_1' %>
+
+        <!-- Markets Headlines 2 -->
+        <%= render 'shared/company_news' %>
+
+        <!-- Recommendations 1 -->
+        <%# render 'shared/recommendations_1' %>
+
+        <!-- Recommendations 2 -->
+        <%= render 'shared/recommendations_2' %>
+
+        <!-- Footer -->
+        <%= render 'shared/side_bar_footer' %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+
+
+    $(document).keydown(function (e) {
+      if(e.which == 39){ //39 right  .carousel('prev')
+        $('.tab-pane.active .carousel').carousel('next'); // only active tab pane carousel
+      }
+      if(e.which == 37){ //37 left
+        $('.tab-pane.active .carousel').carousel('prev'); // only active tab pane carousel
+      }
+    });
+
+    //news functions
+    $(".thumbnail-news").hover(
+      function() {
+        var selctimg = $( this).find('img').attr('src');
+        $("#news-active").find('img').attr('src', selctimg);
+        var contentdiv =  $( this).find('.hidden').html();
+        console.log(contentdiv)
+        $("#news-active").find('.captions').html(contentdiv);
+
+      }, function() {
+
+      }
+    );
+
+    //enscroll instance
+
+    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+      var activePane = $(e.target).attr('href');
+      //console.log(activePane);
+      $(activePane).find('.scroll-pane').enscroll("destroy");
+      $(activePane).find('.scroll-pane').enscroll({
+        showOnHover: false,
+        verticalTrackClass: 'track3',
+        verticalHandleClass: 'handle3',
+        easingDuration:100
+      });
+
+    })
+
+  })
+</script>

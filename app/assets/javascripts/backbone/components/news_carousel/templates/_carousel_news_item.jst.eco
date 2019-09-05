@@ -1,0 +1,6 @@
+<img src="<%- @news_thumbnail_carousel_list_url %>" data-bigger-image-src="<%- @news_thumbnail_stretched_full_url %>">
+<div class="item-caption">
+  <p><%- s(@title).prune(30).value() %></p>
+  <span class="item-title"><%- s(@title).prune(90).value() %></span>
+  <span class="item-text"><%- s(@sanitized_summary).prune(100).value() %></span>
+</div>

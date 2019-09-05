@@ -1,0 +1,11 @@
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <%- @gravatarImageFor @currentUser(), { htmlClass: 'avatar', alt: 'Avatar' } %>
+  <%= @name %> <span class="icon-chevron-down"></span></a>
+<ul class="dropdown-menu dropdown-menu-right" role="menu">
+  <li><a href="/messages" class='bb-messages-link'>Inbox</a></li>
+  <li><a href="#">Vault</a></li>
+  <li><a href="#">Portfolio <small>beta</small></a></li>
+  <li><a href="http://support.stockharp.com" target="_blank">Support</a></li>
+  <li><a href="#" class='bb-settings-link'>Settings</a></li>
+  <li><a href="#" class='bb-logout-link'>Sign out</a></li>
+</ul>

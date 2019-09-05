@@ -1,0 +1,309 @@
+<%= render partial: 'shared/header', locals: {display_search: false} %>
+
+<section class="compose-message">
+  <div class="container">
+    <div class="row">
+      <!-- Left col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- Buttons side bar -->
+        <div class="well well-profile buttons-container-on-side">
+          <a href="#" class="btn btn-primary">Compose</a>
+        </div>
+
+        <!-- Inbox -->
+        <div class="inbox-side-box">
+          <div class="inbox-side-box-title">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="inbox-details">
+                  <a href="#"><span>Inbox</span> <span class="new-inbox-items">(2)</span></a>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="followers">
+                  <a href="#"><span>Followers</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inbox-items scrollable">
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class="inbox-label inbox-label-type-r"><span class="inbox-label-text">R</span></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class="inbox-label inbox-label-type-d"><span class="inbox-label-text">D</span></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class="inbox-label inbox-label-type-checked"><i class="icon-check"></i></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item active">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class="inbox-label inbox-label-type-r"><span class="inbox-label-text">R</span></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class="inbox-label inbox-label-type-d"><span class="inbox-label-text">D</span></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class="inbox-label inbox-label-type-checked"><span class="inbox-label-text">?</span></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- User profile box -->
+        <%# render 'shared/user_profile' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_stocks' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_channels' %>
+
+        <!-- Vital Financial Stats -->
+        <%# render 'shared/vital_financial_stats' %>
+
+      </div>
+
+      <!-- Center col -->
+      <div class="col-lg-14 col-md-12 ">
+        <div class="col-center">
+
+          <div class="panel panel-default panel-main">
+
+            <form class="form-horizontal">
+
+                <div class="message-to">
+                  <div class="row">
+                    <div class="col-xs-3 col-sm-1">
+                      <label for="MessageTo" class="control-label">To:</label>
+                    </div>
+                    <div class="col-xs-21 col-sm-23">
+                      <input type="text" name="MessageTo" class="form-control typeahead" id="MessageTo" placeholder="John">
+
+                      <!-- <div class="twitter-typeahead">
+                        <div class="suggestion">
+                          <span class="avatar">
+                            <img src="/assets/avatar.jpg" class="img-responsive">
+                          </span>
+                          <span class="username">John Dow</span>
+                        </div>
+
+                        <div class="suggestion">
+                          <span class="avatar">
+                            <img src="/assets/avatar.jpg" class="img-responsive">
+                          </span>
+                          <span class="username">John Dow</span>
+                        </div>
+
+                        <div class="suggestion">
+                          <span class="avatar">
+                            <img src="/assets/avatar.jpg" class="img-responsive">
+                          </span>
+                          <span class="username">John Dow</span>
+                        </div>
+                      </div> -->
+
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="message-comment">
+                  <div class="row">
+                    <div class="col-xs-2">
+                      <div class="avatar">
+                        <img src="/assets/avatar.jpg" class="img-responsive">
+                      </div>
+                    </div>
+                    <div class="col-xs-22">
+                      <textarea class="form-control" name="MessageComment" id="MessageComment" rows="5" placeholder="Write a Comment"></textarea>
+
+                      <div class="clearfix">
+                        <a href="#" class="add-image-button"><span class="icon-image"></span> <span>Add Image</span></a>
+                        <a href="#" class="btn btn-primary pull-right">Send</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </form>
+        </div>
+      </div>
+
+      <!-- Right col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- Main Markets -->
+        <%# render 'shared/main_markets' %>
+
+        <!-- Markets Headlines 1 -->
+        <%# render 'shared/markets_headlines_1' %>
+
+        <!-- Markets Headlines 2 -->
+        <%# render 'shared/company_news' %>
+
+        <!-- Recommendations 1 -->
+        <%# render 'shared/recommendations_1' %>
+
+        <!-- Recommendations 2 -->
+        <%# render 'shared/recommendations_2' %>
+
+        <!-- Footer -->
+        <%= render 'shared/side_bar_footer' %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  $('.inbox-side-box .scrollable').enscroll({
+    showOnHover: true,
+    verticalTrackClass: 'track3',
+    verticalHandleClass: 'handle3',
+    addPaddingToPane: false
+  });
+
+  // typeahead-rails
+  var users = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('user'),
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: [
+      { user: 'John Dow' },
+      { user: 'John Malkovich' },
+      { user: 'John Snow' },
+      { user: 'John Dean' },
+      { user: 'John Richardson' }
+    ],
+    limit: 5
+  });
+
+  // initialize the bloodhound suggestion engine
+  users.initialize();
+
+  // instantiate the typeahead UI
+  $('#MessageTo').typeahead({
+    highlight: true,
+
+  },
+  {
+    display: 'user',
+    source: users.ttAdapter(),
+    templates: {
+      // empty: function(data) {
+      //   return '<div class="empty-message">Unable to find any results.</div>';
+      // },
+      suggestion: function(data) {
+        var markup = [
+          '<div class="suggestion">',
+          '<div class="row display-table">',
+          '<div class="col-xs-2 display-cell">',
+          '<span class="avatar"><img src="/assets/avatar.jpg" class="img-responsive"></span>',
+          '</div>',
+          '<div class="col-xs-10 display-cell">',
+          '<span class="username">' + data.user + '</span>',
+          '</div>',
+          '<div class="col-xs-12 display-cell">',
+          //'<a href="#" class="btn btn-primary">Add Friend</a>',
+          //'<a href="#" class="btn btn-primary">Follow</a>',
+          '</div>',
+          '</div>',
+          '</div>'
+        ].join('\n');
+
+        return markup;
+      }
+    }
+  });
+
+</script>

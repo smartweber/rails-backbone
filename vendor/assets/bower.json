@@ -1,0 +1,31 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "jquery": "2.1.1",
+    "backbone": "1.2.1",
+    "backbone-deep-model": "git://github.com/kahwee/backbone-deep-model#2.0.1",
+    "backbone.validation": "latest",
+    "backbone.stickit": "0.9.2",
+    "bootstrap-sass": "~3.3.5",
+    "enscroll": "~0.6.0",
+    "jquery.scrollTo": "latest",
+    "marionette": "2.4.2",
+    "marionette.backbone.syphon": "latest",
+    "jquery-timeago": "~1.4.3",
+    "moment": "latest",
+    "jcrop": "latest",
+    "underscore.string": "latest",
+    "jquery-mentions-input": "git://github.com/naive/jquery-mentions-input#af2332b35d27",
+    "backbone-route-filter": "latest",
+    "autotrack": "0.6.5",
+    "qm-jquery-ui": "http://app.quotemedia.com/js/jsChart/js/jquery-ui.min.js",
+    "qm-highstock": "http://app.quotemedia.com/js/jsChart/js/highstock.js",
+    "qm-exporting": "http://app.quotemedia.com/js/jsChart/js/exporting.js",
+    "numeral": "1.4.5",
+    "qm-jschart": "http://app.quotemedia.com/js/jsChart/js/jsChart.js"
+  },
+  "resolutions": {
+    "jquery": "2.1.1",
+    "underscore": "1.8.3"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "resource": "Recommendations",
+  "http_method": "GET",
+  "route": "/api/users/:id/recommendations/companies",
+  "description": "Getting list of recommended companies",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "User id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/users/88/recommendations/companies",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 18,\n    \"name\": \"Bauch-Rice\",\n    \"abbr\": \"gscu\",\n    \"exchange\": \"NYSE\",\n    \"relationship\": null,\n    \"followers_count\": 0,\n    \"target_url\": \"/c/gscu\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/users/88/recommendations/companies\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<div class="box-profile">
+
+  <a href="#" class="dismiss-recommendation"><i class="icon-close"></i></a>
+
+  <img src="<%- asset_path('aapl.png') %>" class="avatar" alt=""/>
+  <div class="profile-info">
+    <span class="name"><%- @name %></span>
+    <span class="followers"><%- @followers_count %> Followers</span>
+    <%- @followingButton @, 'recommendations' %>
+  </div>
+</div>

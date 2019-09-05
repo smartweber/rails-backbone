@@ -1,0 +1,27 @@
+<!-- Buttons side bar -->
+<div class="well well-profile buttons-container-on-side">
+  <a href="#" class="btn btn-primary bb-compose-btn">Compose</a>
+</div>
+
+<!-- Inbox -->
+<div class="inbox-side-box">
+  <div class="inbox-side-box-title">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="inbox-details">
+          <a href="#"><span>Inbox</span> <span class="new-inbox-items">(2)</span></a>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="followers">
+          <a href="#"><span>Followers</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="inbox-items scrollable">
+
+  </div>
+</div>

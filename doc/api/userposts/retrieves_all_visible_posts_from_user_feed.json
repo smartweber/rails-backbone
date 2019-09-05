@@ -1,0 +1,104 @@
+{
+  "resource": "UserPosts",
+  "http_method": "GET",
+  "route": "/api/users/:user_id/posts",
+  "description": "Retrieves all visible posts from user feed",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "user_id",
+      "description": "User ID"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "posts_count",
+      "description": "Total post count in article Feed"
+    },
+    {
+      "name": "posts[][id]",
+      "description": "Post id"
+    },
+    {
+      "name": "posts[][created_at]",
+      "description": "DateTime post was created at"
+    },
+    {
+      "name": "posts[][comments_count]",
+      "description": "Amount of comments for a post"
+    },
+    {
+      "name": "posts[][content]",
+      "description": "Post content(with $/@/# wrapped into links)"
+    },
+    {
+      "name": "posts[][favorited]",
+      "description": "Favorite entity id(delete to unfavorite)"
+    },
+    {
+      "name": "posts[][likes_count]",
+      "description": "Cached amount of likes"
+    },
+    {
+      "name": "posts[][article_id]",
+      "description": "ID of article object that this post belongs to"
+    },
+    {
+      "name": "posts[][article_type]",
+      "description": "Type of article object(\"Article\"/\"GeneralNewsItem\") that this post belongs to"
+    },
+    {
+      "name": "posts[][like]",
+      "description": "DEPRECATED"
+    },
+    {
+      "name": "posts[][user][id]",
+      "description": "Id of user that's created post"
+    },
+    {
+      "name": "posts[][user][name]",
+      "description": "Name of the creator"
+    },
+    {
+      "name": "posts[][user][gravatar_url]",
+      "description": "Url for gravatar image"
+    },
+    {
+      "name": "posts[][comments][]",
+      "description": "See POST /comments for a description"
+    },
+    {
+      "name": "posts[][attachments][][id]",
+      "description": "Attachment ID"
+    },
+    {
+      "name": "posts[][attachments][][url]",
+      "description": "URL of attached image"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/users/52/posts",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"posts_count\": 1,\n  \"posts\": [\n    {\n      \"id\": 10,\n      \"created_at\": \"2016-09-01T16:03:32.000Z\",\n      \"comments_count\": 0,\n      \"likes_count\": 0,\n      \"content\": \"Hic incidunt quis occaecati reprehenderit eos consequatur.\",\n      \"favorited\": false,\n      \"like\": null,\n      \"user\": {\n        \"id\": 52,\n        \"name\": \"Cassandre Pouros\",\n        \"username\": \"cassandrepouros\",\n        \"gravatar_url\": \"https://secure.gravatar.com/avatar/e945b766563d577ae611b2b23ab0c6a5?s=50\"\n      },\n      \"attachments\": [\n\n      ],\n      \"comments\": [\n\n      ]\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/users/52/posts\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

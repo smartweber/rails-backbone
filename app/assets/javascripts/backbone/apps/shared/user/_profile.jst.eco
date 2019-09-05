@@ -1,0 +1,35 @@
+<table class="table">
+  <tr class="box-profile">
+    <td class="text-right">
+    <%- @gravatarImageFor @, {htmlClass: 'avatar', alt: 'Profile Image'} %></td>
+    <td class="profile-info">
+      <a href="/users/<%= @username %>" class="btn btn-sm btn-default btn-profile">Edit Profile <span class="icon-pencil"></span></a>
+      <span><%= @name %></span>
+      <a href="/users/<%= @username %>" class="btn-link"><%= @username %></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="links-to-sections">
+      <a href="<%- Routes.user_path(@username) + '#posts' %>" class="bb-section-link">
+        <span class="number"><%- @ideas_count %></span> Posts
+      </a>
+    </td>
+    <td class="links-to-sections">
+      <a href="<%- Routes.user_path(@username) + '#followers' %>" class="bb-section-link">
+        <span class="number"><%- @followers_count %></span> Followers
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td class="links-to-sections">
+      <a href="<%- Routes.user_path(@username) + '#following' %>" class="bb-section-link">
+        <span class="number"><%- @following_users_count %></span> Following
+      </a>
+    </td>
+    <td class="links-to-sections">
+      <a href="<%- Routes.user_path(@username) + '#radar' %>" class="bb-section-link">
+        <span class="number"><%- @following_companies_count %></span> Stocks
+      </a>
+    </td>
+  </tr>
+</table>

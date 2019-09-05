@@ -1,0 +1,89 @@
+.user-account-page {
+
+  ul.user-profile-page-tabs {
+    margin-bottom: 22px;
+    border: 1px solid #666;
+    border-radius: 4px;
+
+    li + li {
+      margin-top: 0;
+    }
+
+    li {
+      font-size: 0;
+      border-bottom: 1px solid #666;
+      vertical-align: middle;
+      text-align: center;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        border: none;
+        border-radius: 0;
+        text-transform: uppercase;
+        color: #666;
+        font-size: 14px;
+        // font-family: $font-bold;
+        padding: 20px 15px;
+
+        &:hover,
+        &:focus {
+          background: #2d3e50;
+          color: #fff;
+        }
+      }
+
+      &:last-child {
+        a {
+          border-right: none;
+        }
+      }
+
+      &.active,
+      &:hover,
+      &:focus {
+        background: #2d3e50;
+
+        a {
+          border: none;
+          background: #2d3e50;
+          color: #fff;
+
+          &:link,
+          &:hover,
+          &:focus {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .panel {
+
+    .panel-title {
+      font-size: 18px;
+      font-family: $font-bold;
+      text-transform: uppercase;
+      padding: 15px 40px 10px;
+      border-bottom: 1px solid #eae5e0;
+    }
+
+    .panel-subtitle {
+      font-size: 15px;
+      font-family: $font-bold;
+      text-transform: uppercase;
+      padding: 0 0 10px;
+      border-bottom: 1px solid #eae5e0;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      border-top: 1px solid #eae5e0;
+      margin: 0;
+    }
+  }
+}

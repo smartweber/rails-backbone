@@ -1,0 +1,39 @@
+{
+  "resource": "Posts",
+  "http_method": "DELETE",
+  "route": "/api/posts/:id",
+  "description": "Deleting a post",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "ID of post to delete"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/posts/5",
+      "request_body": "{}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache"
+      },
+      "response_content_type": null,
+      "curl": "curl \"http://localhost:3000/api/posts/5\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

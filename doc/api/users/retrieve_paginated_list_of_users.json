@@ -1,0 +1,68 @@
+{
+  "resource": "Users",
+  "http_method": "GET",
+  "route": "/api/users",
+  "description": "Retrieve paginated list of users",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "query",
+      "description": "Beggining of User's username"
+    },
+    {
+      "name": "page",
+      "description": "If query parameter is not present - page is used for simple pagination"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "User id"
+    },
+    {
+      "name": "name",
+      "description": "User name"
+    },
+    {
+      "name": "username",
+      "description": "User username"
+    },
+    {
+      "name": "gravatar_url",
+      "description": "User's gravatar image url"
+    },
+    {
+      "name": "followers_count",
+      "description": "Amount of users that following this user"
+    },
+    {
+      "name": "target_url",
+      "description": "Url to user's page"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/users?query&page=1",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "query": null,
+        "page": "1"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 80,\n    \"name\": \"Elton Crona\",\n    \"username\": \"eltoncrona\",\n    \"gravatar_url\": \"https://secure.gravatar.com/avatar/d5b52572e6167c24565024298718ea78?s=50\",\n    \"relationship\": null,\n    \"followers_count\": 0,\n    \"target_url\": \"/users/eltoncrona\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/users?query&page=1\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

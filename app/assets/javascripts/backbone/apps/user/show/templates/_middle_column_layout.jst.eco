@@ -1,0 +1,22 @@
+<div class="col-center">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified profile-page-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#posts" aria-controls="posts" role="tab">Post</a></li>
+    <li role="presentation"><a href="#about" aria-controls="about" role="tab">About</a></li>
+    <li role="presentation"><a href="#investor-info" aria-controls="investor-info" role="tab">Investor Info</a></li>
+    <li role="presentation"><a href="#radar" aria-controls="radar" role="tab">Radar</a></li>
+    <li role="presentation"><a href="#following" aria-controls="following" role="tab">Following</a></li>
+    <li role="presentation"><a href="#followers" aria-controls="followers" role="tab">Followers</a></li>
+    <!-- <li role="presentation"><a href="#friends" aria-controls="friends" role="tab" data-toggle="tab">Friends</a></li> -->
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="posts" role="tabpanel" class="feed-region tab-pane active"></div>
+    <div id="about" role="tabpanel" class="about-region tab-pane"></div>
+    <div id="investor-info" role="tabpanel" class="investor-info-region tab-pane"></div>
+    <div id="radar" role="tabpanel" class="radar-region tab-pane"></div>
+    <div id="following" role="tabpanel" class="following-region tab-pane"></div>
+    <div id="followers" role="tabpanel" class="followers-region tab-pane"></div>
+    <div id="friends" role="tabpanel" class="friends-region tab-pane"></div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="col-center">
+  <div class="tab-content">
+    <div id="general-tab-region" class="tab-pane active" role="tabpanel"></div>
+    <div id="security-tab-region" class="tab-pane" role="tabpanel"></div>
+    <div id="blocked-accounts-tab-region" class="tab-pane" role="tabpanel"></div>
+    <div id="notifications-tab-region" class="tab-pane" role="tabpanel"></div>
+  </div>
+</div>

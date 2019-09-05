@@ -1,0 +1,443 @@
+{
+  "resources": [
+    {
+      "name": "Articles",
+      "examples": [
+        {
+          "description": "Getting a list of articles",
+          "link": "articles/getting_a_list_of_articles.json",
+          "groups": "all",
+          "route": "/api/articles",
+          "method": "get"
+        },
+        {
+          "description": "Getting a specific article",
+          "link": "articles/getting_a_specific_article.json",
+          "groups": "all",
+          "route": "/api/articles/:id",
+          "method": "get"
+        },
+        {
+          "description": "Retrieving feed associated with an article",
+          "link": "articles/retrieving_feed_associated_with_an_article.json",
+          "groups": "all",
+          "route": "/api/articles/:id/feed",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "BreakingNews",
+      "examples": [
+        {
+          "description": "Getting the latest Breaking News",
+          "link": "breakingnews/getting_the_latest_breaking_news.json",
+          "groups": "all",
+          "route": "/api/breaking_news",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Channels",
+      "examples": [
+        {
+          "description": "Retrieving #hashtag mentioning posts",
+          "link": "channels/retrieving_#hashtag_mentioning_posts.json",
+          "groups": "all",
+          "route": "/api/channels/:id",
+          "method": "get"
+        },
+        {
+          "description": "Retrieving top hashtags(channels)",
+          "link": "channels/retrieving_top_hashtags(channels).json",
+          "groups": "all",
+          "route": "/api/channels",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Chats",
+      "examples": [
+        {
+          "description": "Getting a list of chats",
+          "link": "chats/getting_a_list_of_chats.json",
+          "groups": "all",
+          "route": "/api/chats",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "examples": [
+        {
+          "description": "Creating a comment",
+          "link": "comments/creating_a_comment.json",
+          "groups": "all",
+          "route": "/api/comments",
+          "method": "post"
+        },
+        {
+          "description": "Delete comment",
+          "link": "comments/delete_comment.json",
+          "groups": "all",
+          "route": "/api/comments/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Getting a list of comments",
+          "link": "comments/getting_a_list_of_comments.json",
+          "groups": "all",
+          "route": "/api/comments",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Companies",
+      "examples": [
+        {
+          "description": "Retrieving a list of companies",
+          "link": "companies/retrieving_a_list_of_companies.json",
+          "groups": "all",
+          "route": "/api/c",
+          "method": "get"
+        },
+        {
+          "description": "Retrieving a list of companies that user follows",
+          "link": "companies/retrieving_a_list_of_companies_that_user_follows.json",
+          "groups": "all",
+          "route": "/api/users/:user_id/following/companies",
+          "method": "get"
+        },
+        {
+          "description": "Retrieving a list of composite indexes",
+          "link": "companies/retrieving_a_list_of_composite_indexes.json",
+          "groups": "all",
+          "route": "/api/c/market_snapshot",
+          "method": "get"
+        },
+        {
+          "description": "Retrieving a specific company",
+          "link": "companies/retrieving_a_specific_company.json",
+          "groups": "all",
+          "route": "/api/c/:id",
+          "method": "get"
+        },
+        {
+          "description": "Retrieving trending companies",
+          "link": "companies/retrieving_trending_companies.json",
+          "groups": "all",
+          "route": "/api/c/trending",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "CompanyNews",
+      "examples": [
+        {
+          "description": "Retrieve company news",
+          "link": "companynews/retrieve_company_news.json",
+          "groups": "all",
+          "route": "/api/c/:company_id/news",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "CompanyPosts",
+      "examples": [
+        {
+          "description": "Retrieve posts that mention company name",
+          "link": "companyposts/retrieve_posts_that_mention_company_name.json",
+          "groups": "all",
+          "route": "/api/c/:company_id/posts",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Favorites",
+      "examples": [
+        {
+          "description": "Add to favorites",
+          "link": "favorites/add_to_favorites.json",
+          "groups": "all",
+          "route": "/api/collection",
+          "method": "post"
+        },
+        {
+          "description": "Remove from favorites",
+          "link": "favorites/remove_from_favorites.json",
+          "groups": "all",
+          "route": "/api/collection/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Retrieve favorite posts",
+          "link": "favorites/retrieve_favorite_posts.json",
+          "groups": "all",
+          "route": "/api/collection",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Feed",
+      "examples": [
+        {
+          "description": "Retrieve user-specific feed",
+          "link": "feed/retrieve_user-specific_feed.json",
+          "groups": "all",
+          "route": "/api/feed",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "FollowingCompanies",
+      "examples": [
+        {
+          "description": "Retrieve companies that user is following",
+          "link": "followingcompanies/retrieve_companies_that_user_is_following.json",
+          "groups": "all",
+          "route": "/api/users/:user_id/following/companies",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Likes",
+      "examples": [
+        {
+          "description": "Create a like",
+          "link": "likes/create_a_like.json",
+          "groups": "all",
+          "route": "/api/likes",
+          "method": "post"
+        },
+        {
+          "description": "Delete a like",
+          "link": "likes/delete_a_like.json",
+          "groups": "all",
+          "route": "/api/likes/:id",
+          "method": "delete"
+        }
+      ]
+    },
+    {
+      "name": "MarketHeadlines",
+      "examples": [
+        {
+          "description": "Retrieve market headlines news",
+          "link": "marketheadlines/retrieve_market_headlines_news.json",
+          "groups": "all",
+          "route": "/api/market_headlines",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Messages",
+      "examples": [
+        {
+          "description": "Create message",
+          "link": "messages/create_message.json",
+          "groups": "all",
+          "route": "/api/messages",
+          "method": "post"
+        },
+        {
+          "description": "Listing messages",
+          "link": "messages/listing_messages.json",
+          "groups": "all",
+          "route": "/api/chats/:chat_id/messages",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "examples": [
+        {
+          "description": "Getting a list of news articles",
+          "link": "news/getting_a_list_of_news_articles.json",
+          "groups": "all",
+          "route": "/api/news_articles",
+          "method": "get"
+        },
+        {
+          "description": "Getting a specific article",
+          "link": "news/getting_a_specific_article.json",
+          "groups": "all",
+          "route": "/api/news_articles/:id",
+          "method": "get"
+        },
+        {
+          "description": "Retrieve news articles ranged by position",
+          "link": "news/retrieve_news_articles_ranged_by_position.json",
+          "groups": "all",
+          "route": "/api/news_articles/ranged",
+          "method": "get"
+        },
+        {
+          "description": "Retrieving feed associated with an news article",
+          "link": "news/retrieving_feed_associated_with_an_news_article.json",
+          "groups": "all",
+          "route": "/api/news_articles/:id/feed",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "examples": [
+        {
+          "description": "Updates participant's last_seen_message_id",
+          "link": "notifications/updates_participant's_last_seen_message_id.json",
+          "groups": "all",
+          "route": "/api/participants/:id",
+          "method": "put"
+        },
+        {
+          "description": "Updating notification",
+          "link": "notifications/updating_notification.json",
+          "groups": "all",
+          "route": "/api/notifications/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Posts",
+      "examples": [
+        {
+          "description": "Creating a post",
+          "link": "posts/creating_a_post.json",
+          "groups": "all",
+          "route": "/api/posts",
+          "method": "post"
+        },
+        {
+          "description": "Deleting a post",
+          "link": "posts/deleting_a_post.json",
+          "groups": "all",
+          "route": "/api/posts/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Retrieving trending posts feed",
+          "link": "posts/retrieving_trending_posts_feed.json",
+          "groups": "all",
+          "route": "/api/posts/trending",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Recommendations",
+      "examples": [
+        {
+          "description": "Getting list of recommended companies",
+          "link": "recommendations/getting_list_of_recommended_companies.json",
+          "groups": "all",
+          "route": "/api/users/:id/recommendations/companies",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Relationships",
+      "examples": [
+        {
+          "description": "Creating a relationship",
+          "link": "relationships/creating_a_relationship.json",
+          "groups": "all",
+          "route": "/api/relationships",
+          "method": "post"
+        },
+        {
+          "description": "Delete Relationship",
+          "link": "relationships/delete_relationship.json",
+          "groups": "all",
+          "route": "/api/relationships/:id",
+          "method": "delete"
+        }
+      ]
+    },
+    {
+      "name": "UserAttachments",
+      "examples": [
+        {
+          "description": "Creating image attachment",
+          "link": "userattachments/creating_image_attachment.json",
+          "groups": "all",
+          "route": "/api/user_attachments",
+          "method": "post"
+        },
+        {
+          "description": "Creating link attachment",
+          "link": "userattachments/creating_link_attachment.json",
+          "groups": "all",
+          "route": "/api/user_attachments",
+          "method": "post"
+        },
+        {
+          "description": "Delete attachment",
+          "link": "userattachments/delete_attachment.json",
+          "groups": "all",
+          "route": "/api/user_attachments/:id",
+          "method": "delete"
+        }
+      ]
+    },
+    {
+      "name": "UserPosts",
+      "examples": [
+        {
+          "description": "Retrieves all visible posts from user feed",
+          "link": "userposts/retrieves_all_visible_posts_from_user_feed.json",
+          "groups": "all",
+          "route": "/api/users/:user_id/posts",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "examples": [
+        {
+          "description": "Getting a specific User",
+          "link": "users/getting_a_specific_user.json",
+          "groups": "all",
+          "route": "/api/users/:id",
+          "method": "get"
+        },
+        {
+          "description": "Retrieve list of users for autocomplete",
+          "link": "users/retrieve_list_of_users_for_autocomplete.json",
+          "groups": "all",
+          "route": "/api/users",
+          "method": "get"
+        },
+        {
+          "description": "Retrieve paginated list of users",
+          "link": "users/retrieve_paginated_list_of_users.json",
+          "groups": "all",
+          "route": "/api/users",
+          "method": "get"
+        },
+        {
+          "description": "Update user",
+          "link": "users/update_user.json",
+          "groups": "all",
+          "route": "/api/users/:id",
+          "method": "put"
+        }
+      ]
+    }
+  ]
+}

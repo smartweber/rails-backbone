@@ -1,0 +1,100 @@
+{
+  "resource": "CompanyPosts",
+  "http_method": "GET",
+  "route": "/api/c/:company_id/posts",
+  "description": "Retrieve posts that mention company name",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "name": "posts_count",
+      "description": "Total post count in article Feed"
+    },
+    {
+      "name": "posts[][id]",
+      "description": "Post id"
+    },
+    {
+      "name": "posts[][created_at]",
+      "description": "DateTime post was created at"
+    },
+    {
+      "name": "posts[][comments_count]",
+      "description": "Amount of comments for a post"
+    },
+    {
+      "name": "posts[][content]",
+      "description": "Post content(with $/@/# wrapped into links)"
+    },
+    {
+      "name": "posts[][favorited]",
+      "description": "Favorite entity id(delete to unfavorite)"
+    },
+    {
+      "name": "posts[][likes_count]",
+      "description": "Cached amount of likes"
+    },
+    {
+      "name": "posts[][article_id]",
+      "description": "ID of article object that this post belongs to"
+    },
+    {
+      "name": "posts[][article_type]",
+      "description": "Type of article object(\"Article\"/\"GeneralNewsItem\") that this post belongs to"
+    },
+    {
+      "name": "posts[][like]",
+      "description": "DEPRECATED"
+    },
+    {
+      "name": "posts[][user][id]",
+      "description": "Id of user that's created post"
+    },
+    {
+      "name": "posts[][user][name]",
+      "description": "Name of the creator"
+    },
+    {
+      "name": "posts[][user][gravatar_url]",
+      "description": "Url for gravatar image"
+    },
+    {
+      "name": "posts[][comments][]",
+      "description": "See POST /comments for a description"
+    },
+    {
+      "name": "posts[][attachments][][id]",
+      "description": "Attachment ID"
+    },
+    {
+      "name": "posts[][attachments][][url]",
+      "description": "URL of attached image"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/c/omtj/posts",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"posts_count\": 1,\n  \"posts\": [\n    {\n      \"id\": 27,\n      \"created_at\": \"2016-09-01T16:03:40.000Z\",\n      \"comments_count\": 0,\n      \"likes_count\": 0,\n      \"content\": \"<a class=\\\"bb-post-link\\\" href=\\\"/c/omtj\\\">$OMTJ</a> mentioned\",\n      \"favorited\": false,\n      \"like\": null,\n      \"user\": {\n        \"id\": 111,\n        \"name\": \"Myrtie Walter\",\n        \"username\": \"myrtiewalter\",\n        \"gravatar_url\": \"https://secure.gravatar.com/avatar/189eb5cb15e3c608c1fc91e879eac584?s=50\"\n      },\n      \"attachments\": [\n\n      ],\n      \"comments\": [\n\n      ]\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/c/omtj/posts\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

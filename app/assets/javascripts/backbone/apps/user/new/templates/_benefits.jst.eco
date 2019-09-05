@@ -1,0 +1,33 @@
+<h2>Where Your Business<br/>Journey Begins</h2>
+<ul class="list-benefits">
+  <li>
+    <span class="sprite-benefit img-1"></span>
+    <strong>Superior Charts</strong>
+    <p>Access the best visualization for your stocks</p>
+  </li>
+  <li>
+    <span class="sprite-benefit img-2"></span>
+    <strong>Real Time Data</strong>
+    <p>Never be behind again</p>
+  </li>
+  <li>
+    <span class="sprite-benefit img-3"></span>
+    <strong>Exquisite Metrics</strong>
+    <p>Receive remarkable data metrics for your unique portfolio</p>
+  </li>
+  <li>
+    <span class="sprite-benefit img-4"></span>
+    <strong>Investor Interaction</strong>
+    <p>Share ideas and discuss market trends</p>
+  </li>
+  <li>
+    <span class="sprite-benefit img-5"></span>
+    <strong>Stay in the Know</strong>
+    <p>Personalized news stories from over the top dozen news providers</p>
+  </li>
+  <li>
+    <span class="sprite-benefit img-6"></span>
+    <strong>Focused Alerts</strong>
+    <p>Set and receive relevant news & stock data on companies</p>
+  </li>
+</ul>

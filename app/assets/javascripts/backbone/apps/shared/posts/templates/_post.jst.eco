@@ -1,0 +1,16 @@
+<div class="dropdown pull-right ">
+  <% if @currentUserCan('destroy', @): %>
+    <a href="#" class="bb-delete-post"><span class="icon-close"></span></a>
+  <% else: %>
+    <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="icon-chevron-down"></span></a>
+    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+      <li><a href="#"><span class="icon-close"></span> Unfollow</a></li>
+      <li><a href="#"><span class="icon-warning"></span> Report</a></li>
+      <li><a href="#"><span class="icon-code"></span> Embed Code</a></li>
+    </ul>
+  <% end %>
+</div>
+<a href="<%- Routes.user_path(@user.username) %>" class='bb-user-link'>
+  <span class="name"><%= @user.name %></span>
+</a>
+<p><%- @content %></p>

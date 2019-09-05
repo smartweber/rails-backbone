@@ -1,0 +1,23 @@
+<div class="sh-tabs">
+  <ul class="nav nav-pills sh-nav-pills nav-justified">
+    <li>
+      <a href="#tab1" class="news" data-toggle="pill"><span class="icon-newspaper-o"></span> News</a>
+    </li>
+    <li class="active">
+      <a href="#tab2" data-toggle="pill"><span class="icon-gauge"></span> Radar</a>
+    </li>
+    <li>
+      <a href="#tab3" data-toggle="pill"><span class="icon-area-graph"></span> Market movers</a>
+    </li>
+    <li>
+      <a href="#tab4" data-toggle="pill"><span class="icon-bar-graph"></span> Most volume</a>
+    </li>
+  </ul>
+
+  <div class="tab-content sh-tab-content">
+    <div id='tab1' class="news-region tab-pane" role='tabpanel'></div>
+    <div id='tab2' class="radar-region tab-pane active" role='tabpanel'></div>
+    <div id='tab3' class="market-movers-region tab-pane" role='tabpanel'></div>
+    <div id='tab4' class="most-volume-region tab-pane" role='tabpanel'></div>
+  </div>
+</div>

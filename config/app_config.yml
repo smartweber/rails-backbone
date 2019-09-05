@@ -1,0 +1,91 @@
+default: &default
+  feed_sources:
+    npr: "http://www.npr.org/rss/rss.php?id=1001"
+    usa_today: ["http://rssfeeds.usatoday.com/usatoday-newstopstories&x=1", "http://rssfeeds.usatoday.com/usatodaycommoney-topstories&x=1"]
+    ny_times: "http://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+    huffington_post: "http://www.huffingtonpost.com/feeds/verticals/business/index.xml"
+    bbc_uk: "http://feeds.bbci.co.uk/news/business/rss.xml"
+    reuters: "http://feeds.reuters.com/reuters/businessNews"
+    cnn: "http://rss.cnn.com/rss/money_latest.rss"
+    abc_news: "http://feeds.abcnews.com/abcnews/topstories"
+    ap: "http://hosted2.ap.org/atom/APDEFAULT/f70471f764144b2fab526d39972d37b3"
+    la_times: "http://www.latimes.com/business/rss2.0.xml"
+    telegraph: "http://www.telegraph.co.uk/finance/rss"
+    time: "http://feeds2.feedburner.com/time/business"
+    marketwatch: http://feeds.marketwatch.com/marketwatch/topstories/
+    fox: http://feeds.foxbusiness.com/foxbusiness/latest
+  yahoo_finance: http://finance.yahoo.com/rss/headline?s=
+  faye:
+    port: "9292"
+    host: localhost
+  elasticsearch:
+    port: "9200"
+    host: localhost
+  redis:
+    port: "6379"
+    host: localhost
+    main_db: "14"
+    sessions_db: "10"
+  quote_media:
+    webmaster_id: 102098
+  fog:
+    directory: "stockharp.development"
+    asset_host: "https://s3-us-west-2.amazonaws.com/stockharp.development"
+  google_api:
+    server_key: "AIzaSyChl7ef9dBzQBr10TcuRCrNkw7YMD3JXIs"
+    search_engine_id: "011057956515630255885:g897ymtdpt8"
+  aws_region: "us-west-2"
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  faye:
+    port: "9291"
+    host: localhost
+  redis:
+    port: "6379"
+    host: localhost
+    main_db: "14"
+    sessions_db: "10"
+
+production:
+  <<: *default
+  faye:
+    port: "9293"
+    host: "www.stockharp.com"
+  elasticsearch:
+    port: "9200"
+    host: 172.0.0.33
+  redis:
+    port: "6379"
+    host: 172.0.0.55
+    main_db: "14"
+    sessions_db: "10"
+  fog:
+    directory: "stockharp"
+    asset_host: "https://s3-us-west-2.amazonaws.com/stockharp"
+  google_api:
+    server_key: <%= ENV['GOOGLE_SERVER_KEY'] %>
+    search_engine_id: <%= ENV['GOOGLE_SEARCH_ENGINE_ID'] %>
+
+staging:
+  <<: *default
+  faye:
+    port: "9293"
+    host: "staging.stockharp.com"
+  elasticsearch:
+    port: "9200"
+    host: 10.0.0.21
+  redis:
+    port: "6379"
+    host: 10.0.0.55
+    main_db: "14"
+    sessions_db: "10"
+  fog:
+    directory: "stockharp.staging"
+    asset_host: "https://s3-us-west-2.amazonaws.com/stockharp.staging"
+  google_api:
+    server_key: <%= ENV['GOOGLE_SERVER_KEY'] %>
+    search_engine_id: <%= ENV['GOOGLE_SEARCH_ENGINE_ID'] %>

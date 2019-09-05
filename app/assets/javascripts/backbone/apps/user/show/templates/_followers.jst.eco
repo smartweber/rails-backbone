@@ -1,0 +1,67 @@
+<div class="panel-body">
+  <div class="row">
+    <div class="col-sm-11">
+
+      <div class="friend-item">
+        <div class="avatar">
+          <img src="<%- asset_path('avatar.png') %>" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">John Snow</div>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Following</span> <span class="unfollow-txt"><i class="icon-close"></i> Unfollow</span></a>
+        </div>
+      </div>
+
+      <div class="friend-item">
+        <div class="avatar">
+          <img src="<%- asset_path('avatar.png') %>" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">John Snow</div>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Follow</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-11 col-sm-offset-2">
+
+      <div class="friend-item">
+        <div class="avatar">
+          <img src="<%- asset_path('avatar.png') %>" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">John Snow</div>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Following</span> <span class="unfollow-txt"><i class="icon-close"></i> Unfollow</span></a>
+        </div>
+      </div>
+
+      <div class="friend-item">
+        <div class="avatar">
+          <img src="<%- asset_path('avatar.png') %>" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">John Snow</div>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Follow</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<% lastMessage = @messages.at(@messages.length - 1) %>
+<% unless lastMessage.isNew(): %>
+  <div class="avatar">
+    <%- @gravatarImageFor lastMessage.get('user'), { htmlClass: 'img-responsive' } %>
+  </div>
+
+  <div class="message-excerpt">
+    <div class="sender"><%- lastMessage.get('user').name %></div>
+    <div class="subject">
+      <%- @messageDeliveryBadgeWithStatus @isSeen() %> <%= s(lastMessage.get('body')).prune(23).value() %>
+    </div>
+  </div>
+
+  <div class="timestamp">
+    <%- @datetimeToHumanFormatOT lastMessage.get('created_at') %>
+  </div>
+<% end %>

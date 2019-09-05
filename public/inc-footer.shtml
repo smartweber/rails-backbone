@@ -1,0 +1,17 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="#">about</a> | <a href="#">help</a> | <a href="#">feedback</a> | <a href="#">careers</a> | <a
+      href="#">blog</a> | <a href="#">privacy</a> | <a href="#">terms</a>
+    </div>
+    <div class="clearfix">
+      <ul class="pull-right list-inline link-social">
+        <li><a href="#"><span class="icon-facebook"></span></a></li>
+        <li><a href="#"><span class="icon-play"></span></a></li>
+        <li><a href="#"><span class="icon-twitter"></span></a></li>
+      </ul>
+      <small>
+      Copyright &copy; 2015. Stockharp. All rights reserved.</small>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,68 @@
+{
+  "resource": "News",
+  "http_method": "GET",
+  "route": "/api/news_articles/:id",
+  "description": "Getting a specific article",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "ID of NewsArticle to retrieve"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "News article ID"
+    },
+    {
+      "name": "url",
+      "description": "Url to external news article"
+    },
+    {
+      "name": "title",
+      "description": "Title of news article"
+    },
+    {
+      "name": "summary",
+      "description": "Truncated summary of news article"
+    },
+    {
+      "name": "sanitized_summary",
+      "description": "Truncated sanitized(strict) summary of news article"
+    },
+    {
+      "name": "agency",
+      "description": "See app_config.yml for agency types"
+    },
+    {
+      "name": "slug",
+      "description": "Friendly URL"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/news_articles/13",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 13,\n  \"url\": \"http://beiergoyette.net/louisa\",\n  \"agency\": \"telegraph\",\n  \"locally_hosted\": false,\n  \"news_thumbnail_carousel_list_url\": \"/uploads/general_news_item/news_thumbnail/13/carousel_list_default_medium.png\",\n  \"news_thumbnail_stretched_full_url\": \"/uploads/general_news_item/news_thumbnail/13/stretched_full_default_medium.png\",\n  \"slug\": \"vel-repellendus-et-rerum-laudantium-autem\",\n  \"title\": \"Vel repellendus et rerum laudantium autem.\",\n  \"sanitized_summary\": \"Aut officiis et dolores. Et ab maiores atque. Quod omnis eum repudiandae nobis deserunt. Quibusdam excepturi dolore cum voluptates. Quia sit autem non pariatur suscipit.\",\n  \"summary\": \"Aut officiis et dolores. Et ab maiores atque. Quod omnis eum repudiandae nobis deserunt. Quibusdam excepturi dolore cum voluptates. Quia sit autem non pariatur suscipit.\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/news_articles/13\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

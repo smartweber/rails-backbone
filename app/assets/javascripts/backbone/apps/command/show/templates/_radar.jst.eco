@@ -1,0 +1,26 @@
+<ul class="nav nav-pills sh-nav-opaq">
+  <li class="active"><a href="#tab1-1" data-toggle="pill" id="btn-radar-tile"><span class="icon-th"></span></a></li>
+  <li><a href="#tab1-2" data-toggle="pill" id="btn-radar-list"><span class="icon-align-justify"></span></a></li>
+</ul>
+
+<ul class="list-inline sh-nextback" id="sh-tile-action1">
+  <li><a href="#carousel-radar" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a></li>
+  <li><a href="#carousel-radar" role="button" data-slide="next"><span class="icon-chevron-right"></span></a></li>
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="tab1-1">
+    <div id="carousel-radar" class="carousel sh-carousel slide" data-ride="carousel" data-interval="10000">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <% _.each @pageRegionsSelectors, (selector, index) ->: %>
+          <div class="item <%- s(selector).ltrim('.').value() %> <%- 'active' if index == 0 %>"></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tab1-2">
+    <div class="radar-listview scroll-pane companies-list-region">
+    </div>
+  </div>
+</div>

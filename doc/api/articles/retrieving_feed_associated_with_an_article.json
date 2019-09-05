@@ -1,0 +1,104 @@
+{
+  "resource": "Articles",
+  "http_method": "GET",
+  "route": "/api/articles/:id/feed",
+  "description": "Retrieving feed associated with an article",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "ID of Article"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "posts_count",
+      "description": "Total post count in article Feed"
+    },
+    {
+      "name": "posts[][id]",
+      "description": "Post id"
+    },
+    {
+      "name": "posts[][created_at]",
+      "description": "DateTime post was created at"
+    },
+    {
+      "name": "posts[][comments_count]",
+      "description": "Amount of comments for a post"
+    },
+    {
+      "name": "posts[][content]",
+      "description": "Post content(with $/@/# wrapped into links)"
+    },
+    {
+      "name": "posts[][favorited]",
+      "description": "Favorite entity id(delete to unfavorite)"
+    },
+    {
+      "name": "posts[][likes_count]",
+      "description": "Cached amount of likes"
+    },
+    {
+      "name": "posts[][article_id]",
+      "description": "ID of article object that this post belongs to"
+    },
+    {
+      "name": "posts[][article_type]",
+      "description": "Type of article object(\"Article\"/\"GeneralNewsItem\") that this post belongs to"
+    },
+    {
+      "name": "posts[][like]",
+      "description": "DEPRECATED"
+    },
+    {
+      "name": "posts[][user][id]",
+      "description": "Id of user that's created post"
+    },
+    {
+      "name": "posts[][user][name]",
+      "description": "Name of the creator"
+    },
+    {
+      "name": "posts[][user][gravatar_url]",
+      "description": "Url for gravatar image"
+    },
+    {
+      "name": "posts[][comments][]",
+      "description": "See POST /comments for a description"
+    },
+    {
+      "name": "posts[][attachments][][id]",
+      "description": "Attachment ID"
+    },
+    {
+      "name": "posts[][attachments][][url]",
+      "description": "URL of attached image"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/articles/2/feed",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"posts_count\": 2,\n  \"posts\": [\n    {\n      \"id\": 1,\n      \"created_at\": \"2016-09-01T16:03:27.000Z\",\n      \"comments_count\": 0,\n      \"likes_count\": 0,\n      \"content\": \"Aperiam qui id aliquid repudiandae ad dolorem molestias.\",\n      \"favorited\": false,\n      \"like\": null,\n      \"user\": {\n        \"id\": 17,\n        \"name\": \"Camren Ernser\",\n        \"username\": \"camrenernser\",\n        \"gravatar_url\": \"https://secure.gravatar.com/avatar/18608a7f1a979600a23ef164dd1b9660?s=50\"\n      },\n      \"attachments\": [\n\n      ],\n      \"comments\": [\n\n      ]\n    },\n    {\n      \"id\": 2,\n      \"created_at\": \"2016-09-01T16:03:27.000Z\",\n      \"comments_count\": 0,\n      \"likes_count\": 0,\n      \"content\": \"Aliquid voluptatem eius velit ut reprehenderit.\",\n      \"favorited\": false,\n      \"like\": null,\n      \"user\": {\n        \"id\": 18,\n        \"name\": \"Ellis Windler\",\n        \"username\": \"elliswindler\",\n        \"gravatar_url\": \"https://secure.gravatar.com/avatar/45614a6db2cd38f25e9014e8164924c6?s=50\"\n      },\n      \"attachments\": [\n\n      ],\n      \"comments\": [\n\n      ]\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/articles/2/feed\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

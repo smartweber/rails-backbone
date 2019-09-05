@@ -1,0 +1,242 @@
+.compose-message {
+
+  .panel {
+    position: relative;
+  }
+
+  .buttons-container-on-side {
+    background: none;
+    text-align: right;
+  }
+
+  .inbox-side-box {
+    border: 1px solid #eae5e0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    .inbox-items {
+
+      &.scrollable {
+        height: 364px;
+        overflow: hidden;
+      }
+    }
+
+    .inbox-side-box-title {
+      border-bottom: 1px solid #eae5e0;
+
+      .inbox-details,
+      .followers {
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        padding: 12px 0;
+
+        a {
+          color: #C2C2C2;
+        }
+
+        a:hover,
+        a:focus {
+          color: #666;
+        }
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid #eae5e0;
+    margin: 0;
+  }
+
+  .message-to {
+    padding: 15px 40px 15px;
+
+    label {
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+    }
+
+    input {
+      display: inline-block;
+      border: none;
+      padding-left: 5px;
+      padding-right: 5px
+    }
+  }
+
+  .message-from {
+    padding: 15px 40px 15px;
+
+    .sender {
+      font-size: 16px;
+      text-transform: uppercase;
+      padding: 5px;
+    }
+  }
+
+  .message-content {
+    padding: 20px 40px 10px;
+
+    &.scrollable {
+      height: 370px;
+      overflow: hidden;
+      padding: 20px 40px 10px;
+    }
+
+    .sender {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      border: none;
+      padding-left: 5px;
+      padding-right: 5px
+    }
+
+    p {
+      margin-top: 0;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .message {
+      margin-bottom: 40px;
+      position: relative;
+
+      .timestamp {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        color: #a3a3a3;
+        font-size: 12px;
+
+        span {
+          font-size: 14px;
+
+          &.seen {
+            color: #23c575;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .message-body {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .message-comment {
+    padding: 20px 40px 10px;
+
+    textarea {
+      border: none;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 10px;
+    }
+
+    .add-image-button {
+      display: inline-block;
+      color: #a3a3a3;
+      text-decoration: none;
+
+      span {
+        vertical-align: middle;
+      }
+
+      .icon-image {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .avatar {
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  .dropdown-menu {
+    border-color: #eae5e0;
+
+    li {
+      border-top-color: #eae5e0;
+      text-align: center;
+    }
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .uploads-previewer {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background: #f9f7f7;
+
+    .upload {
+      float: left;
+      margin: 0 5px 10px;
+      position: relative;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .delete {
+        position: absolute;
+        color: #666;
+        text-decoration: none;
+        font-size: 20px;
+        top: 0;
+        right: 0;
+        margin: 2px;
+
+        &:hover {
+          color: #ea4c44;
+        }
+      }
+    }
+  }
+
+  .message-link {
+    margin: 20px 0 20px 10px;
+
+    h5 {
+      margin: 10px 0 5px 0;
+
+    }
+
+    p {
+      font-size: 11px;
+
+      a {
+        color: #bfbdbd;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .compose-message .message-content .message .timestamp {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .compose-message .flash-messages {
+    position: relative;
+    top: 0;
+  }
+
+}

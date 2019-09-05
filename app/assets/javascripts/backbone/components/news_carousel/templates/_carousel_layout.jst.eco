@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-sm-18">
+    <% if(@firstItem()): %>
+      <div class="news-item-active bb-news-active" id="news-active">
+        <div class="news-item-active-img">
+          <img src="<%- @firstItem().get('news_thumbnail_stretched_full_url') %>" alt="" />
+        </div>
+        <div class="news-item-active-caption">
+          <h4 class="news-item-title"><%- s(@firstItem().get('title')).prune(90).value() %></h4>
+          <p class="news-item-text">
+            <%- s(@firstItem().get('sanitized_summary')).prune(100).value() %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-sm-6">
+    <div class="news-thumb">
+      <div class="track axis-y">
+        <div class="inner">
+          <div class="slider-container-pagination up">
+            <a href="#" class="prev disabled"><span class="icon-chevron-up"></span></a>
+          </div>
+          <div class="view-port">
+            <div id="news-carousel" class="slider-container">
+              <% _.each @pageRegionsSelectors, (selector, index) ->: %>
+                <div class="<%- s(selector).ltrim('.').value() %> <%- 'active' if index == 0 %>"></div>
+              <% end %>
+            </div>
+          </div>
+          <div class="slider-container-pagination down">
+            <a href="#" class="next disabled"><span class="icon-chevron-down"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

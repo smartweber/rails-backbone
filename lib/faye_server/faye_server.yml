@@ -1,0 +1,8 @@
+# Thin for Faye
+---
+pid: tmp/pids/faye.pid
+log: log/faye.log
+threaded: true
+no-epoll: true
+daemonize: true
+tag: faye

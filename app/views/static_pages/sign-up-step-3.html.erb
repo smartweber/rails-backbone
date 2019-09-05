@@ -1,0 +1,153 @@
+<%= render partial: 'shared/header', locals: {display_search: true} %>
+
+<section class="sign-up-step sign-up-step-2">
+  <div class="container">
+    <form class="">
+      <div class="row">
+        <div class="col-xs-24">
+          <div class="col-center">
+            <div class="panel panel-default panel-main">
+              <div class="heading">
+                <h4>Find And Invite People You Know</h4>
+                <p>Having your friends and family on stockharp will significantly enhance your stockharp experience.</p>
+              </div>
+
+              <div class="sub-heading">
+                <h5>Industries</h5>
+              </div>
+
+              <div class="content thumbs-content">
+                <div class="row">
+                  <div class="col-xs-24">
+
+                    <div class="custom-thumbs">
+                      <div class="thumb social">
+                        <div class="thumb-content">
+                          <span class="thumb-title"><img src="/assets/sign-up-fb-logo.png"> Facebook</span>
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Value
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="thumb social">
+                        <div class="thumb-content">
+                          <span class="thumb-title"><img src="/assets/sign-up-tw-logo.png"> Twitter</span>
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Value
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading">
+                <h5>Investments Security</h5>
+              </div>
+
+              <div class="content thumbs-content">
+                <div class="row">
+                  <div class="col-xs-24">
+
+                    <div class="custom-thumbs">
+                      <div class="thumb social">
+                        <div class="thumb-content">
+                          <span class="thumb-title"><img src="/assets/sign-up-gmail-logo.png"> Gmail</span>
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Value
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="thumb social">
+                        <div class="thumb-content">
+                          <span class="thumb-title"><img src="/assets/sign-up-outlook-logo.png"> Outlook</span>
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Value
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="thumb social">
+                        <div class="thumb-content">
+                          <span class="thumb-title"><img src="/assets/sign-up-yahoo-logo.png"> Yahoo</span>
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Value
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="thumb social">
+                        <div class="thumb-content">
+                          <span class="thumb-title"><img src="/assets/sign-up-aol-logo.png"> AOL</span>
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Value
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-24">
+                    <div class="form-buttons">
+                      <a href="#">Skip this step</a> <button type="submit" class="btn btn-lg btn-primary">Continue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+
+  $(function () {
+
+    $('.thumb').click(function() {
+      if ($(this).hasClass('selected')) {
+        $(this).removeClass('selected');
+        $(this).find('input[type=checkbox]').attr('checked', false);
+      } else {
+        $(this).addClass('selected');
+        $(this).find('input[type=checkbox]').attr('checked', true);
+      }
+    });
+
+  });
+
+</script>

@@ -1,0 +1,25 @@
+<header class="navbar navbar-default sh-header navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">StockHarp</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <form class=" navbar-right form-inline form-login" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Email or Username">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-login">Login</button>
+        <button type="button" class="btn btn-info">Signup</button>
+        <div class="link-password"><a href="#">Forgot you password?</a></div>
+      </form>
+    </div>
+  </div>
+</header>

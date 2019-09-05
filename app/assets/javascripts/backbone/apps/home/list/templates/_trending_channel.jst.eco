@@ -1,0 +1,10 @@
+<div class="panel-heading">
+  <strong>What’s Happening</strong> <%- @description or @word %>
+</div>
+<div class="panel-body">
+  <div class="scroll-pane">
+    <ul class="list-unstyled list-landing-stat bb-trending-channel-items">
+
+    </ul>
+  </div>
+</div>

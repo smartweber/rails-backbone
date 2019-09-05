@@ -1,0 +1,7 @@
+<div class="col-center">
+  <div class="channel-heading">
+    <span>#<%- @channelName %></span>
+  </div>
+
+  <div class="feed-region"></div>
+</div>

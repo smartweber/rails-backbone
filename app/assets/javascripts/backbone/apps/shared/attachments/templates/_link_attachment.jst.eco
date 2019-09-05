@@ -1,0 +1,11 @@
+<!-- TODO: Add delete cross once it's on designs -->
+<div class="link-preview-container">
+  <div class="link-img">
+    <img src="<%= @image_url %>" alt=""/>
+  </div>
+  <div class="link-info">
+    <p class="link-title"><%= @title %></p>
+    <p class="link-url"><%= @original_url %></p>
+    <p class="link-description"><%= @description %></p>
+  </div>
+</div>

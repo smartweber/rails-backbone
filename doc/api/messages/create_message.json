@@ -1,0 +1,107 @@
+{
+  "resource": "Messages",
+  "http_method": "POST",
+  "route": "/api/messages",
+  "description": "Create message",
+  "explanation": "Being used only once for each new chat(creates chats by first message).\n                     Please do not use this endpoint response data-object in the app",
+  "parameters": [
+    {
+      "required": true,
+      "scope": "message",
+      "name": "username",
+      "description": "User that's to receive a message"
+    },
+    {
+      "required": true,
+      "scope": "message",
+      "name": "body",
+      "description": "Content of the message"
+    },
+    {
+      "scope": "message",
+      "name": "id",
+      "description": "ID of attachment"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Id if message"
+    },
+    {
+      "name": "body",
+      "description": "Body(content) of message"
+    },
+    {
+      "name": "chat_id",
+      "description": "Chat id of message"
+    },
+    {
+      "name": "created_at",
+      "description": "DateTime at which message was created"
+    },
+    {
+      "name": "user[id]",
+      "description": "User id of the messages creator"
+    },
+    {
+      "name": "user[name]",
+      "description": "Name of the messages creator"
+    },
+    {
+      "name": "user[username]",
+      "description": "Username of the messages creator"
+    },
+    {
+      "name": "user[gravatar_url]",
+      "description": "Gravatar url of the messages creator"
+    },
+    {
+      "name": "attachments[id]",
+      "description": "Id of the attachment"
+    },
+    {
+      "name": "attachments[type_of_attachment]",
+      "description": "'image' or 'link'"
+    },
+    {
+      "name": "attachments[title]",
+      "description": "Title of the 'link' attachment"
+    },
+    {
+      "name": "attachments[description]",
+      "description": "Description of the 'link' attachment"
+    },
+    {
+      "name": "attachments[image_url]",
+      "description": "Url of image(if any)"
+    },
+    {
+      "name": "attachments[user_id]",
+      "description": "User that created attachment"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/messages",
+      "request_body": "{\"message\":{\"username\":\"seamushalvorson\",\"body\":\"est aut et dolorum\",\"id\":2}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 20,\n  \"body\": \"est aut et dolorum\",\n  \"created_at\": \"2016-09-01T16:03:31.178Z\",\n  \"chat_id\": 8,\n  \"participant_id\": 18,\n  \"attachments\": [\n\n  ],\n  \"user\": {\n    \"id\": 35,\n    \"name\": \"Allison Wyman\",\n    \"username\": \"allisonwyman\",\n    \"gravatar_url\": \"https://secure.gravatar.com/avatar/ee6010672e8fd57a5dd4a5253092d655?s=50\",\n    \"relationship\": null\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/messages\" -d '{\"message\":{\"username\":\"seamushalvorson\",\"body\":\"est aut et dolorum\",\"id\":2}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

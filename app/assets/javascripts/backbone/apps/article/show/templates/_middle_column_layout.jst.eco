@@ -1,0 +1,33 @@
+<div class="col-center">
+  <div class="row">
+    <div class="col-xs-24">
+      <div class="container-fluid art">
+        <div class="row">
+          <div class="">
+            <p class="art_name"><%- @title %></p>
+            <p class="art_time"><%- @datetimeToArticleFormat @created_at %></p>
+            <hr/>
+          </div>
+        </div>
+        
+        <% if(@thumbnail_url): %>
+          <div class="row">
+            <div class="">
+              <img src="<%- @thumbnail_url %>" alt="Article image" class="art_img">
+            </div>
+          </div>
+        <% end %>
+        <div class="row">
+          <div class="">
+            <div class="art_content">
+              <%- @body or @summary %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-post-region"></div>
+  <div class="feed-region"></div>
+</div>

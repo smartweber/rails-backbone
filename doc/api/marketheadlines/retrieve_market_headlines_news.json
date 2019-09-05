@@ -1,0 +1,48 @@
+{
+  "resource": "MarketHeadlines",
+  "http_method": "GET",
+  "route": "/api/market_headlines",
+  "description": "Retrieve market headlines news",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Market Headline ID"
+    },
+    {
+      "name": "title",
+      "description": "Market Headline title"
+    },
+    {
+      "name": "position",
+      "description": "Market Headline position"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/market_headlines",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"title\": \"Est est eum atque.\",\n    \"position\": null\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Esse laboriosam dolorem soluta inventore.\",\n    \"position\": null\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/market_headlines\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

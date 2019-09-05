@@ -1,0 +1,89 @@
+{
+  "resource": "Users",
+  "http_method": "PUT",
+  "route": "/api/users/:id",
+  "description": "Update user",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "ID of User to retrieve"
+    },
+    {
+      "scope": "user",
+      "name": "avatar",
+      "description": "User's avatar"
+    },
+    {
+      "scope": "user",
+      "name": "filename",
+      "description": "Avatar's filename"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "User id"
+    },
+    {
+      "name": "name",
+      "description": "User name"
+    },
+    {
+      "name": "username",
+      "description": "User username"
+    },
+    {
+      "name": "gravatar_url",
+      "description": "User's gravatar image url"
+    },
+    {
+      "name": "email",
+      "description": "User email"
+    },
+    {
+      "name": "created_at",
+      "description": "DateTime at which user registered"
+    },
+    {
+      "name": "following_users_count",
+      "description": "Amount of users that this user is following"
+    },
+    {
+      "name": "followers_count",
+      "description": "Amount of users that following this user"
+    },
+    {
+      "name": "relationship[id]",
+      "description": "Relationship id(following entity, destroy to unfollow)"
+    },
+    {
+      "name": "friendship[id]",
+      "description": "Friendship id(friendship entity, destroy to unfriend)"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/users/78",
+      "request_body": "{\"user\":{\"avatar\":{\"content_type\":\"text/plain\",\"original_filename\":\"image.png\",\"tempfile\":[\"Contents of PNG file\\n\"]},\"filename\":\"image.png\"}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"email\": \"madie_wiegand@krajcik.info\",\n  \"created_at\": \"2016-09-01T16:03:36.000Z\",\n  \"following_users_count\": 0,\n  \"followers_count\": 0,\n  \"collections_count\": 0,\n  \"ideas_count\": 0,\n  \"following_companies_count\": 0,\n  \"id\": 78,\n  \"name\": \"Arlo Schimmel\",\n  \"username\": \"arloschimmel\",\n  \"gravatar_url\": \"https://secure.gravatar.com/avatar/b96f725e7cc781ade11e353de84363eb?s=50\",\n  \"relationship\": null,\n  \"friendship\": null\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/users/78\" -d '{\"user\":{\"avatar\":{\"content_type\":\"text/plain\",\"original_filename\":\"image.png\",\"tempfile\":[\"Contents of PNG file\\n\"]},\"filename\":\"image.png\"}}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

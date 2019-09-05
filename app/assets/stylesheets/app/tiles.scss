@@ -1,0 +1,11 @@
+.tile-change {
+  position: absolute;
+  top: 70%;
+  color: white;
+  &.up {
+    left: 65%;
+  }
+  &.down {
+    left: 15%;
+  }
+}

@@ -1,0 +1,168 @@
+<div class="panel-body">
+
+  <form>
+
+    <div class="row">
+      <div class="col-md-24 col-lg-12">
+        <div class="profile-option">
+          <h5>Occupation</h5>
+
+          <p>
+            <span>Fundamentals Investors Ruby on Rails Python</span>
+
+            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="Fundamentals Investors Ruby on Rails Python" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="" name="Ocupation1">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                </div>
+              </div>
+            </div> -->
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+
+          <img class="img-responsive" src="http://placehold.it/150x50?text=DUMMY+IMAGE">
+        </div>
+
+        <div class="profile-option">
+          <h5>Another Detail</h5>
+
+          <p>
+            <span></span>
+
+            <a href="#" class="profile-option-action_"><i class="icon-pencil edit-profile-option"></i></a>
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+        </div>
+
+        <div class="profile-option">
+          <h5>Education</h5>
+
+          <p>
+            <span>Berkeley University</span>
+
+            <a href="#" class="profile-option-action"><i class="icon-pencil edit-profile-option"></i></a>
+            <a href="#" class="profile-option-action"><i class="icon-close delete-profile-option"></i></a>
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="Berkeley University" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+
+          <img class="img-responsive" src="http://placehold.it/150x50?text=DUMMY+IMAGE">
+        </div>
+
+        <div class="profile-option">
+          <h5>Organizations & Groups Involved</h5>
+
+          <p>
+            <span>Fundamentals Investors Ruby on rails Python</span>
+
+            <a href="#" class="profile-option-action"><i class="icon-pencil edit-profile-option"></i></a>
+            <a href="#" class="profile-option-action"><i class="icon-close delete-profile-option"></i></a>
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="Fundamentals Investors Ruby on rails Python" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-24 col-lg-12">
+        <div class="profile-option">
+          <h5>Location</h5>
+
+          <p>
+            <span>San Francisco, CA</span>
+
+            <a href="#" class="profile-option-action"><i class="icon-pencil edit-profile-option"></i></a>
+            <a href="#" class="profile-option-action"><i class="icon-close delete-profile-option"></i></a>
+
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="San Francisco, CA" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img class="img-responsive" src="http://placehold.it/265x175?text=MAP">
+        </div>
+
+        <div class="profile-option">
+          <h5>Joined On</h5>
+
+          <p>
+            <span>July 4th 2012</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</div>

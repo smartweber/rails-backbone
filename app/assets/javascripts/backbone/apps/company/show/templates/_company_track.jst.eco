@@ -1,0 +1,7 @@
+<div class="track">
+  <%- @followingButton @, 'companyProfile' %>
+</div>
+
+<div class="trackers">
+  <span><%- @followers_count %> Trackers</span>
+</div>

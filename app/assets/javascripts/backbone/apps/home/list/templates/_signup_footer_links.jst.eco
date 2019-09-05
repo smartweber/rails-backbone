@@ -1,0 +1,5 @@
+<h3>Join us now</h3>
+<div class="text-center">
+  <button class="btn btn-primary bb-login-btn">Log in</button>
+  <button class="btn btn-info bb-signup-btn">Sign up</button>
+</div>

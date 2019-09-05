@@ -1,0 +1,13 @@
+<div class="suggestion">
+  <div class="row display-table">
+    <div class="col-xs-3 display-cell">
+      <span class="avatar"><img src="<%- @gravatar_url %>" class="img-responsive"></span>
+    </div>
+    <div class="col-xs-9 display-cell">
+      <span class="username"><%- @name %></span>
+    </div>
+    <div class="col-xs-12 display-cell text-right">
+      <%- @followingButton(@, 'userProfile') %>
+    </div>
+  </div>
+</div>

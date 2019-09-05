@@ -1,0 +1,169 @@
+<div class="panel-body">
+  <form>
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="profile-option">
+          <h5>Primary Investment Strategy</h5>
+
+          <p>
+            <span>Fundamentals</span>
+
+            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="Fundamentals" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+        </div>
+
+        <div class="profile-option">
+          <h5>AVG. Investment Period</h5>
+
+          <div>
+            <a href="#">Long Term</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+
+          </div>
+
+          <br>
+
+          <p>
+            <a href="#" class="profile-option-action_ edit-profile-option"><i class="icon-pencil"></i></a>
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <select class="form-control" value="" name="">
+                    <option>Long Term</option>
+                    <option>Short Term</option>
+                  </select>
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="profile-option">
+          <h5>Experience</h5>
+
+          <p>
+            <span>Beginner</span>
+
+            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="Beginner" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+        </div>
+
+        <div class="profile-option">
+          <h5>Interested Industries</h5>
+
+          <p>
+            <span>Beginner</span>
+
+            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <input type="text" class="form-control" value="Beginner" name="">
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+        </div>
+
+        <div class="profile-option">
+          <h5>Interested Industries</h5>
+
+          <div>
+            <a href="#">Natural Gas</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+            <a href="#">Technology</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+            <a href="#">Biotech</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+            <a href="#">Energy</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+            <a href="#">Design</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+            <a href="#">Development</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+            <a href="#">Real State</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+
+          </div>
+
+          <br>
+
+          <p>
+            <a href="#" class="profile-option-action_ edit-profile-option"><i class="icon-pencil"></i></a>
+          </p>
+
+          <div class="inputs">
+            <div class="form-group">
+              <div class="row display-table">
+                <div class="col-xs-14 display-cell">
+                  <select class="form-control" value="" name="">
+                    <option>Natural Gas</option>
+                    <option>Technology</option>
+                    <option>Biotech</option>
+                    <option>Energy</option>
+                    <option>Design</option>
+                    <option>Real State</option>
+                  </select>
+                </div>
+                <div class="col-xs-10 display-cell">
+                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>

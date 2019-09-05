@@ -1,0 +1,64 @@
+{
+  "resource": "News",
+  "http_method": "GET",
+  "route": "/api/news_articles",
+  "description": "Getting a list of news articles",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "News article ID"
+    },
+    {
+      "name": "url",
+      "description": "Url to external news article"
+    },
+    {
+      "name": "title",
+      "description": "Title of news article"
+    },
+    {
+      "name": "summary",
+      "description": "Truncated summary of news article"
+    },
+    {
+      "name": "sanitized_summary",
+      "description": "Truncated sanitized(strict) summary of news article"
+    },
+    {
+      "name": "agency",
+      "description": "See app_config.yml for agency types"
+    },
+    {
+      "name": "slug",
+      "description": "Friendly URL"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/news_articles",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 14,\n    \"url\": \"http://turcotte.info/golda.little\",\n    \"agency\": \"bbc_uk\",\n    \"locally_hosted\": false,\n    \"news_thumbnail_carousel_list_url\": \"/uploads/general_news_item/news_thumbnail/14/carousel_list_default_medium.png\",\n    \"news_thumbnail_stretched_full_url\": \"/uploads/general_news_item/news_thumbnail/14/stretched_full_default_medium.png\",\n    \"slug\": \"cum-eos-ipsum-reiciendis-sint-beatae-accusantium-deserunt\",\n    \"title\": \"Cum eos ipsum reiciendis sint beatae accusantium deserunt.\",\n    \"sanitized_summary\": \"Nulla commodi sed et ullam enim porro fuga. Cumque cupiditate suscipit est sunt. Nemo sint est libero eaque voluptate sit. Dignissimos ut ratione sit eos ut nihil. Placeat asperiores quae culpa ex et.\",\n    \"summary\": \"Nulla commodi sed et ullam enim porro fuga. Cumque cupiditate suscipit est sunt. Nemo sint est libero eaque voluptate sit. Dignissimos ut ratione sit eos ut nihil. Placeat asperiores quae culpa ex et.\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/news_articles\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

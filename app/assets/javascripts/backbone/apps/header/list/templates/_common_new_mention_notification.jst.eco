@@ -1,0 +1,2 @@
+<%- @gravatarImageFor @notifiable.user %>
+<div class="bb-seenable"><%- @linkTo(@notifiable.user.name, Routes.user_path(@notifiable.user.username)) + " has tagged you in his/her(TODO)" + @linkTo(@notifiable.entity_name.toLowerCase(), Routes.user_path(@notifiable.user.username)) %>.</div>

@@ -1,0 +1,30 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="left-column-region"></div>
+      <div class="right-column-region"></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="features-region"></div>
+</section>
+<section class="footer-signup">
+  <div class="signup-footer-links-region"></div>
+</section>
+
+<!-- TODO: move it somewhere -->
+<script>
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+  //$('.scroll-pane').enscroll("destroy");
+  $('.scroll-pane').enscroll({
+    showOnHover: false,
+    verticalTrackClass: 'track3',
+    verticalHandleClass: 'handle3',
+    easingDuration: 100,
+    addPaddingToPane: false
+  });
+})
+</script>

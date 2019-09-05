@@ -1,0 +1,32 @@
+# A sample Bowerfile
+# Check out https://github.com/42dev/bower-rails#ruby-dsl-configuration for more options
+
+# asset 'bootstrap'
+
+dependency_group :dependencies do
+  asset 'jquery', '2.1.1'
+  asset 'backbone', '1.2.1'
+  asset 'backbone-deep-model', '2.0.1', github: 'kahwee/backbone-deep-model', main_files: ["./dist/backbone-deep-model.min.js"]
+  asset 'backbone.validation', main_files: ["./dist/backbone-validation.js"]
+  asset 'backbone.stickit', '0.9.2'
+  asset 'bootstrap-sass', '~3.3.5', main_files: ["./assets/stylesheets/bootstrap/*"]
+  asset 'enscroll', '~0.6.0'
+  asset 'jquery.scrollTo'
+  asset 'marionette', '2.4.2'
+  asset 'marionette.backbone.syphon'
+  asset 'jquery-timeago', '~1.4.3'
+  asset 'moment'
+  asset 'jcrop'
+  asset 'underscore.string'
+  asset 'jquery-mentions-input', github: 'naive/jquery-mentions-input', ref: 'af2332b35d27'
+  asset 'backbone-route-filter', main_files: ['backbone-route-filter.js']
+  asset 'autotrack', '0.6.5', main_files: ['./autotrack.js']
+  asset 'qm-jquery-ui', "http://app.quotemedia.com/js/jsChart/js/jquery-ui.min.js"
+  asset 'qm-highstock', "http://app.quotemedia.com/js/jsChart/js/highstock.js"
+  asset 'qm-exporting', "http://app.quotemedia.com/js/jsChart/js/exporting.js"
+  asset 'numeral', "1.4.5", main_files: ["./min/numeral.min.js"]
+  asset 'qm-jschart', "http://app.quotemedia.com/js/jsChart/js/jsChart.js"
+end
+
+resolution "jquery", "2.1.1"
+resolution "underscore", "1.8.3"

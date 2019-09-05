@@ -1,0 +1,40 @@
+<li class="list-group-item heading">Recommendations</li>
+<li class="list-group-item">
+  <div class="box-profile">
+
+    <a href="#" class="dismiss-recommendation"><i class="icon-close"></i></a>
+
+    <img src="app/assets/images/avatar.jpg" class="avatar" alt="" />
+    <div class="profile-info">
+      <span>Roger<br>Downington JR</span>
+      <em>New York (Us)</em>
+      <a href="#" class="btn btn-sm btn-primary">Follow</a>
+    </div>
+  </div>
+</li>
+<li class="list-group-item">
+  <div class="box-profile">
+
+    <a href="#" class="dismiss-recommendation"><i class="icon-close"></i></a>
+
+    <img src="app/assets/images/avatar.jpg" class="avatar" alt="" />
+    <div class="profile-info">
+      <span>Roger<br>Downington JR</span>
+      <em>New York (Us)</em>
+      <a href="#" class="btn btn-sm btn-primary">Follow</a>
+    </div>
+  </div>
+</li>
+<li class="list-group-item">
+  <div class="box-profile">
+
+    <a href="#" class="dismiss-recommendation"><i class="icon-close"></i></a>
+
+    <img src="app/assets/images/avatar.jpg" class="avatar" alt="" />
+    <div class="profile-info">
+      <span>Roger<br>Downington JR</span>
+      <em>New York (Us)</em>
+      <a href="#" class="btn btn-sm btn-primary">Follow</a>
+    </div>
+  </div>
+</li>

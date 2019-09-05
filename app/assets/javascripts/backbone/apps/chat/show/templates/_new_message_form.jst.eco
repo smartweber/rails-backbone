@@ -1,0 +1,7 @@
+<textarea class="form-control" name="body" rows="5" placeholder="Write a message.."></textarea>
+
+<div class="clearfix">
+  <a href="#" class="add-image-button bb-attach-link"><span class="icon-photo"></span> <span>Add Image</span></a>
+  <a href="#" class="btn btn-primary pull-right bb-message-btn">Send</a>
+</div>
+<div class="attachments-region"></div>

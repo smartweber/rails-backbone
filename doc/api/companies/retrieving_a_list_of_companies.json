@@ -1,0 +1,44 @@
+{
+  "resource": "Companies",
+  "http_method": "GET",
+  "route": "/api/c",
+  "description": "Retrieving a list of companies",
+  "explanation": "See 'Retrieving a specific company' for response structure explanation",
+  "parameters": [
+    {
+      "required": true,
+      "name": "query",
+      "description": "First symbols(at least 1) of abbreviature"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "target_url",
+      "description": "Company page URL"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/c?query=Q",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "query": "Q"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 4,\n    \"name\": \"Cassin, Schoen and Spinka\",\n    \"abbr\": \"QQQ\",\n    \"exchange\": \"NYSE\",\n    \"relationship\": null,\n    \"followers_count\": 0,\n    \"target_url\": \"/c/QQQ\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/c?query=Q\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

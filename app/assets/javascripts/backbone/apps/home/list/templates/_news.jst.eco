@@ -1,0 +1,18 @@
+<div class="panel-must-read">
+	<div class="panel-heading">
+		<div class="heading-title">Must read news</div>
+	</div>
+	<div class="panel-body">
+	  <ul class="list-group list-well bb-news-groups">
+	  	<li class="list-group-item news-item-region">
+        <div class="info">
+          <ul class="list-stories">
+            <div class="box-stories bb-news-items">
+
+            </div>
+          </ul>
+        </div>
+      </li>
+	  </ul>
+	</div>
+</div>

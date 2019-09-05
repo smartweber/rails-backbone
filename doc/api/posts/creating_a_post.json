@@ -1,0 +1,89 @@
+{
+  "resource": "Posts",
+  "http_method": "POST",
+  "route": "/api/posts",
+  "description": "Creating a post",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "post",
+      "name": "content",
+      "description": "Content of post"
+    },
+    {
+      "scope": "post",
+      "name": "friends_only",
+      "description": "Whether this post is only shown for a friends"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Post id"
+    },
+    {
+      "name": "created_at",
+      "description": "DateTime post was created at"
+    },
+    {
+      "name": "comments_count",
+      "description": "Amount of comments for a post"
+    },
+    {
+      "name": "content",
+      "description": "Post content(with $/@/# wrapped into links)"
+    },
+    {
+      "name": "favorited",
+      "description": "Favorite entity id(delete to unfavorite)"
+    },
+    {
+      "name": "likes_count",
+      "description": "Cached amount of likes"
+    },
+    {
+      "name": "like",
+      "description": "DEPRECATED"
+    },
+    {
+      "name": "user[id]",
+      "description": "Id of user that's created post"
+    },
+    {
+      "name": "user[name]",
+      "description": "Name of the creator"
+    },
+    {
+      "name": "user[gravatar_url]",
+      "description": "Url for gravatar image"
+    },
+    {
+      "name": "comments[]",
+      "description": "See POST /comments for a description"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/posts",
+      "request_body": "{\"post\":{\"content\":\"Assumenda tempore voluptatem et sequi quis quasi.\",\"friends_only\":true}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 4,\n  \"created_at\": \"2016-09-01T16:03:29.000Z\",\n  \"comments_count\": 0,\n  \"likes_count\": 0,\n  \"content\": \"Assumenda tempore voluptatem et sequi quis quasi.\",\n  \"favorited\": false,\n  \"like\": null,\n  \"user\": {\n    \"id\": 24,\n    \"name\": \"Olen Padberg\",\n    \"username\": \"olenpadberg\",\n    \"gravatar_url\": \"https://secure.gravatar.com/avatar/5e21914eff2eb3ab4f0998c119c15911?s=50\"\n  },\n  \"attachments\": [\n\n  ],\n  \"comments\": [\n\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/posts\" -d '{\"post\":{\"content\":\"Assumenda tempore voluptatem et sequi quis quasi.\",\"friends_only\":true}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

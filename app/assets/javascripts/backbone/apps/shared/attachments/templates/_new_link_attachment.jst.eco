@@ -1,0 +1,13 @@
+<a href="#" class="delete bb-remove"><span class="icon icon-cancel"></span></a>
+<div class="link-preview-container">
+  <div class="link-img">
+    <img src="<%= @image_url %>" alt=""/>
+  </div>
+  <input class="hidden" name="<%- @attachable_type %>[attachment_ids][]" type="hidden" value="<%= @id %>" autocomplete="on">
+  <div class="link-info">
+    <p class="link-title"><%= @title %></p>
+    <p class="link-url"><%= @original_url %></p>
+    <p class="link-description"><%= @description %></p>
+  </div>
+</div>
+

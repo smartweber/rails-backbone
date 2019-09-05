@@ -1,0 +1,420 @@
+<%= render partial: 'shared/header', locals: {display_search: false} %>
+
+<section class="compose-message">
+  <div class="container">
+    <div class="row">
+      <!-- Left col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- Buttons side bar -->
+        <div class="well well-profile buttons-container-on-side">
+          <a href="#" class="btn btn-primary"><i class="icon-pencil"></i> Compose</a>
+        </div>
+
+        <!-- Inbox -->
+        <div class="inbox-side-box">
+          <div class="inbox-side-box-title">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="inbox-details">
+                  <a href="#"><span>Inbox</span> <span class="new-inbox-items">(2)</span></a>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="followers">
+                  <a href="#"><span>Followers</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inbox-items scrollable">
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class='icon icon-reply seen'></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class='icon icon-reply'></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class='icon icon-reply seen'></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item active">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class='icon icon-reply'></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class='icon icon-reply seen'></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+            <div class="inbox-item">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" class="img-responsive">
+              </div>
+
+              <div class="message-excerpt">
+                <div class="sender">John David</div>
+                <div class="subject">
+                  <span class='icon icon-reply'></span> Lorem ipsum dolor sit ...
+                </div>
+              </div>
+
+              <div class="timestamp">
+                12:41am
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- User profile box -->
+        <%# render 'shared/user_profile' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_stocks' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_channels' %>
+
+        <!-- Vital Financial Stats -->
+        <%# render 'shared/vital_financial_stats' %>
+
+      </div>
+
+      <!-- Center col -->
+      <div class="col-lg-14 col-md-12">
+        <div class="col-center">
+
+          <div class="panel panel-default panel-main">
+
+            <div class="flash-messages">
+              <div class="flash-message">Problem with Internet Connection. <a href="#">Retry Connection</a></div>
+            </div>
+
+            <form class="form-horizontal">
+
+                <div class="message-from">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="sender">Chandhi Makasana</div>
+                    </div>
+                    <div class="col-xs-12">
+
+                      <div class="dropdown pull-right">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Options
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Mark as Uread/Read</a></li>
+                          <li><a href="#">Archive</a></li>
+                          <li><a href="#">Delete Conversation</a></li>
+                          <li><a href="#">Report</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="message-content scrollable">
+
+                  <div class="message">
+
+                    <div class="timestamp">Monday March 16, 2015</div>
+
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <div class="avatar">
+                          <img src="/assets/avatar.jpg" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="col-xs-21">
+
+                        <div class="message-body">
+
+                          <div class="sender">Chandhi Makasana</div>
+
+                          <p>Nam sit amet risus consectetur, rutrum velit at, auctor dolor. Morbi aliquet, erat at rutrum aliquam, mauris libero gravida risus, at mollis lorem mauris vel massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam semper sapien a vestibulum interdum. Aenean a sollicitudin ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque augue sit amet quam rhoncus, vel ullamcorper lacus fermentum.</p>
+
+                          <p>Nam sit amet risus consectetur, rutrum velit at, auctor dolor. Morbi aliquet, erat at rutrum aliquam, mauris libero gravida risus, at mollis lorem mauris vel massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam semper sapien a vestibulum interdum. Aenean a sollicitudin ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque augue sit amet quam rhoncus, vel ullamcorper lacus fermentum.</p>
+
+                          <p>
+                            <img class="img-responsive" src="http://placehold.it/960x500?text=MESSAGE+IMAGE">
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="message">
+
+                    <div class="timestamp"><span class="icon icon-reply seen"></span> Monday March 16, 2015</div>
+
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <div class="avatar">
+                          <img src="/assets/avatar.jpg" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="col-xs-21">
+
+                        <div class="message-body">
+
+                          <div class="sender">Emma Richardson</div>
+
+                          <p>Nam sit amet risus consectetur, rutrum velit at, auctor dolor. Morbi aliquet, erat at rutrum aliquam, mauris libero gravida risus, at mollis lorem mauris vel massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam semper sapien a vestibulum interdum. Aenean a sollicitudin ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque augue sit amet quam rhoncus, vel ullamcorper lacus fermentum.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="message">
+
+                    <div class="timestamp"><span class="icon icon-reply seen"></span> Monday March 16, 2015</div>
+
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <div class="avatar">
+                          <img src="/assets/avatar.jpg" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="col-xs-21">
+
+                        <div class="message-body">
+
+                          <div class="sender">Emma Richardson</div>
+
+                          <p>Nam sit amet risus consectetur, rutrum velit at, auctor dolor. Morbi aliquet, erat at rutrum aliquam, mauris libero gravida risus, at mollis lorem mauris vel massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam semper sapien a vestibulum interdum. Aenean a sollicitudin ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque augue sit amet quam rhoncus, vel ullamcorper lacus fermentum.</p>
+                        </div>
+
+                        <div class="message-link">
+                          <div class="row">
+                            <div class="col-sm-8 col-lg-6">
+                              <img class="img-responsive" src="http://placehold.it/100x100?text=Uploaded+image">
+                            </div>
+                            <div class="col-sm-16 col-lg-18">
+                              <h5>Aenean Corp</h5>
+                              <p>Aenean a sollicitudin ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque augue sit amet quam rhoncus, vel ullamcorper lacus fermentum. <br><a href="#">aeneancorp.info</a></p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <hr>
+
+                <div class="message-comment">
+                  <div class="row">
+                    <div class="col-xs-2">
+                      <div class="avatar">
+                        <img src="/assets/avatar.jpg" class="img-responsive">
+                      </div>
+                    </div>
+                    <div class="col-xs-22">
+                      <textarea class="form-control" name="MessageComment" id="MessageComment" rows="5" placeholder="Write a Comment"></textarea>
+
+                      <div class="clearfix">
+                        <a href="#" class="add-image-button"><span class="icon-image"></span> <span>Add Image</span></a>
+                        <a href="#" class="btn btn-primary pull-right">Send</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="message-comment">
+                  <div class="row">
+                    <div class="col-xs-2">
+                      <div class="avatar">
+                        <img src="/assets/avatar.jpg" class="img-responsive">
+                      </div>
+                    </div>
+                    <div class="col-xs-22">
+                      <textarea class="form-control" name="MessageComment" id="MessageComment" rows="5" placeholder="Write a Comment"></textarea>
+
+                      <div class="uploads-previewer clearfix">
+                        <div class="upload">
+                          <a href="#" class="delete"><span class="icon icon-cancel"></span></a>
+                          <img class="img-responsive" src="http://placehold.it/100x100?text=Uploaded+image">
+                        </div>
+
+                        <div class="upload">
+                          <a href="#" class="delete"><span class="icon icon-cancel"></span></a>
+                          <img class="img-responsive" src="http://placehold.it/100x100?text=Uploaded+image">
+                        </div>
+                      </div>
+
+                      <div class="clearfix">
+                        <a href="#" class="add-image-button"><span class="icon-image"></span> <span>Add Image</span></a>
+                        <a href="#" class="btn btn-primary pull-right">Send</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="message-comment">
+                  <div class="row">
+                    <div class="col-xs-2">
+                      <div class="avatar">
+                        <img src="/assets/avatar.jpg" class="img-responsive">
+                      </div>
+                    </div>
+                    <div class="col-xs-22">
+                      <textarea class="form-control" name="MessageComment" id="MessageComment" rows="5" placeholder="Write a Comment"></textarea>
+
+                      <div class="message-link">
+                        <div class="row">
+                          <div class="col-sm-8 col-lg-6">
+                            <img class="img-responsive" src="http://placehold.it/100x100?text=Uploaded+image">
+                          </div>
+                          <div class="col-sm-16 col-lg-18">
+                            <h5>Aenean Corp</h5>
+                            <p>Aenean a sollicitudin ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque augue sit amet quam rhoncus, vel ullamcorper lacus fermentum. <br><a href="#">aeneancorp.info</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="clearfix">
+                        <a href="#" class="add-image-button"><span class="icon-image"></span> <span>Add Image</span></a>
+                        <a href="#" class="btn btn-primary pull-right">Send</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </form>
+        </div>
+      </div>
+
+      <!-- Right col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- Main Markets -->
+        <%# render 'shared/main_markets' %>
+
+        <!-- Markets Headlines 1 -->
+        <%# render 'shared/markets_headlines_1' %>
+
+        <!-- Markets Headlines 2 -->
+        <%# render 'shared/company_news' %>
+
+        <!-- Recommendations 1 -->
+        <%# render 'shared/recommendations_1' %>
+
+        <!-- Recommendations 2 -->
+        <%# render 'shared/recommendations_2' %>
+
+        <!-- Footer -->
+        <%= render 'shared/side_bar_footer' %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  $('.inbox-items.scrollable, .message-content.scrollable').enscroll({
+    showOnHover: true,
+    verticalTrackClass: 'track3',
+    verticalHandleClass: 'handle3',
+    addPaddingToPane: false
+  });
+
+  // Kill the margin for the body in this page
+  if ($('.compose-message').length) {
+    $('body').css({'margin-bottom': 0});
+
+    // Dynamic height for the message comment area
+    var viewport_height = $(window).height();
+
+    var header_height = $('header.navbar-fixed-top').outerHeight(true);
+    var message_comment_height = $('.message-comment').outerHeight(true);
+    var message_from = $('.message-from').outerHeight(true);
+
+    $('.message-content.scrollable').height(viewport_height-(header_height+message_comment_height+message_from+70));
+  }
+
+</script>

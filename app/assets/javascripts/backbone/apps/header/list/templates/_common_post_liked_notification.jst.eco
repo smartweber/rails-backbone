@@ -1,0 +1,8 @@
+<%- @gravatarImageFor @notifiable %>
+<% if (@other_recent_activity_participants.length == 0): %>
+  <div class='bb-seenable'><%- @linkTo(@notifiable.user.name, Routes.user_path(@notifiable.user.username)) + " has liked your" + @linkTo(@notifiable.entity_name.toLowerCase(), Routes.user_path(@notifiable.user.username)) %>.</div>
+<% else if (@other_recent_activity_participants.length == 1): %>
+  <div class='bb-seenable'><%- @linkTo(@notifiable.user.name, Routes.user_path(@notifiable.user.username)) + " and #{@other_recent_activity_participants[0].name} have liked your" + @linkTo(@notifiable.entity_name.toLowerCase(), Routes.user_path(@notifiable.user.username)) %>.</div>
+<% else if (@other_recent_activity_participants.length > 1): %>
+  <div class='bb-seenable'><%- @linkTo(@notifiable.user.name, Routes.user_path(@notifiable.user.username)) + " and #{@other_recent_activity_participants.length} other friends have liked your" + @linkTo(@notifiable.entity_name.toLowerCase(), Routes.user_path(@notifiable.user.username)) %>.</div>
+<% end %>

@@ -1,0 +1,95 @@
+@import "theme/core";
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sh-header-right .navbar-right > div.navbar-right-box > .dropdown-profile {
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: $screen-lg-desktop) {
+  .sh-header .navbar-form {
+    width: 100%;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+
+  .sh-header .navbar-form {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: $screen-sm-max) {
+
+  .flash-messages-container {
+
+    .flash-message-item {
+      top: 16px;
+    }
+  }
+
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .col-center {
+    padding: 0;
+  }
+
+  .flash-messages-container {
+
+    .flash-message-item {
+      top: -1px;
+    }
+  }
+
+  .sh-header .navbar-brand {
+    width: 190px;
+  }
+
+}
+
+@media (min-width: $screen-desktop) {
+
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .sh-header-right .navbar-right > div.navbar-right-box > .btn-icon {
+    padding: 5px;
+  }
+
+  .sh-header-right .navbar-right > div.navbar-right-box > .dropdown-profile {
+    padding: 0;
+  }
+
+  .sh-header-right .navbar-right > div.navbar-right-box > .dropdown-profile > a .avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sh-header-right .form-login .bb-login-btn,
+  .sh-header-right .form-login .bb-signup-btn {
+    width: 100px;
+  }
+
+  .sh-panel .panel-body.sh-panel-body1 {
+    padding: 18px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sh-header .navbar-right {
+    text-align: right;
+  }
+}

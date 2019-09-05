@@ -1,0 +1,708 @@
+<%= render partial: 'shared/header', locals: {display_search: false} %>
+
+<section class="profile-page">
+  <div class="container">
+    <div class="row">
+      <!-- Left col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- User profile box -->
+        <%# render 'shared/user_profile' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_stocks' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_channels' %>
+
+        <!-- Vital Financial Stats -->
+        <%# render 'shared/vital_financial_stats' %>
+
+      </div>
+
+      <!-- Center col -->
+      <div class="col-lg-14 col-md-12 ">
+        <div class="col-center">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs nav-justified profile-page-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#post" aria-controls="post" role="tab" data-toggle="tab">Post</a></li>
+            <li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+            <li role="presentation"><a href="#investor-info" aria-controls="investor-info" role="tab" data-toggle="tab">Investor Info</a></li>
+            <li role="presentation"><a href="#radar" aria-controls="radar" role="tab" data-toggle="tab">Radar</a></li>
+            <li role="presentation"><a href="#friends" aria-controls="friends" role="tab" data-toggle="tab">Friends</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+
+            <!-- Posts tab content -->
+            <div role="tabpanel" class="tab-pane active" id="post">
+
+              <!-- Comments boxes -->
+              <%= render partial: 'shared/comments', locals: {display_image: nil} %>
+
+              <%= render partial: 'shared/comments', locals: {display_image: true} %>
+
+              <div class="panel panel-default sh-panel">
+                <div class="panel-body no-post-banner">
+                  <span class="icon-pencil"></span>
+
+                  <h3>No Post to See<br> Share an Idea</h3>
+
+                  <a href="#" class="btn btn-lg btn-primary">Start</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- About tab content -->
+            <div role="tabpanel" class="tab-pane" id="about">
+              <div class="panel panel-default sh-panel">
+                <div class="panel-body">
+
+                  <form>
+
+                    <div class="row">
+                      <div class="col-md-24 col-lg-12">
+                        <div class="profile-option">
+                          <h5>Occupation</h5>
+
+                          <p>
+                            <span>Fundamentals Investors Ruby on Rails Python</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="Fundamentals Investors Ruby on Rails Python" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="" name="Ocupation1">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                                </div>
+                              </div>
+                            </div> -->
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+
+                          <img class="img-responsive" src="http://placehold.it/150x50?text=DUMMY+IMAGE">
+                        </div>
+
+                        <div class="profile-option">
+                          <h5>Another Detail</h5>
+
+                          <p>
+                            <span></span>
+
+                            <a href="#" class="profile-option-action_ edit-profile-option"><i class="icon-pencil"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+                        </div>
+
+                        <div class="profile-option">
+                          <h5>Education</h5>
+
+                          <p>
+                            <span>Berkeley University</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="Berkeley University" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+
+                          <img class="img-responsive" src="http://placehold.it/150x50?text=DUMMY+IMAGE">
+                        </div>
+
+                        <div class="profile-option">
+                          <h5>Organizations & Groups Involved</h5>
+
+                          <p>
+                            <span>Fundamentals Investors Ruby on rails Python</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="Fundamentals Investors Ruby on rails Python" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-md-24 col-lg-12">
+                        <div class="profile-option">
+                          <h5>Location</h5>
+
+                          <p>
+                            <span>San Francisco, CA</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="San Francisco, CA" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <img class="img-responsive" src="http://placehold.it/265x175?text=MAP">
+                        </div>
+
+                        <div class="profile-option">
+                          <h5>Joined On</h5>
+
+                          <p>
+                            <span>July 4th 2012</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Investor info tab content -->
+            <div role="tabpanel" class="tab-pane" id="investor-info">
+              <div class="panel panel-default sh-panel">
+                <div class="panel-body">
+
+                  <form>
+
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <div class="profile-option">
+                          <h5>Primary Investment Strategy</h5>
+
+                          <p>
+                            <span>Fundamentals</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="Fundamentals" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+                        </div>
+
+                        <div class="profile-option">
+                          <h5>Primary Investment Strategy</h5>
+
+                          <p>
+                            <span>AVG. Investment Period</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="AVG. Investment Period" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="profile-option">
+                          <h5>Experience</h5>
+
+                          <p>
+                            <span>Beginner</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="Beginner" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+                        </div>
+
+                        <div class="profile-option">
+                          <h5>Interested Industries</h5>
+
+                          <p>
+                            <span>Beginner</span>
+
+                            <a href="#" class="profile-option-action edit-profile-option"><i class="icon-pencil"></i></a>
+                            <a href="#" class="profile-option-action delete-profile-option"><i class="icon-close"></i></a>
+
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="Beginner" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+                        </div>
+
+                        <div class="profile-option">
+                          <h5>Interested Industries</h5>
+
+                          <div>
+                            <a href="#">Natural Gas</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+                            <a href="#">Technology</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+                            <a href="#">Biotech</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+                            <a href="#">Energy</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+                            <a href="#">Design</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+                            <a href="#">Development</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+                            <a href="#">Real State</a> <a href="#"><i class="icon-close delete-profile-option-alt"></i></a><br>
+
+                          </div>
+
+                          <br>
+
+                          <p>
+                            <a href="#" class="profile-option-action_ edit-profile-option"><i class="icon-pencil"></i></a>
+                          </p>
+
+                          <div class="inputs">
+                            <div class="form-group">
+                              <div class="row display-table">
+                                <div class="col-xs-14 display-cell">
+                                  <input type="text" class="form-control" value="" name="">
+                                </div>
+                                <div class="col-xs-10 display-cell">
+                                  <a href="#" class="btn btn-sm btn-primary">Save</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <a href="#" class="btn btn-sm btn-primary">Add More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Radar tab content -->
+            <div role="tabpanel" class="tab-pane" id="radar">
+              <div class="panel panel-default sh-panel">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-11">
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/shell-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Shell</div>
+                          <span class="followers">3293 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Track</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/mc-donalds-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">MC Donalds</div>
+                          <span class="followers">5520 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Track</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/shell-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Shell</div>
+                          <span class="followers">3293 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Tracking</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/mc-donalds-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">MC Donalds</div>
+                          <span class="followers">5520 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Tracking</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-sm-11 col-sm-offset-2">
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/apple-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Apple</div>
+                          <span class="followers">3293 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Track</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/youtube-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Youtube</div>
+                          <span class="followers">3566 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Track</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/apple-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Apple</div>
+                          <span class="followers">3293 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Tracking</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/youtube-logo.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Youtube</div>
+                          <span class="followers">3566 Followers</span>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Tracking</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Friends tab content -->
+            <div role="tabpanel" class="tab-pane friends" id="friends">
+              <div class="panel panel-default sh-panel">
+                <div class="panel-body">
+                  <div class="row">
+                     <div class="col-sm-11">
+
+                      <div class="friend-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">John Snow</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Add Friends</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Bruce Wayne</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Add Friends</a>
+                        </div>
+                      </div>
+
+                      <div class="friend-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">John Snow</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Friends</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Bruce Wayne</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Friends</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-sm-11 col-sm-offset-2">
+
+                      <div class="friend-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">John Snow</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Add Friends</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Bruce Wayne</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary">Add Friends</a>
+                        </div>
+                      </div>
+
+                      <div class="friend-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">John Snow</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Friends</a>
+                        </div>
+                      </div>
+
+                      <div class="radar-item">
+                        <div class="avatar">
+                          <img src="/assets/avatar.png" class="" alt=""/>
+                        </div>
+
+                        <div class="profile-info">
+                          <div class="name">Bruce Wayne</div>
+                        </div>
+
+                        <div class="actions">
+                          <a href="#" class="btn btn-primary btn-selected">Friends</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right col -->
+      <div class="col-lg-5 col-md-6">
+
+        <div class="well well-profile buttons-container-on-side">
+          <a href="#" class="btn btn-primary">Add Friend</a>
+          <a href="#" class="btn btn-primary">Follow</a>
+        </div>
+
+        <!-- Main Markets -->
+        <%# render 'shared/main_markets' %>
+
+        <!-- Markets Headlines 1 -->
+        <%# render 'shared/markets_headlines_1' %>
+
+        <!-- Markets Headlines 2 -->
+        <%# render 'shared/company_news' %>
+
+        <!-- Recommendations 1 -->
+        <%# render 'shared/recommendations_1' %>
+
+        <!-- Recommendations 2 -->
+        <%# render 'shared/recommendations_2' %>
+
+        <!-- Footer -->
+        <%= render 'shared/side_bar_footer' %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+
+  $('.edit-profile-option').on('click', function(e) {
+    e.preventDefault;
+    $(this).parents('.profile-option').find('p').hide();
+    $(this).parents('.profile-option').find('.inputs').show();
+  });
+
+</script>

@@ -1,0 +1,48 @@
+{
+  "resource": "Relationships",
+  "http_method": "POST",
+  "route": "/api/relationships",
+  "description": "Creating a relationship",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "followable_id",
+      "description": "ID of object that's to be followed"
+    },
+    {
+      "required": true,
+      "name": "followable_type",
+      "description": "Type of object that's to be followed"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Relationship id"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/relationships",
+      "request_body": "{\"followable_id\":84,\"followable_type\":\"User\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 3\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/relationships\" -d '{\"followable_id\":84,\"followable_type\":\"User\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

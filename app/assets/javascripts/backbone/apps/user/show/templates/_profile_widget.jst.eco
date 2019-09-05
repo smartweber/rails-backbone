@@ -1,0 +1,25 @@
+<div class="widget-box-head big-head">
+  Investor Information
+</div>
+<div class="widget-box-body">
+  <div class="widget-box-item">
+    <p class="widget-box-item-title">Primary Investment
+      Strategy</p>
+      <p class="widget-box-item-content">Fundamentals</p>
+  </div>
+  <div class="widget-box-item">
+    <p class="widget-box-item-title">Avg. Investment Period</p>
+    <p class="widget-box-item-content">Long Term</p>
+  </div>
+  <div class="widget-box-item">
+    <p class="widget-box-item-title">Experience</p>
+    <p class="widget-box-item-content">Beginner</p>
+  </div>
+  <div class="widget-box-item">
+    <p class="widget-box-item-title">Interested Industries</p>
+    <p class="widget-box-item-content">Natural Gas / Energy
+      Technology
+      Biotech
+    </p>
+  </div>
+</div>

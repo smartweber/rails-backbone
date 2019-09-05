@@ -1,0 +1,15 @@
+<div class="panel-body sh-panel-body1 share-form">
+  <div class="form-group-reply">
+    <textarea class="form-control bb-mention-element" placeholder="Share an idea..." name="post[content]" data-validation="content"></textarea>
+  </div>
+</div>
+<div class="panel-footer share-form-footer">
+  <div class="pull-right">
+    <a class="btn btn-primary btn-share disabled" href="#">Share</a>
+  </div>
+  <ul class="list-inline list-action">
+    <li><a class="bb-attach-link"><span class="icon-image"></span></a></li>
+  </ul>
+  <div class="uploads-previewer clearfix attachments-region">
+  </div>
+</div>

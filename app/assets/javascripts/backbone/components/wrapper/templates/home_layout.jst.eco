@@ -1,0 +1,28 @@
+<div id="header-region"></div>
+
+<section>
+  <div>
+    <div id="main-region">
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <!-- TODO: shouldn't be duplicated between other layouts -->
+      <a href="#">about</a> | <a href="http://support.stockharp.com" target="_blank">support</a> | <a href="http://careers.stockharp.com" target="_blank">careers</a> | <a href="http://blog.stockharp.com" target="_blank">blog</a> | <a href="#">privacy</a> | <a href="#">terms</a>
+    </div>
+
+    <ul class="list-inline link-social text-center">
+      <li><a href="https://facebook.com/stockharp" target="_blank"><span class="icon-facebook"></span></a></li>
+      <li><a href="https://twitter.com/stockharp" target="_blank"><span class="icon-twitter"></span></a></li>
+    </ul>
+
+    <div class="text-center">
+      <small>
+      Copyright &copy; 2016. Stockharp. All rights reserved.</small>
+    </div>
+  </div>
+</footer>

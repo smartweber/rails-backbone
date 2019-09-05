@@ -1,0 +1,42 @@
+{
+  "resource": "Favorites",
+  "http_method": "DELETE",
+  "route": "/api/collection/:id",
+  "description": "Remove from favorites",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "ID of post which is to be removed from favorites"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "ID of Favorite entity"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/collection/16",
+      "request_body": "{}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache"
+      },
+      "response_content_type": null,
+      "curl": "curl \"http://localhost:3000/api/collection/16\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

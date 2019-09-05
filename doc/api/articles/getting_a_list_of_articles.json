@@ -1,0 +1,60 @@
+{
+  "resource": "Articles",
+  "http_method": "GET",
+  "route": "/api/articles",
+  "description": "Getting a list of articles",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Article ID"
+    },
+    {
+      "name": "title",
+      "description": "Article title"
+    },
+    {
+      "name": "body",
+      "description": "Article body"
+    },
+    {
+      "name": "posts_count",
+      "description": "Amount of posts associated with article"
+    },
+    {
+      "name": "position",
+      "description": "Position of article"
+    },
+    {
+      "name": "created_at",
+      "description": "DateTime when article was created at"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/articles",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 3,\n    \"title\": \"rerum aut nisi nihil\",\n    \"body\": \"Asperiores laudantium quibusdam voluptates minus debitis vel. Minus quibusdam qui quas animi dolor aspernatur ea. Minus laudantium dolores facere cupiditate.\",\n    \"created_at\": \"2016-09-01T16:03:28.000Z\",\n    \"position\": 1,\n    \"posts_count\": 0,\n    \"slug\": \"rerum-aut-nisi-nihil\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/articles\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

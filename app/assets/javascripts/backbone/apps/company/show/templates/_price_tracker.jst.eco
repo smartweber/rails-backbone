@@ -1,0 +1,12 @@
+<div class="list-well">
+  <div class="list-group-item heading">Price Tracker</div>
+  <div class="list-group-item">
+    <div>
+      <span class="price-tracker-text">Set price to notify</span>
+      <input type="number"/>
+    </div>
+  </div>
+  <div class="list-group-item">
+    <div class="btn btn-primary">Set</div>
+  </div>
+</div>

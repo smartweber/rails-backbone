@@ -1,0 +1,79 @@
+{
+  "resource": "UserAttachments",
+  "http_method": "POST",
+  "route": "/api/user_attachments",
+  "description": "Creating link attachment",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "link",
+      "description": "Link to the attachment"
+    }
+  ],
+  "response_fields": [
+    {
+      "scope": "user_attachment",
+      "name": "id",
+      "description": "Attachment ID"
+    },
+    {
+      "scope": "user_attachment",
+      "name": "type_of_attachment",
+      "description": "'link'"
+    },
+    {
+      "scope": "user_attachment",
+      "name": "image_url",
+      "description": "Link to page preview image"
+    },
+    {
+      "scope": "user_attachment",
+      "name": "title",
+      "description": "Page title"
+    },
+    {
+      "scope": "user_attachment",
+      "name": "description",
+      "description": "Page description"
+    },
+    {
+      "scope": "user_attachment",
+      "name": "user_id",
+      "description": "Creator ID"
+    },
+    {
+      "scope": "user_attachment",
+      "name": "url",
+      "description": "Shortened url to attachment"
+    },
+    {
+      "scope": "user_attachment",
+      "name": "original_url",
+      "description": "Original url"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/user_attachments",
+      "request_body": "{\"link\":\"http://google.com/\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 7,\n  \"type_of_attachment\": \"link\",\n  \"image_url\": null,\n  \"title\": \"Google\",\n  \"description\": \"Search Engine\",\n  \"user_id\": 47,\n  \"url\": \"/l/5uxci\",\n  \"original_url\": \"http://google.com/\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/user_attachments\" -d '{\"link\":\"http://google.com/\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

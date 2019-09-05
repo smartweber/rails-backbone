@@ -1,0 +1,16 @@
+.qmmt_entry_box_form { display: inline; }
+.qmmt_entry_box_table { display: inline-table; }
+.qmmt_quoteEntryBox_linksRow, .qmmt_header_bar_container { display: none; }
+.qm_js_nav_lookup_container { display: inline; }
+
+/* Make chart width responsive */
+.qm_mainCont { width: 100% !important; }
+
+/* Hide compare button */
+.qm_mainCont #qm_dd_1 { display: none; }
+
+/* Hide indicators button */
+.qm_mainCont #qm_dd_3 { display: none; }
+.qm_searchbox { display: none; }
+.qm_taglist { display: none !important; }
+.qm_navbar { display: none; }

@@ -1,0 +1,19 @@
+<strong>Apple Inc.</strong> is below your target price
+<div class="down" class='bb-seenable'>
+  <div class="pull-right date">02/04 12:42:24</div>
+  <ul class="list-inline">
+    <li><span class="icon-chevron-circle-up ico"></span> $ 99.85</li>
+    <li> - 1.58 (0.81%)</li>
+  </ul>
+</div>
+
+<!-- Example for different notification type -->
+<!--         <strong>Google</strong> has exceeded your watch price
+        <div class="up" class='bb-seenable'>
+          <div class="pull-right date">02/04 12:42:24</div>
+          <ul class="list-inline">
+            <li><span class="icon-chevron-circle-down ico"></span> $ 99.85</li>
+            <li> 1.58 (0.81%)</li>
+          </ul>
+        </div>
+ -->

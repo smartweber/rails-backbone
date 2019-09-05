@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" ">
+  <meta name="author" content=" ">
+
+  <title>
+    StockHarp
+  </title>
+
+  <!-- CSS -->
+  <link href="dist/theme.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="app/assets/images/apple-touch-icon.png">
+  <link rel="icon" href="app/assets/images/favicon.ico">
+</head>
+<body>
+<!--Included header-->
+<!--#include virtual="inc-header.shtml" -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6">
+        <div class="well well-profile">
+          <table class="table">
+            <tr class="box-profile">
+              <td class="text-right">
+                <img src="app/assets/images/avatar.jpg" class="avatar" alt="Profile Image"/></td>
+              <td class="profile-info">
+                <a href="#" class="btn btn-sm btn-default btn-profile">Edit Profile <span
+                  class="icon-pencil"></span></a>
+                <span>EMMA<br/>Richardson</span>
+                <a href="#" class="btn-link">emma.richardson</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <dl class="dl-horizontal">
+                  <dt>532</dt>
+                  <dd>Ideas</dd>
+                </dl>
+              </td>
+              <td>
+                <dl class="dl-horizontal">
+                  <dt>532</dt>
+                  <dd>Followers</dd>
+                </dl>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <dl class="dl-horizontal">
+                  <dt>532</dt>
+                  <dd>Following</dd>
+                </dl>
+              </td>
+              <td>
+                <dl class="dl-horizontal">
+                  <dt>532</dt>
+                  <dd>Stocks</dd>
+                </dl>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <ul class="list-group list-well">
+          <li class="list-group-item heading">Trending Stocks</li>
+
+          <li class="list-group-item">
+            <div class="pull-right trade up">
+              <strong>71.50 <span class="symbol icon-chevron-circle-up"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title">
+              Cheniere Energy <br/>
+              <span>$LNG</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="pull-right trade down">
+              <strong>71.50 <span class="symbol icon-chevron-circle-down"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title">
+              BlackBerry <br/>
+              <span>$BBRY</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="pull-right trade up">
+              <strong>71.50 <span class="symbol icon-chevron-circle-up"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title">
+              Cheniere Energy <br/>
+              <span>$LNG</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="pull-right trade down">
+              <strong>71.50 <span class="symbol icon-chevron-circle-down"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title">
+              BlackBerry <br/>
+              <span>$BBRY</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="pull-right trade up">
+              <strong>71.50 <span class="symbol icon-chevron-circle-up"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title">
+              Cheniere Energy <br/>
+              <span>$LNG</span>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="list-group list-well list-channels">
+          <li class="list-group-item heading">Trending Channels</li>
+
+          <li class="list-group-item">
+            <a href="#">#PrimeDay</a>
+            <span>Lorem ipsum dolor sit amet,</span>
+          </li>
+          <li class="list-group-item">
+            <a href="#">Eurozone</a>
+            <span>Lorem ipsum dolor sit amet,</span>
+          </li>
+          <li class="list-group-item">
+            <a href="#">Iran</a>
+            <span>Lorem ipsum dolor sit amet,</span>
+          </li>
+          <li class="list-group-item">
+            <a href="#">#Grexit</a>
+            <span>Lorem ipsum dolor sit amet,</span>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-lg-14 col-md-12 ">
+        <div class="col-center">
+          <div class="well">
+            <div class="sh-tabs">
+              <ul class="nav nav-pills sh-nav-pills nav-justified">
+                <li><a href="#tab1" data-toggle="pill"><span class="icon-newspaper-o"></span> News</a></li>
+                <li class="active"><a href="#tab2" data-toggle="pill"><span class="icon-pie-chart"></span> Radar</a></li>
+                <li><a href="#tab3" data-toggle="pill"><span class="icon-fire"></span> Market movers</a></li>
+                <li><a href="#tab4" data-toggle="pill"><span class="icon-signal"></span> Most volume</a></li>
+              </ul>
+              <div class="tab-content sh-tab-content">
+                <div role="tabpanel" class="tab-pane" id="tab1">
+            <div class="news-active" id="news-active">
+              <img src="app/assets/images/news1.jpg" alt=""/>
+              <div class="captions">
+                New debate about stock market coming up this Tuesday
+                <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                  href="#">for more details click here</a></p>
+              </div>
+            </div>
+            <div class="news-thumb">
+                  <div id="carousel-news" class="carousel slide" data-ride="carousel"
+                       data-interval="10000">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <div class="thumbnail-news">
+                          <img src="app/assets/images/news1.jpg" alt=""/>
+                          <div>Apple stocks down</div>
+                          <div class="hidden">
+                            News2 title here debate about stock market coming up this Tuesday
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div>
+                        </div>
+                        <div class="thumbnail-news">
+                          <img src="app/assets/images/news2.jpg" alt=""/>
+                          <div>Whitehouse red</div>
+                          <div class="hidden">
+                            New3 some changes
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div>
+                        </div>
+                        <div div class="thumbnail-news">
+                          <img src="app/assets/images/news3.jpg" alt=""/>
+                          <div>some caption</div>
+                          <div class="hidden">
+                            New3 some changes
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div>
+                        </div>
+                        <div class="thumbnail-news">
+                          <img src="app/assets/images/news4.jpg" alt=""/>
+                          <div>some caption</div>
+                          <div class="hidden">
+                            New3 some changes
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="thumbnail-news"><img src="app/assets/images/news5.jpg" alt=""/><div>some caption</div>
+                          <div class="hidden">
+                            New3 some changes
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div></div>
+                        <div class="thumbnail-news"><img src="app/assets/images/news4.jpg" alt=""/><div>some caption</div>
+                          <div class="hidden">
+                            New3 some changes
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div></div>
+                        <div class="thumbnail-news"><img src="app/assets/images/news3.jpg" alt=""/><div>some caption</div>
+                          <div class="hidden">
+                            New3 some changes
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div></div>
+                        <div class="thumbnail-news"><img src="app/assets/images/news1.jpg" alt=""/><div>some caption</div>
+                          <div class="hidden">
+                            New3 some changes
+                            <p>Find out everything you need for successful trading. Live coverage from the studio 24 hours/day. <a
+                              href="#">for more details click here</a></p>
+                          </div></div>
+                      </div>
+                    </div>
+                  </div>
+  <a href="#carousel-news" class="btn-prev" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a>
+  <a href="#carousel-news" class="btn-next" role="button" data-slide="next"><span class="icon-chevron-right"></span></a>
+
+
+</div>
+
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane active" id="tab2">
+
+                  <ul class="nav nav-pills sh-nav-opaq">
+                    <li class="active"><a href="#tab1-1" data-toggle="pill" id="btn-radar-tile"><span
+                      class="icon-th"></span></a></li>
+                    <li><a href="#tab1-2" data-toggle="pill" id="btn-radar-list"><span
+                      class="icon-align-justify"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1-1">
+
+                      <ul class="list-inline sh-nextback" id="sh-tile-action1">
+                        <li><a href="#carousel-radar" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a></li>
+                        <li><a href="#carousel-radar" role="button" data-slide="next"><span class="icon-chevron-right"></span></a></li>
+                      </ul>
+
+                      <div id="carousel-radar" class="carousel sh-carousel slide" data-ride="carousel"
+                           data-interval="10000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                          </div>
+                          <div class="item">
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab1-2">
+                      <div class="radar-listview scroll-pane">
+                        <table class="table table-striped table-hover">
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab3">
+
+
+                  <ul class="nav nav-pills sh-nav-opaq">
+                    <li class="active"><a href="#tab2-1" data-toggle="pill"><span class="icon-th"></span></a></li>
+                    <li><a href="#tab2-2" data-toggle="pill"><span class="icon-align-justify"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab2-1">
+
+
+
+                      <div id="carousel-high" class="carousel sh-carousel slide" data-ride="carousel"
+                           data-interval="10000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2-2">
+                      <div class="radar-listview scroll-pane">
+                        <table class="table table-striped table-hover">
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab4">
+
+                  <ul class="nav nav-pills sh-nav-opaq">
+                    <li class="active"><a href="#tab3-1" data-toggle="pill"><span class="icon-th"></span></a></li>
+                    <li><a href="#tab3-2" data-toggle="pill"><span class="icon-align-justify"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab3-1">
+
+
+                      <div id="carousel-most" class="carousel sh-carousel slide" data-ride="carousel"
+                           data-interval="10000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph1.png" alt=""/></a>
+                            <a href="#"><img src="app/assets/images/graph2.png" alt=""/></a>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab3-2">
+                      <div class="radar-listview scroll-pane">
+                        <table class="table table-striped table-hover">
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>Microsoft (mcs)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Coca Cola (ccl)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade up">
+                            <td>google (GGl)</td>
+                            <td>52.50</td>
+                            <td>+1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph11.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Ebay (eby)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                          <tr class="trade down">
+                            <td>Facebook (fbk)</td>
+                            <td>134.80</td>
+                            <td>- 1.58</td>
+                            <td>0.81%</td>
+                            <td><img src="app/assets/images/graph12.png" alt=""/></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default sh-panel">
+            <div class="panel-body sh-panel-body1">
+              <div class="form-group-reply">
+<textarea class="form-control" rows="5" placeholder="Share an idea..."></textarea>
+              </div>
+
+            </div>
+            <div class="panel-footer">
+              <a href="#" class="btn btn-primary pull-right btn-share">Share</a>
+              <ul class="list-inline list-action">
+                <li><a href="#"><span class="icon-paper-plane"></span></a></li>
+                <li><a href="#"><span class="icon-clock-o"></span></a></li>
+                <li><a href="#"><span class="icon-image"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-default sh-panel">
+            <div class="panel-body panel-body-comments">
+              <img src="app/assets/images/avatar.jpg" class="avatar" alt="Avatar"/>
+              <div class="box-comments">
+                <div class="dropdown pull-right ">
+                  <a id="dLabel22" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="icon-chevron-down"></span></a>
+
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel22">
+                    <li><a href="#"><span class="icon-eye-slash"></span> Hide Post</a></li>
+                    <li><a href="#"><span class="icon-close"></span> Unfollow</a></li>
+                    <li><a href="#"><span class="icon-warning"></span> Report</a></li>
+                    <li><a href="#"><span class="icon-code"></span> Embed Code</a></li>
+                  </ul>
+                </div>
+
+                <span class="name">Zoran Collins</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur deserunt dolore dolores, ea earum error iste nesciunt non possimus quae quibusdam, quis rem sed soluta, tempora ut voluptas voluptate! Asperiores aspernatur deserunt dolore dolores, ea earum error iste nesciunt non possimus quae quibusdam, quis rem sed soluta, tempora ut voluptas voluptate!
+                </p>
+                <div class="comments-info">
+                  <hr/>
+                    <span class="pull-right ">Monday March 16, 2005</span>
+                  <ul class="list-inline">
+                    <li><a href="#">Like</a></li>
+                    <li>&bullet;</li>
+                    <li><a href="#">Share</a></li>
+                    <li>&bullet;</li>
+                    <li><a href="#">Save</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="#"><span class="icon-thumbs-o-up"></span> 256</a></li>
+                    <li><a href="#"><span class="icon-comments"></span> 643</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="panel-body panel-body-comments reply">
+              <img src="app/assets/images/avatar.jpg" class="avatar" alt="Avatar"/>
+              <div class="box-comments">
+                <div class="dropdown pull-right ">
+                  <a id="dLabel" href="#"><span class="icon-close"></span></a>
+                </div>
+
+                <span class="name">Zoran Collins</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur deserunt dolore dolores, ea earum error iste nesciunt non possimus quae quibusdam, quis rem sed soluta, tempora ut voluptas voluptate! Asperiores aspernatur deserunt dolore dolores, ea earum error iste nesciunt non possimus quae quibusdam, quis rem sed soluta, tempora ut voluptas voluptate!
+                </p>
+                <div class="comments-info">
+                  <hr/>
+                    <span class="pull-right ">Monday March 16, 2005</span>
+                  <ul class="list-inline">
+                    <li><a href="#">Like</a></li>
+                    <li>&bullet;</li>
+                    <li><a href="#">Share</a></li>
+                    <li>&bullet;</li>
+                    <li><a href="#">Save</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="#"><span class="icon-thumbs-o-up"></span> 256</a></li>
+                    <li><a href="#"><span class="icon-comments"></span> 643</a></li>
+                  </ul>
+                  Monday March 16, 2005
+                </div>
+
+              </div>
+            </div>
+            <div class="panel-footer sh-panel-footer-reply">
+
+              <img src="app/assets/images/avatar.jpg" class="avatar" alt="Avatar"/>
+              <div class="form-group form-group-reply">
+                <textarea class="form-control" rows="2" placeholder="Write a comment"></textarea>
+                <a href="#" class="btn-image"><span class="icon-image"></span></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-5 col-md-6">
+        <ul class="list-group list-well">
+          <li class="list-group-item">
+            <div class="pull-right trade up">
+              <strong>18,000.54 <span class="symbol icon-chevron-circle-up"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title caps">
+              Dow Jones
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="pull-right trade down">
+              <strong>3,500.54 <span class="symbol icon-chevron-circle-down"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title caps">
+              S&P 500
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="pull-right trade up">
+              <strong>5,100.47 <span class="symbol icon-chevron-circle-up"></span></strong>
+              1.58 (0.81%)
+            </div>
+            <div class="trade-title caps">
+              Nasdaq
+            </div>
+          </li>
+        </ul>
+
+        <div class="list-group list-well list-headlines">
+          <div class="list-group-item heading">Market Headlines</div>
+          <a href="#" class="btn-link link-more">see more</a>
+          <a href="#" class="list-group-item">
+            <img src="app/assets/images/logo-rt.png" alt=""/>
+            <span  class="headline">Headline of Some Article</span>
+            Sample text of article in few lines,
+            maximum 2 lines like this maximum 2 lines like
+          </a>
+          <a href="#" class="list-group-item">
+            <img src="app/assets/images/logo-wallstreet.png" alt=""/>
+            <span class="headline">Headline of Some Article</span>
+            Sample text of article in few lines,
+            maximum 2 lines like this maximum 2 lines like
+          </a>
+          <a href="#" class="list-group-item">
+            <img src="app/assets/images/logo-usatoday.png" alt=""/>
+            <span class="headline">Headline of Some Article</span>
+            Sample text of article in few lines,
+            maximum 2 lines like this maximum 2 lines like
+          </a>
+          <a href="#" class="list-group-item">
+            <img src="app/assets/images/logo-cnn.png" alt=""/>
+            <span class="headline">Headline of Some Article</span>
+            Sample text of article in few lines,
+            maximum 2 lines like this maximum 2 lines like
+          </a>
+
+        </div>
+
+        <ul class="list-group list-well">
+          <li class="list-group-item heading">Recommendations</li>
+
+          <li class="list-group-item">
+            <div class="box-profile">
+              <img src="app/assets/images/avatar.jpg" class="avatar" alt=""/>
+              <div class="profile-info">
+                <span>Roger<br>Downington JR</span>
+                <em>New York (Us)</em>
+                <a href="#" class="btn btn-sm btn-primary">Follow</a>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="box-profile">
+              <img src="app/assets/images/avatar.jpg" class="avatar" alt=""/>
+              <div class="profile-info">
+                <span>Roger<br>Downington JR</span>
+                <em>New York (Us)</em>
+                <a href="#" class="btn btn-sm btn-primary">Follow</a>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="box-profile">
+              <img src="app/assets/images/avatar.jpg" class="avatar" alt=""/>
+              <div class="profile-info">
+                <span>Roger<br>Downington JR</span>
+                <em>New York (Us)</em>
+                <a href="#" class="btn btn-sm btn-primary">Follow</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Place sticky footer content here.</p>
+  </div>
+</footer>
+
+
+<!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="bower_components/enscroll/js/mylibs/enscroll.js"></script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+
+
+    $(document).keydown(function (e) {
+      if(e.which == 39){ //39 right  .carousel('prev')
+        $('.tab-pane.active .carousel').carousel('next'); // only active tab pane carousel
+      }
+      if(e.which == 37){ //37 left
+        $('.tab-pane.active .carousel').carousel('prev'); // only active tab pane carousel
+      }
+    });
+
+    //news functions
+    $(".thumbnail-news").hover(
+      function() {
+        var selctimg = $( this).find('img').attr('src');
+        $("#news-active").find('img').attr('src', selctimg);
+        var contentdiv =  $( this).find('.hidden').html();
+        console.log(contentdiv)
+        $("#news-active").find('.captions').html(contentdiv);
+
+      }, function() {
+
+      }
+    );
+
+    //enscroll instance
+
+    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+      var activePane = $(e.target).attr('href');
+      //console.log(activePane);
+      $(activePane).find('.scroll-pane').enscroll("destroy");
+      $(activePane).find('.scroll-pane').enscroll({
+        showOnHover: false,
+        verticalTrackClass: 'track3',
+        verticalHandleClass: 'handle3',
+        easingDuration:100
+      });
+
+    })
+
+  })
+</script>
+</body>
+</html>

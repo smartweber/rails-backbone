@@ -1,0 +1,2 @@
+<%- @gravatarImageFor @notifiable %>
+<div class='bb-seenable'><%- @linkTo(@notifiable.name, Routes.user_path(@notifiable.username)) + " has commented on your" + @linkTo(@notifiable.entity_name.toLowerCase(), Routes.user_path(@notifiable.username)) %></div>

@@ -1,0 +1,28 @@
+<div class="message-to">
+  <div class="row">
+    <div class="col-xs-3 col-sm-1">
+      <label for="username" class="control-label">To:</label>
+    </div>
+    <div class="col-xs-21 col-sm-23">
+      <input type="text" name="message[username]" class="form-control typeahead-element" placeholder="John">
+    </div>
+  </div>
+</div>
+<hr>
+<div class="message-comment">
+  <div class="row">
+    <div class="col-xs-2">
+      <div class="avatar">
+        <%- @gravatarImageFor @currentUser, { htmlClass: 'img-responsive' } %>
+      </div>
+    </div>
+    <div class="col-xs-22">
+      <textarea class="form-control mention-element" name="message[body]" rows="5" placeholder="Write a Comment" data-validation="body"></textarea>
+      <div class="clearfix">
+        <a href="#" class="add-image-button bb-attach-link"><span class="icon-photo"></span> <span>Add Image</span></a>
+        <a href="#" class="btn btn-primary pull-right bb-message-btn">Send</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="attachments-region"></div>

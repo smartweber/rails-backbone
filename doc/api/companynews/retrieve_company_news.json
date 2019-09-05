@@ -1,0 +1,56 @@
+{
+  "resource": "CompanyNews",
+  "http_method": "GET",
+  "route": "/api/c/:company_id/news",
+  "description": "Retrieve company news",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "company_id",
+      "description": "Company ID"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "NewsItem ID"
+    },
+    {
+      "name": "url",
+      "description": "NewsItem url"
+    },
+    {
+      "name": "title",
+      "description": "NewsItem title"
+    },
+    {
+      "name": "published_at",
+      "description": "NewsItem published_at"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/c/oufj/news",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"url\": \"http://bechtelarklein.com/jerad\",\n    \"title\": \"Qui consequatur impedit autem iste.\",\n    \"published_at\": \"2016-08-31T16:03:25.000Z\"\n  },\n  {\n    \"id\": 2,\n    \"url\": \"http://us.rd.yahoo.com/finance/external/mfool/rss/SIG=12s3shtn2/*http://www.fool.com/investing/general/2015/12/22/why-i-returned-my-apple-inc-ipad-pro.aspx?source=eogyholnk0000001&utm_source=yahoo&utm_medium=feed&utm_campaign=article\",\n    \"title\": \"Why I Returned My Apple Inc. iPad Pro\",\n    \"published_at\": \"2015-12-23T01:45:00.000Z\"\n  },\n  {\n    \"id\": 3,\n    \"url\": \"http://us.rd.yahoo.com/finance/external/bloomberg/rss/SIG=13b9asj04/*http://www.bloomberg.com/news/videos/2015-12-23/apple-s-executive-shuffle-bloomberg-west-full-show-12-17-?cmpid=yhoo.headline\",\n    \"title\": \"Apple Executive Shuffle: Bloomberg West (Full Show 12/17)\",\n    \"published_at\": \"2015-12-23T01:28:52.000Z\"\n  },\n  {\n    \"id\": 4,\n    \"url\": \"http://us.rd.yahoo.com/finance/external/ft/rss/SIG=129pfdcot/*http://www.ft.com/cms/s/f52529a8-a905-11e5-955c-1e1d6de94879,s01=1.html?ftcamp=traffic/partner/feed_headline/us_yahoo/auddev\",\n    \"title\": \"[$$] Apple opens board nominations to large investors\",\n    \"published_at\": \"2015-12-23T00:09:51.000Z\"\n  },\n  {\n    \"id\": 5,\n    \"url\": \"http://us.rd.yahoo.com/finance/external/cnbc/rss/SIG=112ijcqr0/*http://www.cnbc.com/id/103261591?__source=yahoo%7cfinance%7cheadline%7cheadline%7cstory&par=yahoo&doc=103261591\",\n    \"title\": \"Cramer Remix: Memo to Apple CEO Tim Cook\",\n    \"published_at\": \"2015-12-23T00:05:38.000Z\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/c/oufj/news\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<a href="<%- @url %>" class="list-group-item" target="_blank">
+  <span class="headline"><%- @title %></span> <%- @summary %>
+
+  <div class="item-source-details clearfix">
+    <div class="item-source-logo pull-left">
+      <img src="<%- @agnosticAssetPath(@agency) %>" class="img-responsive center-block">
+    </div>
+
+    <div class="item-timestamp pull-right">
+      <span><i>16 mins ago</i></span>
+    </div>
+  </div>
+</a>

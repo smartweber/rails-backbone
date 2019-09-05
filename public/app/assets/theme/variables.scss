@@ -1,0 +1,91 @@
+// path for images on rails asset-url()
+$img-path:'..//app/assets/images/';
+
+/* vars for StockHarp */
+$drk-blue: #2d3e50;
+$box-bg: #f5f2f1;
+$box-bg-drk: #dad2c8;
+$box-bg-lt: #fbfaf9;
+$red: #ea4c44;
+$green: #23c575;
+
+
+/* var for bootstrap */
+$text-color: #666666;
+$line-height-base: 1;
+$line-height-computed: 1;
+
+$brand-primary:         #6699ff;
+//$brand-success:         #5cb85c;
+$brand-info:            #66ccff;
+//$brand-warning:         #f0ad4e;
+//$brand-danger:          #d9534f;
+
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%);
+
+  //## Font, line-height, and color for body text, headings, and more.
+
+$font-roman: 'HelveticaNeueLTStdRoman', Helvetica, Arial, sans-serif;
+$font-medium: 'HelveticaNeueLTStdMedium', Helvetica, Arial, sans-serif;
+$font-bold: 'HelveticaNeueLTStdBold', Helvetica, Arial, sans-serif;
+$font-light: 'HelveticaNeueLTStdLight', Helvetica, Arial, sans-serif;
+$font-mdcn: 'HelveticaNeueLTStdMdCn', Helvetica, Arial, sans-serif;
+$font-hvcn: 'HelveticaNeueLTStdHvCn', Helvetica, Arial, sans-serif;
+
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+//$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-roman;
+
+$headings-font-family:   $font-bold;
+$headings-font-weight:    normal;
+
+$font-size-base:          12px;
+//$font-size-large:         ceil(($font-size-base * 1.25));
+//$font-size-small:         ceil(($font-size-base * 0.85));
+
+//** Number of columns in the grid.
+$grid-columns:              24;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         10px;
+
+//== Navbar
+
+// Basics of a navbar
+$navbar-height:                    70px;
+//$navbar-margin-bottom:             $line-height-computed !default;
+//$navbar-border-radius:             $border-radius-base !default;
+//$navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+//$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+//$navbar-collapse-max-height:       340px !default;
+
+$navbar-default-color:             #FFF;
+$navbar-default-bg:                $drk-blue;
+//$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+
+// Navbar links
+$navbar-default-link-color:                #bfc6ca;
+$navbar-default-link-hover-color:          #FFF;
+$navbar-default-link-hover-bg:             transparent;
+$navbar-default-link-active-color:         #FFF;
+$navbar-default-link-active-bg:            transparent;
+//$navbar-default-link-disabled-color:       #ccc !default;
+//$navbar-default-link-disabled-bg:          transparent !default;
+
+
+//== Wells
+
+$well-bg:                     $box-bg;
+$well-border:                 transparent;
+
+//** Placeholder text color
+$input-color-placeholder:        #666;
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             transparent;
+
+//
+$btn-info-color:                 #fff;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                transparent;

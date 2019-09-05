@@ -1,0 +1,217 @@
+.sign-up-step {
+
+  .heading {
+    padding: 20px 40px;
+
+    h4 {
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+
+    p {
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  .content {
+    padding: 20px 40px;
+
+    .profile-option {
+      margin-bottom: 30px;
+
+      .avatar {
+        margin-bottom: 10px;
+
+        img {
+          border-radius: 4px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.2;
+
+        &:hover,
+        &:focus {
+
+          a {
+            font-size: 14px;
+
+            &.profile-option-action {
+              display: inline-block;
+            }
+          }
+        }
+
+        a {
+          text-decoration: none;
+
+          &.profile-option-action {
+            display: none;
+          }
+
+          &.delete-profile-option {
+            color: $red;
+          }
+        }
+
+        & + .form-group {
+          display: none;
+        }
+      }
+    }
+
+    .profile-avatar {
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+
+      .about-textarea {
+        height: 218px;
+      }
+    }
+
+    .form-buttons {
+      text-align: right;
+      margin-top: 80px;
+
+      button {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .thumbs-content {
+    padding: 20px 40px 10px;
+
+    .custom-thumbs {
+      position: relative;
+
+      .thumb {
+        width: 20%;
+        position: relative;
+        padding: 0 5px;
+        float: left;
+        margin-bottom: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.selected {
+          .thumb-content {
+            background-color: #6798FF;
+          }
+
+          img {
+            opacity: 0.8;
+          }
+        }
+
+        .thumb-content {
+          border: 2px solid #fff;
+          border-radius: 6px;
+          min-height: 104px;
+          background: #f5f2f1;
+
+          &:hover {
+            border: 2px solid #6798FF;
+            background-color: #6798FF;
+
+            img {
+              opacity: 0.8;
+            }
+          }
+
+          img {
+            border-radius: 4px;
+          }
+
+          .checkbox {
+            display: none;
+          }
+
+          .thumb-title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            width: 80%;
+          }
+        }
+      }
+
+      .social {
+
+        .thumb-content {
+
+          .thumb-title {
+            color: #666;
+
+            img {
+              display: inline-block;
+              margin-right: 15px;
+            }
+          }
+
+          &:hover {
+            border: 2px solid #6798FF;
+            background-color: #f5f2f1;
+
+            img {
+              opacity: 1;
+            }
+          }
+        }
+
+        &.selected {
+          .thumb-content {
+            border: 2px solid #6798FF;
+            background-color: #f5f2f1;
+          }
+        }
+      }
+    }
+  }
+
+  .sub-heading {
+    padding: 10px 60px;
+    border-top: 1px solid #ece8e3;
+    border-bottom: 1px solid #ece8e3;
+    background: #f5f2f1;
+
+    h5 {
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  hr {
+    border-color: #ece8e3;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .sign-up-step .thumbs-content .custom-thumbs .thumb {
+    width: 50%;
+  }
+
+}

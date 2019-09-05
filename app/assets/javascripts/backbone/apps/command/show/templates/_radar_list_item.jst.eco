@@ -1,0 +1,5 @@
+<td><%- "#{@name} (#{@abbr})" %></td>
+<td class="bb-last-price"></td>
+<td class="bb-change"></td>
+<td class="bb-change-percent"></td>
+<td><img src="<%- asset_path('graph11.png') %>" alt="" /></td>

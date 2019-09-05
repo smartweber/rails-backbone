@@ -1,0 +1,3 @@
+<a href="<%- Routes.hashtag_path(@word) %>" class="trending-channel bb-channel-link"><span class="word"><%- "##{@word}" %></span> <span class="description"><%- @description %></span></a>
+
+

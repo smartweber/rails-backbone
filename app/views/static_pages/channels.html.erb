@@ -1,0 +1,63 @@
+<%= render partial: 'shared/header', locals: {display_search: false} %>
+
+<section class="profile-page">
+  <div class="container">
+    <div class="row">
+      <!-- Left col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- User profile box -->
+        <%= render 'shared/user_profile' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_stocks' %>
+
+        <!-- Trending Stocks -->
+        <%# render 'shared/trending_channels' %>
+
+        <!-- Vital Financial Stats -->
+        <%# render 'shared/vital_financial_stats' %>
+
+      </div>
+
+      <!-- Center col -->
+      <div class="col-lg-14 col-md-12 ">
+        <div class="col-center">
+
+          <div class="channel-heading">
+            <span>#PRIMETIME</span>
+          </div>
+
+          <!-- Comments boxes -->
+          <%= render partial: 'shared/comments', locals: {display_image: nil} %>
+
+          <%= render partial: 'shared/comments', locals: {display_image: true} %>
+
+        </div>
+      </div>
+
+      <!-- Right col -->
+      <div class="col-lg-5 col-md-6">
+
+        <!-- Main Markets -->
+        <%# render 'shared/main_markets' %>
+
+        <!-- Markets Headlines 1 -->
+        <%# render 'shared/markets_headlines_1' %>
+
+        <!-- Markets Headlines 2 -->
+        <%# render 'shared/company_news' %>
+
+        <!-- Recommendations 1 -->
+        <%# render 'shared/recommendations_1' %>
+
+        <!-- Recommendations 2 -->
+        <%# render 'shared/recommendations_2' %>
+
+        <!-- Footer -->
+        <%= render 'shared/side_bar_footer' %>
+
+      </div>
+    </div>
+  </div>
+</section>

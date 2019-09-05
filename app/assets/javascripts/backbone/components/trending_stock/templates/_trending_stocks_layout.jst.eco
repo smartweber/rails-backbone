@@ -1,0 +1,25 @@
+<div class="panel-heading">
+  Trending Stocks
+</div>
+<div class="panel-body">
+
+  <ul class="list-inline sh-nextback bb-action-buttons" id="sh-tile-action1">
+    <li><a href="#carousel-landing" role="button" data-slide="prev"><span class="icon-chevron-left"></span></a></li>
+    <li><a href="#carousel-landing" role="button" data-slide="next"><span class="icon-chevron-right"></span></a></li>
+  </ul>
+
+  <div id="carousel-landing" class="carousel sh-carousel slide" data-ride="carousel" data-interval="10000">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <% _.each @pageRegionsSelectors, (selector, index) ->: %>
+        <div class="item <%- s(selector).ltrim('.').value() %> <%- 'active' if index == 0 %>"></div>
+      <% end %>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="company-chart-region company-chart"></div>
+</div>

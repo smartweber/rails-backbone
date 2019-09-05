@@ -1,0 +1,1 @@
+<%= link_to "#{@notification.notifiable.participant.user.name}: #{@notification.notifiable.body}", chat_url(@notification.notifiable.chat_id), class: 'chat-link' %>

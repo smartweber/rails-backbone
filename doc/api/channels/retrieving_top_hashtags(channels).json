@@ -1,0 +1,56 @@
+{
+  "resource": "Channels",
+  "http_method": "GET",
+  "route": "/api/channels",
+  "description": "Retrieving top hashtags(channels)",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "limit",
+      "description": "How many hashtags to retrieve"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Tag id"
+    },
+    {
+      "name": "word",
+      "description": "Channel name"
+    },
+    {
+      "name": "description",
+      "description": "Description of channel"
+    },
+    {
+      "name": "taggings_count",
+      "description": "How many items are tagged with this tag"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/channels?limit=5",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "limit": "5"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 2,\n    \"word\": \"hashtag\",\n    \"description\": null,\n    \"taggings_count\": 1\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/channels?limit=5\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

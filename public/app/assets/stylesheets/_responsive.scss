@@ -1,0 +1,32 @@
+@import "../theme/core";
+
+@media (max-width: $screen-xs-max) {
+/* some resp css here */
+
+}
+
+
+@media (min-width: 1400px) {
+  .container{
+    width: 1300px;
+  }
+}
+
+
+@media (min-width: $screen-sm) {
+  .sh-header .navbar-form{
+    width:50%;
+  }
+}
+@media (min-width: $screen-desktop) {
+  .sh-header .navbar-form{
+    width: 80%;
+  }
+}
+@media (min-width: $screen-lg-desktop) {
+  .sh-header .navbar-form{
+    width: 80%;
+  }
+}
+
+

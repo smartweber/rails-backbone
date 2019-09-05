@@ -1,0 +1,10 @@
+<div class="panel-heading">
+  trending stream
+</div>
+<div class="panel-body">
+  <div class="scroll-pane">
+    <ul class="list-group list-well bb-trending-stream-items">
+
+    </ul>
+  </div>
+</div>

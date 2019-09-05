@@ -1,0 +1,64 @@
+{
+  "resource": "Notifications",
+  "http_method": "PUT",
+  "route": "/api/participants/:id",
+  "description": "Updates participant's last_seen_message_id",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "Participant ID"
+    },
+    {
+      "scope": "participant",
+      "name": "last_seen_message_id",
+      "description": "ID of the last message that participant have seen"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Participant ID"
+    },
+    {
+      "name": "user_id",
+      "description": "User ID of user behind Participant"
+    },
+    {
+      "name": "chat_id",
+      "description": "ID of chat that participant is participating at"
+    },
+    {
+      "name": "last_seen_message_id",
+      "description": "ID of the last message that participant have seen"
+    },
+    {
+      "name": "user[name]",
+      "description": "Name of the User behind participant"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/participants/24",
+      "request_body": "{\"participant\":{\"last_seen_message_id\":25}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 24,\n  \"user_id\": 49,\n  \"chat_id\": 10,\n  \"last_seen_message_id\": 25,\n  \"user\": {\n    \"name\": \"Eugene Jast\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/participants/24\" -d '{\"participant\":{\"last_seen_message_id\":25}}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

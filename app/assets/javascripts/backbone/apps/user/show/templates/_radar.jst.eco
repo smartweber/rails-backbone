@@ -1,0 +1,161 @@
+<div class="panel-body">
+  <div class="row">
+    <div class="col-sm-11">
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/ebay.png" class="img-responsive" alt="">
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Ebay</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Tracking</span> <span class="unfollow-txt"><i class="icon-close"></i> Untrack</span></a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/msft.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Microsoft</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Tracking</span> <span class="unfollow-txt"><i class="icon-close"></i> Untrack</span></a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/hp.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">HP</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Tracking</span> <span class="unfollow-txt"><i class="icon-close"></i> Untrack</span></a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/aa.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Alcoa</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Track</a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/googl.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Google Inc</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Track</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-11 col-sm-offset-2">
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/ebay.png" class="img-responsive" alt="">
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Ebay</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Tracking</span> <span class="unfollow-txt"><i class="icon-close"></i> Untrack</span></a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/msft.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Microsoft</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Tracking</span> <span class="unfollow-txt"><i class="icon-close"></i> Untrack</span></a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/hp.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">HP</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary btn-selected btn-following"><span class="following-txt"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Tracking</span> <span class="unfollow-txt"><i class="icon-close"></i> Untrack</span></a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/aa.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Alcoa</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Track</a>
+        </div>
+      </div>
+
+      <div class="radar-item">
+        <div class="avatar">
+          <img src="/assets/squared-logos/googl.png" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">Google Inc</div>
+          <span class="followers">3293 Followers</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-primary"><i class="icon-chevron-right"></i><i class="icon-chevron-right"></i> Track</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

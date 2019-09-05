@@ -1,0 +1,10 @@
+<div class="panel-body panel-body-comments">
+  <%- @gravatarImageFor( @user, {htmlClass: 'avatar', alt: 'Avatar'} ) %>
+  <div class="box-comments">
+    <div class="post-region"></div>
+    <div class="attachments-region"></div>
+    <div class="ui-region"></div>
+  </div>
+</div>
+<div class="comments-region"></div>
+<div class="reply-region"></div>

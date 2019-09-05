@@ -1,0 +1,10 @@
+<a href="<%- Routes.article_path(@slug) %>">
+  <div class="col-xs-2"><div class="news-item-count"><%- @indexInCollection %></div></div>
+  <div class="col-xs-22">
+    <div class="news-item-title"><%- @title %></div>
+    <div class="news-item-bottom">
+      <div class="pull-left"><span class="icon icon-comments"></span> <%- @posts_count || 0 %></div>
+      <div class="pull-right"><%- @timestampFor @created_at %></div>
+    </div>
+  </div>
+</a>

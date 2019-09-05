@@ -1,0 +1,16 @@
+<div tabindex="-1" role="dialog" id="likesDetailModal" class="modal fade" aria-labelledby="likeDetails" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" class="close">
+          <span aria-hidden="true">×</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 id="likeDetails" class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>

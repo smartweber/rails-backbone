@@ -1,0 +1,5 @@
+<input class="hidden" name="<%- @attachable_type %>[attachment_ids][]"  type="hidden" value="<%= @id %>" autocomplete="on">
+<div class="upload">
+  <a href="#" class="delete bb-remove"><span class="icon icon-cancel"></span></a>
+  <img class="img-responsive bb-preview-image" src="<%= @image_url %>">
+</div>

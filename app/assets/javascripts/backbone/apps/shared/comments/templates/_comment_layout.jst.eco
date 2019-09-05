@@ -1,0 +1,6 @@
+<%- @gravatarImageFor(@user, {htmlClass: 'avatar', alt: 'Avatar'} ) %>
+<div class="box-comments">
+  <div class="content-region"></div>
+  <div class="attachments-region"></div>
+  <div class="comment-ui-region"></div>
+</div>

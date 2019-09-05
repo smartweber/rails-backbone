@@ -1,0 +1,356 @@
+.company-profile {
+
+  .company-key-info {
+     &:hover,
+     &:focus {
+      border-color: #eae5e0;
+    }
+  }
+
+  .company-info {
+    .desktop{
+      @media (max-width: 768px){
+        display: none;
+      }
+    }
+
+    .mobile{
+      @media (min-width: 768px){
+        display: none;
+      }
+    }
+    .company-info-table {
+      padding-top: 10px;
+    }
+
+    .company-logo {
+      img {
+        border-radius: 4px;
+      }
+    }
+
+    .name {
+      font-size: 20px;
+      font-family: $font-light;
+    }
+
+    .value {
+      font-family: $font-hvcn;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .change-rate {
+      font-size: 24px;
+      font-family: $font-mdcn;
+      text-align: right;
+      &.down {
+        color: $red;
+      }
+      &.up {
+        color: $green;
+      }
+      &.no-changes {
+        text-align: center;
+      }
+    }
+
+    hr {
+      border-top: 1px solid #eae5e0;
+      margin: 10px 0;
+    }
+
+    .company-symbol {
+      font-family: $font-bold;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+
+    .real-time-price {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .track {
+      text-align: center;
+      padding-top: 25px;
+    }
+
+    .trackers {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px 0;
+      font-family: $font-bold;
+    }
+  }
+
+  .company-stock-info {
+    span {
+      color: #666666;
+      font-size: 14px;
+      font-family: $font-hvcn;
+      vertical-align: middle;
+    }
+
+    .detail {
+      margin-bottom: 8px;
+
+      .detail-title {
+        font-family: $font-bold;
+        color: #a3a3a3;
+        font-size: 11px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .progress-indicators {
+
+        .progress-numbers {
+          span {
+            margin-bottom: 4px;
+          }
+
+          .lower {
+            color: $red;
+          }
+
+          .higher {
+            color: $green;
+          }
+        }
+
+        .progress {
+          height: 6px;
+          border-radius: 0;
+          background: #dad2c8;
+
+          .progress-bar {
+            background: #666;
+          }
+        }
+
+        .progress-pointer {
+          color: $green;
+          font-size: 14px;
+          position: relative;
+        }
+      }
+    }
+
+    .detail-horizontal {
+      margin-bottom: 20px;
+
+      .detail-title {
+        display: inline-block;
+        margin-bottom: 0;
+        min-width: 80px;
+      }
+    }
+  }
+
+  .company-chart {
+    padding-top: 0 !important;
+    padding-bottom: 25px !important;
+  }
+
+  .sh-panel {
+  	.heading {
+      padding: 14px;
+      background-color: $box-bg-drk;
+      text-align: center;
+      font-size: 16px;
+      font-family: $font-bold;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .sign-in-to-share-banner {
+    background: #f5f2f1;
+    padding: 40px !important;
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 20px;
+    }
+  }
+
+  .bb-market-snapshots-items {
+    .list-group-item {
+      padding: 5px 15px;
+    }
+
+    .trade-title.caps {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .trade {
+      strong,
+      .change-rate {
+        display: inline-block;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .price-tracker-box {
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .list-group-item {
+      text-align: center;
+      text-transform: uppercase;
+
+      .price-tracker-text {
+        font-size: 12px;
+        font-weight: bold;
+        color: #888;
+      }
+
+      div {
+        font-size: 12px;
+      }
+
+      input {
+        width: 50px;
+        height: 25px;
+        border-radius: 4px;
+        background-color: transparent;
+        border: 1px solid #aaa;
+        font-size: 12px!important;
+        text-align: right;
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .navigation-bar-box {
+    .list-group-item {
+      padding: 0;
+
+      .navigation-bar-item {
+        padding: 15px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #777;
+
+        &:hover {
+          background-color: #fafafa;
+          cursor: pointer;
+        }
+
+        &.selected {
+          color: #3377ff;
+          border-left: 3px solid #3377ff;
+        }
+      }
+
+      .navigation-bar-lock {
+        display: inline-block;
+        font-size: 20px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      .navigation-bar-title {
+        display: inline-block;
+        padding: 10px 0 5px;
+        vertical-align: middle;
+
+        overflow: hidden;
+        width: 80%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+  }
+
+  .company_left-column {
+    .list-group {
+      margin-bottom: 0;
+    }
+
+    .container-fluid {
+      padding: 0;
+    }
+
+    .navbar {
+      min-height: initial;
+    }
+
+    .navbar-default {
+      background-color: transparent;
+      border: none;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar-nav {
+      margin: 0;
+      float: none;
+    }
+
+    .navbar-toggle {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  // Media queries
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+    .company-info {
+
+      .real-time-price {
+        font-size: 11px;
+      }
+    }
+
+  }
+
+  @media (max-width: $screen-sm-max) {
+
+    .company-stock-info {
+
+      .detail-horizontal {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+
+  @media (max-width: $screen-xs-max) {
+
+    .company-stock-info {
+
+      .detail-horizontal {
+        margin-bottom: 10px;
+      }
+    }
+
+    .navigation-bar-box {
+      .navigation-bar-items {
+        margin-top: -145px;
+      }
+
+      .navbar-collapse {
+        overflow-y: visible;
+      }
+    }
+
+  }
+}

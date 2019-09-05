@@ -1,0 +1,5 @@
+<span class="headline"><%= @title %></span>
+
+<div class="clearfix">
+  <div class="posted pull-right"><i><%- @timestampFor @published_at %></i></div>
+</div>

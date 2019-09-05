@@ -1,0 +1,8 @@
+<%- @gravatarImageFor @notifiable %>
+<% if (@other_recent_activity_participants.length == 0): %>
+  <div class='bb-seenable'><%- @linkTo(@notifiable.name, Routes.user_path(@notifiable.username)) + " has followed you" %></div>
+<% else if (@other_recent_activity_participants.length == 1): %>
+  <div class='bb-seenable'><%- @linkTo(@notifiable.name, Routes.user_path(@notifiable.username)) + " and #{@other_recent_activity_participants[0].name} have followed you." %></div>
+<% else if (@other_recent_activity_participants.length > 1): %>
+  <div class='bb-seenable'><%- @linkTo(@notifiable.name, Routes.user_path(@notifiable.username)) + " and #{@other_recent_activity_participants.length} other friends have followed you." %></div>
+<% end %>

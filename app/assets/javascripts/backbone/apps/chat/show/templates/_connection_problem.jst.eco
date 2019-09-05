@@ -1,0 +1,3 @@
+<div class="flash-messages">
+  <div class="connection-error">Problem with Internet Connection. <a href="#">Retry Connection</a></div>
+</div>

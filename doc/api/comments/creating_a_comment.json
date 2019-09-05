@@ -1,0 +1,165 @@
+{
+  "resource": "Comments",
+  "http_method": "POST",
+  "route": "/api/comments",
+  "description": "Creating a comment",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "body",
+      "description": "Comment content"
+    },
+    {
+      "required": true,
+      "name": "commentable_id",
+      "description": "ID of the object which will nest a comment"
+    },
+    {
+      "required": true,
+      "name": "commentable_type",
+      "description": "Type of the object which will nest a comment"
+    },
+    {
+      "name": "reply_to_comment_id",
+      "description": "ID of the comment that this comment replies to"
+    },
+    {
+      "name": "user_attachment_id",
+      "description": "ID of the attachment that to be embedded into comment"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Comment id"
+    },
+    {
+      "name": "commentable_id",
+      "description": "Commentable object id"
+    },
+    {
+      "name": "commentable_type",
+      "description": "Commentable object type"
+    },
+    {
+      "name": "created_at",
+      "description": "DateTime when comment was created"
+    },
+    {
+      "name": "reply_to_comment_id",
+      "description": "Id of comment to which this comment is replying"
+    },
+    {
+      "name": "user_id",
+      "description": "Id of user that created comment"
+    },
+    {
+      "name": "likes_count",
+      "description": "Cached amount of likes"
+    },
+    {
+      "name": "body",
+      "description": "Content of the comment"
+    },
+    {
+      "name": "like",
+      "description": "DEPRECATED"
+    },
+    {
+      "name": "user[id]",
+      "description": "User id"
+    },
+    {
+      "name": "user[email]",
+      "description": "User email"
+    },
+    {
+      "name": "user[created_at]",
+      "description": "Date of registration"
+    },
+    {
+      "name": "user[username]",
+      "description": "Username"
+    },
+    {
+      "name": "user[following_users_count]",
+      "description": "Number of users that this user following"
+    },
+    {
+      "name": "user[followers_count]",
+      "description": "Number of users that following this user"
+    },
+    {
+      "name": "user[name]",
+      "description": "Full name"
+    },
+    {
+      "name": "user[gravatar_url]",
+      "description": "URL to gravatar image"
+    },
+    {
+      "name": "user[collections_count]",
+      "description": "Amount of collections"
+    },
+    {
+      "name": "user[ideas_count]",
+      "description": "Amount of ideas(posts etc.)"
+    },
+    {
+      "name": "user[relationship]",
+      "description": "DEPRECATED"
+    },
+    {
+      "name": "user[friendship]",
+      "description": "DEPRECATED"
+    },
+    {
+      "name": "attachments[][id]",
+      "description": "Attachment ID"
+    },
+    {
+      "name": "attachments[][type_of_attachment]",
+      "description": "'link'"
+    },
+    {
+      "name": "attachments[][image_url]",
+      "description": "Link to page preview image"
+    },
+    {
+      "name": "attachments[][title]",
+      "description": "Page title"
+    },
+    {
+      "name": "attachments[][description]",
+      "description": "Page description"
+    },
+    {
+      "name": "attachments[][user_id]",
+      "description": "Creator ID"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/comments",
+      "request_body": "{\"comment\":{\"body\":\"Sint ut eveniet deleniti non voluptatibus quia.\",\"commentable_id\":8,\"commentable_type\":\"Post\",\"attachment_ids\":[3]}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 4,\n  \"commentable_id\": 8,\n  \"commentable_type\": \"Post\",\n  \"created_at\": \"2016-09-01T16:03:30.000Z\",\n  \"reply_to_comment_id\": null,\n  \"user_id\": 30,\n  \"likes_count\": 0,\n  \"user\": {\n    \"email\": \"tatyana_rodriguez@padbergarmstrong.biz\",\n    \"created_at\": \"2016-09-01T16:03:29.000Z\",\n    \"following_users_count\": 0,\n    \"followers_count\": 0,\n    \"collections_count\": 0,\n    \"ideas_count\": 0,\n    \"following_companies_count\": 0,\n    \"id\": 30,\n    \"name\": \"Amber Robel\",\n    \"username\": \"amberrobel\",\n    \"gravatar_url\": \"https://secure.gravatar.com/avatar/29236f12d057ea1c307be6bc46fd10b7?s=50\",\n    \"relationship\": null,\n    \"friendship\": null\n  },\n  \"attachments\": [\n    {\n      \"id\": 3,\n      \"url\": null\n    }\n  ],\n  \"body\": \"Sint ut eveniet deleniti non voluptatibus quia.\",\n  \"like\": null\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/comments\" -d '{\"comment\":{\"body\":\"Sint ut eveniet deleniti non voluptatibus quia.\",\"commentable_id\":8,\"commentable_type\":\"Post\",\"attachment_ids\":[3]}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

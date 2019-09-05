@@ -1,0 +1,5 @@
+<input type="file" name="<%- @namePrefix() %>[]" class="hidden bb-hidden-file-input" data-validation="attachments">
+<div class="upload hidden">
+  <a href="#" class="delete bb-remove"><span class="icon icon-cancel"></span></a>
+  <img class="img-responsive bb-preview-image" src="">
+</div>

@@ -1,0 +1,60 @@
+{
+  "resource": "Companies",
+  "http_method": "GET",
+  "route": "/api/c/trending",
+  "description": "Retrieving trending companies",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Company id"
+    },
+    {
+      "name": "name",
+      "description": "Company name"
+    },
+    {
+      "name": "abbr",
+      "description": "Company name abbreviature(same as on stock markets)"
+    },
+    {
+      "name": "exchange",
+      "description": "Company stock exchange"
+    },
+    {
+      "name": "target_url",
+      "description": "Company page URL"
+    },
+    {
+      "name": "followers_count",
+      "description": "Amount of followers"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/c/trending",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 16,\n    \"name\": \"Gulgowski, Conn and Weimann\",\n    \"abbr\": \"QQQ\",\n    \"exchange\": \"NYSE\",\n    \"relationship\": null,\n    \"followers_count\": 0,\n    \"quote\": {\n      \"delaymin\": 15,\n      \"equityinfo\": {\n        \"longname\": \"Gulgowski, Conn and Weimann\",\n        \"shortname\": \"QQQ\"\n      },\n      \"fundamental\": {\n        \"eps\": \"n/a\",\n        \"marketcap\": \"n/a\",\n        \"dividend\": {\n          \"amount\": \"n/a\",\n          \"yield\": \"n/a\",\n          \"paydate\": \"n/a\",\n          \"frequency\": \"n/a\",\n          \"latestamount\": {\n            \"content\": \"n/a\",\n            \"currency\": \"n/a\"\n          },\n          \"date\": \"n/a\"\n        },\n        \"pbratio\": \"n/a\",\n        \"week52low\": {\n          \"content\": \"n/a\",\n          \"date\": \"n/a\"\n        },\n        \"week52high\": {\n          \"content\": \"n/a\",\n          \"date\": \"n/a\"\n        },\n        \"peratio\": \"n/a\",\n        \"sharesoutstanding\": \"n/a\",\n        \"sharesescrow\": \"n/a\"\n      },\n      \"datatype\": \"n/a\",\n      \"datetime\": null,\n      \"entitlement\": \"n/a\",\n      \"pricedata\": {\n        \"vwap\": \"n/a\",\n        \"tradevolume\": \"n/a\",\n        \"last\": \"n/a\",\n        \"change\": \"n/a\",\n        \"bidsize\": \"n/a\",\n        \"sharevolume\": \"n/a\",\n        \"changepercent\": \"n/a\",\n        \"asksize\": \"n/a\",\n        \"open\": \"n/a\",\n        \"rawasksize\": \"n/a\",\n        \"prevclose\": \"n/a\",\n        \"rawbidsize\": \"n/a\",\n        \"high\": \"n/a\",\n        \"low\": \"n/a\",\n        \"ask\": \"n/a\",\n        \"bid\": \"n/a\",\n        \"lasttradedatetime\": null\n      },\n      \"key\": {\n        \"symbol\": \"QQQ\",\n        \"exchange\": \"NYSE\"\n      },\n      \"symbolstring\": \"QQQ\"\n    },\n    \"target_url\": \"/c/QQQ\"\n  },\n  {\n    \"id\": 17,\n    \"name\": \"Tremblay-Bauch\",\n    \"abbr\": \"sljn\",\n    \"exchange\": \"NYSE\",\n    \"relationship\": null,\n    \"followers_count\": 0,\n    \"quote\": {\n      \"delaymin\": 15,\n      \"equityinfo\": {\n        \"longname\": \"Tremblay-Bauch\",\n        \"shortname\": \"sljn\"\n      },\n      \"fundamental\": {\n        \"eps\": \"n/a\",\n        \"marketcap\": \"n/a\",\n        \"dividend\": {\n          \"amount\": \"n/a\",\n          \"yield\": \"n/a\",\n          \"paydate\": \"n/a\",\n          \"frequency\": \"n/a\",\n          \"latestamount\": {\n            \"content\": \"n/a\",\n            \"currency\": \"n/a\"\n          },\n          \"date\": \"n/a\"\n        },\n        \"pbratio\": \"n/a\",\n        \"week52low\": {\n          \"content\": \"n/a\",\n          \"date\": \"n/a\"\n        },\n        \"week52high\": {\n          \"content\": \"n/a\",\n          \"date\": \"n/a\"\n        },\n        \"peratio\": \"n/a\",\n        \"sharesoutstanding\": \"n/a\",\n        \"sharesescrow\": \"n/a\"\n      },\n      \"datatype\": \"n/a\",\n      \"datetime\": null,\n      \"entitlement\": \"n/a\",\n      \"pricedata\": {\n        \"vwap\": \"n/a\",\n        \"tradevolume\": \"n/a\",\n        \"last\": \"n/a\",\n        \"change\": \"n/a\",\n        \"bidsize\": \"n/a\",\n        \"sharevolume\": \"n/a\",\n        \"changepercent\": \"n/a\",\n        \"asksize\": \"n/a\",\n        \"open\": \"n/a\",\n        \"rawasksize\": \"n/a\",\n        \"prevclose\": \"n/a\",\n        \"rawbidsize\": \"n/a\",\n        \"high\": \"n/a\",\n        \"low\": \"n/a\",\n        \"ask\": \"n/a\",\n        \"bid\": \"n/a\",\n        \"lasttradedatetime\": null\n      },\n      \"key\": {\n        \"symbol\": \"sljn\",\n        \"exchange\": \"NYSE\"\n      },\n      \"symbolstring\": \"sljn\"\n    },\n    \"target_url\": \"/c/sljn\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/c/trending\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

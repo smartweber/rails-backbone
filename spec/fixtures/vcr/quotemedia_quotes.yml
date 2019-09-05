@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://app.quotemedia.com/data/getQuotes.json?symbols=AAPL,GOOGL&webmasterId=102098
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - StockHarp/0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 04 Mar 2016 15:47:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - XMLSESSIONID=7o9kOyeqIV6JISLQ37sn3vYT.undefined; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Fri, 04 Mar 2016 15:40:00 GMT
+      X-Powered-By:
+      - JSP/2.2
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Max-Age:
+      - '86400'
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":{"quote":[{"delaymin":15,"equityinfo":{"longname":"Apple
+        Inc","shortname":"AAPL"},"fundamental":{"eps":9.21,"marketcap":563495970290,"dividend":{"amount":2.08,"yield":2.049,"paydate":"2016-02-11","frequency":"Q","latestamount":{"content":0.52,"currency":"USD"},"date":"2016-02-04"},"pbratio":4.394,"week52low":{"content":92,"date":"2015-08-24"},"week52high":{"content":134.54,"date":"2015-04-28"},"peratio":10.8,"sharesoutstanding":5544583000,"sharesescrow":0},"datatype":"equity","datetime":"2016-03-04T10:24:00-05:00","entitlement":"DL","pricedata":{"vwap":101.807071,"tradevolume":43774,"last":101.63,"change":0.13,"totalvalue":9.22852346E8,"bidsize":200,"sharevolume":9065180,"changepercent":0.128079,"asksize":500,"tick":-1,"open":102.37,"rawasksize":5,"prevclose":101.5,"rawbidsize":2,"high":102.38,"low":101.37,"ask":101.65,"bid":101.64,"lasttradedatetime":"2016-03-04T10:23:59-05:00"},"key":{"symbol":"AAPL","exLgName":"Nasdaq
+        Global Select","exShName":"NGS","exchange":"NGS"},"symbolstring":"AAPL"},{"delaymin":15,"equityinfo":{"longname":"Alphabet
+        Inc","shortname":"GOOGL"},"fundamental":{"eps":22.77,"marketcap":499939036528,"pbratio":4.155,"week52low":{"content":529,"date":"2015-04-17"},"week52high":{"content":810.35,"date":"2016-02-02"},"peratio":31.9,"sharesoutstanding":688319767,"sharesescrow":0},"datatype":"equity","datetime":"2016-03-04T10:24:00-05:00","entitlement":"DL","pricedata":{"vwap":729.056082,"tradevolume":7615,"last":726.318,"change":-5.272,"totalvalue":3.52710173E8,"bidsize":300,"sharevolume":483812,"changepercent":-0.720622,"asksize":300,"open":734.8,"rawasksize":3,"prevclose":731.59,"rawbidsize":3,"high":735,"low":725.62,"ask":726.51,"bid":726.01,"lasttradedatetime":"2016-03-04T10:23:53-05:00"},"key":{"symbol":"GOOGL","exLgName":"Nasdaq
+        Global Select","exShName":"NGS","exchange":"NGS"},"symbolstring":"GOOGL"}],"symbolcount":2,"copyright":"Copyright
+        (c) 2016 QuoteMedia, Inc."}}'
+    http_version: 
+  recorded_at: Fri, 01 Jan 2016 11:15:05 GMT
+recorded_with: VCR 3.0.1

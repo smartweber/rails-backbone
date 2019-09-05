@@ -1,0 +1,6 @@
+<a href="<%- Routes.company_path(@abbr) %>" class="trending-stock">
+  <div class="bb-essential-data"></div>
+  <div class="trade-title caps">
+    <%- @simplifiedName() %>
+  </div>
+</a>

@@ -1,0 +1,21 @@
+<div class="list-group-item heading">Market Headlines</div>
+
+<div class="bb-headlines"></div>
+
+<div class="more-headlines">
+  <div class="list-group-items-pagination">
+    <div class="row">
+      <div class="col-xs-4">
+        <a href="#" class="previous bb-prev-page icon-chevron-left pull-left" style="display:none;"></a>
+      </div>
+
+      <div class="col-xs-16">
+        <div class="page-number bb-page-number">Page <span><%- @pageNumber %></span> of 2</div>
+      </div>
+
+      <div class="col-xs-4">
+        <a href="#" class="next bb-next-page icon-chevron-right pull-right"></a>
+      </div>
+    </div>
+  </div>
+</div>

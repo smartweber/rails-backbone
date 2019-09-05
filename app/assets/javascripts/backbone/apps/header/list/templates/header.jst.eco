@@ -1,0 +1,81 @@
+<div class="container sh-header-container">
+  <div class="navbar-header col-xs-24 col-sm-8 col-md-6">
+    <a href="/" class="navbar-brand"></a>
+
+    <div class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+
+  </div>
+
+  <div class="col-xs-24 col-sm-16 col-md-18">
+    <div class="sh-header-right">
+        <% unless @atSpecialPage(): %>
+          <form class="navbar-form" role="search">
+            <div class="form-group col-xs-24 col-sm-12 col-lg-14 col-lg-push-1">
+              <input type="text" class="form-control typeahead" placeholder="Search in StockHarp" id="autocomplete_search">
+              <span class="icon-search"></span>
+            </div>
+          </form>
+        <% end %>
+        <% unless @atSpecialPage() and @id?: %>
+          <div class="navbar-collapse collapse" id="navbar-main">
+              <% if @id?: %>
+                <div class="nav navbar-nav navbar-right col-xs-24 col-sm-12 col-lg-8">
+                  <div class="navbar-right-box message-region"></div>
+                  <div class="navbar-right-box common-region"></div>
+                  <div class="navbar-right-box stock-region"></div>
+
+                  <div class="navbar-right-box profile-menu-region"></div>
+                </div>
+              <% end %>
+              <% unless @atSpecialPage(): %>
+                <% unless @id?: %>
+                  <div class="new-user-ui-region navbar-right form-inline form-login col-xs-24 col-sm-12 col-lg-8"></div>
+                <% end %>
+              <% end %>
+              <% unless @atSpecialPage() and @id?: %>
+                <span class="new-user-ui-region navbar-right form-inline form-login"></span>
+              <% end %>
+          </div>
+          <span class="new-user-ui-region navbar-right form-inline form-login"></span>
+        <% end %>
+    </div>
+  </div>
+
+  <!--<div class="col-xs-24 col-sm-16 col-md-18">
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <div class="sh-header-right">
+        <% if @id?: %>
+
+          <div class="nav navbar-nav navbar-right col-xs-24 col-sm-12 col-lg-8">
+            <div class="navbar-right-box message-region"></div>
+            <div class="navbar-right-box common-region"></div>
+            <div class="navbar-right-box stock-region"></div>
+
+            <div class="navbar-right-box profile-menu-region"></div>
+          </div>
+        <% end %>
+
+        <% unless @atSpecialPage(): %>
+          <form class="navbar-form" role="search">
+            <div class="form-group col-xs-24 col-sm-12 col-lg-14 col-lg-push-1">
+              <input type="text" class="form-control typeahead" placeholder="Search in StockHarp" id="autocomplete_search">
+              <span class="icon-search"></span>
+            </div>
+            <% unless @id?: %>
+              <div class="new-user-ui-region navbar-right form-inline form-login col-xs-24 col-sm-12 col-lg-8"></div>
+            <% end %>
+          </form>
+        <% end %>
+        <% unless @atSpecialPage() and @id?: %>
+          <span class="new-user-ui-region navbar-right form-inline form-login"></span>
+        <% end %>
+      </div>
+    </div>-->
+
+    <div class="flash-message-region"></div>
+  </div>
+</div>
+
+<div class="modal-region"></div>

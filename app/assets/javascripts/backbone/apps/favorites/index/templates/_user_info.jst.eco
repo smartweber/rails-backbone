@@ -1,0 +1,28 @@
+<aside class="col-md-4">
+  <section class="user-info row">
+    <h1>
+      <%- @gravatarImageFor @ %>
+      <%= @name %>
+    </h1>
+    <div id="friendship-indicator">
+    </div>
+  </section>
+  <section class="stats row">
+    <div class='col-md-12'>
+      <div class="stats row">
+        <a href="/users/1/following">
+          <strong id="following" class="stat">
+            <%= @following_users_count %>
+          </strong>
+          following
+        </a>
+        <a href="/users/1/followers">
+          <strong id="followers" class="stat">
+            <%= @followers_count %>
+          </strong>
+          followers
+        </a>
+      </div>
+    </div>
+  </section>
+</aside>

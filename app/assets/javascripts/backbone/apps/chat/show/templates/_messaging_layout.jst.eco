@@ -1,0 +1,14 @@
+<div class="col-center">
+  <div class="panel panel-default panel-main">
+    <div class="connection-status-region"></div>
+    <form class="form-horizontal">
+      <div id="chat-info-region"></div>
+      <hr>
+      <div class="message-content scrollable" id="messages-region">
+      </div>
+      <hr>
+      <div class="message-comment" id="new-message-region">
+      </div>
+    </form>
+  </div>
+</div>

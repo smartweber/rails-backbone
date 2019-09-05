@@ -1,0 +1,33 @@
+<h3>Sign Up</h3>
+
+<div id="sign-up-form">
+  <div class="sign-up-form-fields">
+    <div class="form-group">
+      <input name="user[name]" class="form-control" type="text" placeholder="Full name" data-validation="name" />
+    </div>
+    <div class="form-group">
+      <input name="user[username]" class="form-control" type="text" placeholder="Username" data-validation="username" />
+    </div>
+    <div class="form-group">
+      <input name="user[email]" class="form-control" type="email" placeholder="Email" data-validation="email" />
+    </div>
+    <div class="form-group">
+      <input name="user[password]" class="form-control" type="password" placeholder="Password" data-validation="password" />
+    </div>
+    <div class="form-group">
+      <input name="user[password_confirmation]" class="form-control" type="password" placeholder="Password confirmation" data-validation="password_confirmation" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input name="user[tos_and_pp_accepted]" type="checkbox" data-validation="tos_and_pp_accepted" /><span>I agree to the StockHarp Terms of Service &amp; Privacy Policy</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="text-right">
+    <input class="btn btn-signup" type="submit" value="Sign Up" />
+  </div>
+</div>

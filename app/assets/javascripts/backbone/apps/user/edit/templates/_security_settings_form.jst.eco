@@ -1,0 +1,134 @@
+<div class="row">
+  <div class="col-xs-24 col-sm-16 col-sm-offset-4">
+    <div class="panel-subtitle">
+      Secutity Settings
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        Login verification
+      </div>
+      <div class="col-sm-16">
+        <div class="radio">
+          <label>
+            <input type="radio" name="LoginVerification" id="LoginVerification1" value="option1"> Don’t verify login requests
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="LoginVerification" id="LoginVerification2" value="option2"> Send verification requests to my phone
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="LoginVerification" id="LoginVerification3" value="option3" checked> Send login verification to email
+          </label>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="panel-subtitle">
+      Privacy
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        Who can see my stuff?
+        <br><em>(default)</em>
+      </div>
+      <div class="col-sm-16">
+        <div class="radio">
+          <label>
+            <input type="radio" name="SeenBy" id="SeenBy1" value="option1"> Public
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="SeenBy" id="SeenBy2" value="option2"> Mutual Followers
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="SeenBy" id="SeenBy3" value="option3" checked> Custom
+          </label>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-8">
+        Who can contact me?
+      </div>
+      <div class="col-sm-16">
+        <div class="radio">
+          <label>
+            <input type="radio" name="SeenBy" id="ContactMe1" value="option1"> Everyone
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="SeenBy" id="ContactMe2" value="option2" checked> Mutual Followers
+          </label>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-8">
+        Searchability
+      </div>
+      <div class="col-sm-16">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="AllowSearching" id="AllowSearching" value="1"> Allow others to find me through my email address
+          </label>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-8">
+        Direct Messages
+      </div>
+      <div class="col-sm-16">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="AllowDirectMessages" id="AllowDirectMessages" value="1"> Receive direct messages from anyone
+          </label>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-8">
+        Follow Settings
+      </div>
+      <div class="col-sm-16">
+        <div class="radio">
+          <label>
+            <input type="radio" name="FindMeSE" id="FindMeSE1" value="option1"> Everyone
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="FindMeSE" id="FindMeSE2" value="option2"> Approved by Me
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form-group button-container">
+  <div class="col-xs-24">
+    <button type="submit" class="btn btn-primary btn-lg pull-right">Save</button>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="navigation-bar-item <% if @indexInCollection is 0: %>selected<% end %>">
+  <div class="<% if @locked: %>fa-icon-lock<% end %> navigation-bar-lock"></div>
+  <div class="navigation-bar-title"><%- @title %></div> 
+</div>

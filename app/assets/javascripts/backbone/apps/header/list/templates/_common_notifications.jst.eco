@@ -1,0 +1,19 @@
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="icon-bell"></span><%- @badgeFor(@items) %></a>
+
+<div class="dropdown-menu dropdown-menu-right" role="menu">
+  <div class="dropdown-menu-content">
+
+    <ul class="list-unstyled bb-items">
+
+    </ul>
+
+    <div class="dropdown-no-content bb-no-content-dropdown">
+      <span>No General Notifications</span>
+    </div>
+
+  </div>
+
+  <div class="dropdown-menu-footer bb-see-more-link">
+  	<%- @linkTo 'see more', Routes.messages_path() %>
+  </div>
+</div>

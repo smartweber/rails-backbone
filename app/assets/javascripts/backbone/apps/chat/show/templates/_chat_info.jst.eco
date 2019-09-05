@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="sender"><%- @get('user').name %></div>
+  </div>
+  <div class="col-xs-12">
+
+    <div class="dropdown pull-right">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Options
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Mark as Uread/Read</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Delete Conversation</a></li>
+        <li><a href="#">Report</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<a href="<%- Routes.chat_path(@notifiable.chat_id) %>" class="message-notification bb-seenable">
+  <div class="inbox-item">
+    <div class="avatar">
+      <%- @gravatarImageFor @notifiable.user, { htmlClass: 'img-responsive' } %>
+    </div>
+
+    <div class="message-excerpt">
+      <div class="sender"><%- @notifiable.user.name %></div>
+      <div class="subject">
+        <!-- <span class="badge"></span> --> <%- if @notifiable.attachments then "picture image" else @notifiable.body %>
+      </div>
+    </div>
+
+    <div class="timestamp">
+      <%- @datetimeToHumanFormatOT(@notifiable.created_at) %>
+    </div>
+  </div>
+</a>

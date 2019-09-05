@@ -1,0 +1,19 @@
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="icon-dollar"></span><%- @badgeFor(@items) %></a>
+
+<div class="dropdown-menu dropdown-menu-right" role="menu">
+  <div class="dropdown-menu-content">
+
+    <ul class="list-unstyled bb-items">
+
+    </ul>
+
+    <div class="dropdown-no-content bb-no-content-dropdown">
+      <span>No Stock Notifications</span>
+    </div>
+
+  </div>
+
+  <div class="dropdown-menu-footer bb-see-more-link">
+    <a href="#">see more</a>
+  </div>
+</div>

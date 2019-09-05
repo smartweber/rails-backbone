@@ -1,0 +1,56 @@
+{
+  "resource": "Chats",
+  "http_method": "GET",
+  "route": "/api/chats",
+  "description": "Getting a list of chats",
+  "explanation": "Every chat object has just one, last message, embedded",
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "Chat id"
+    },
+    {
+      "name": "participants[id]",
+      "description": "Participant id"
+    },
+    {
+      "name": "participants[user_id]",
+      "description": "User id of participant entity"
+    },
+    {
+      "name": "participants[chat_id]",
+      "description": "Chat id of participant entity"
+    },
+    {
+      "name": "messages[]",
+      "description": "See POST /messages documentation for a structure"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/chats",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 11,\n    \"participants\": [\n      {\n        \"id\": 25,\n        \"user_id\": 67,\n        \"chat_id\": 11,\n        \"last_seen_message_id\": null,\n        \"user\": {\n          \"name\": \"Brandt Gutkowski\"\n        }\n      },\n      {\n        \"id\": 26,\n        \"user_id\": 68,\n        \"chat_id\": 11,\n        \"last_seen_message_id\": null,\n        \"user\": {\n          \"name\": \"Hailie Labadie\"\n        }\n      }\n    ],\n    \"messages\": [\n      {\n        \"id\": 27,\n        \"body\": \"nostrum officia hic expedita\",\n        \"created_at\": \"2016-09-01T16:03:34.000Z\",\n        \"chat_id\": 11,\n        \"participant_id\": 26,\n        \"attachments\": [\n          {\n            \"id\": 9,\n            \"type_of_attachment\": \"image\",\n            \"title\": null,\n            \"description\": null,\n            \"image_url\": \"/uploads/user_attachment/image/9/image.png\",\n            \"user_id\": 68\n          }\n        ],\n        \"user\": {\n          \"id\": 68,\n          \"name\": \"Hailie Labadie\",\n          \"username\": \"hailielabadie\",\n          \"gravatar_url\": \"https://secure.gravatar.com/avatar/01d29f00f4f363ed35433840548aa6c9?s=50\",\n          \"relationship\": null\n        }\n      }\n    ]\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/chats\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

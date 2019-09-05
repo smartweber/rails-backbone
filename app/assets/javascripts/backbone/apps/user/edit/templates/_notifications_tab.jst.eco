@@ -1,0 +1,51 @@
+<div class="panel-title">
+  Notifications
+</div>
+<div class="panel-body">
+  <form class="form-horizontal">
+    <div class="row">
+      <div class="col-xs-24 col-sm-16 col-sm-offset-4">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="Notification" value=""> Someone saves posts
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="Notification" value=""> Someone shared my post
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="Notification" value=""> Someone mentioned me in post
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="Notification" value=""> Get new reply
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="Notification" value=""> New Follower
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="Notification" value=""> New Message
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="Notification" value=""> Someone from Address book joins Stockharp
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group button-container">
+      <div class="col-xs-24">
+        <button type="submit" class="btn btn-primary btn-lg pull-right">Save</button>
+      </div>
+    </div>
+  </form>
+</div>

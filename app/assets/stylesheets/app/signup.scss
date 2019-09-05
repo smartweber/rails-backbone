@@ -1,0 +1,231 @@
+.sign-up-block {
+  margin: 0 46px;
+  background: rgba(245,242,241, 0.9);
+  padding: 40px 60px 28px;
+  @include border-radius(6px);
+
+ h3 {
+    text-align: center;
+    font-family: $font-bold;
+    font-weight: normal;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    color: #2d3e50;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+}
+
+#sign-up-form {
+
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+
+    label {
+      color: #2d3e50;
+      font-size: 12px !important;
+
+      span {
+        line-height: 1.2;
+      }
+    }
+
+    .form-control {
+      color: #2d3e50;
+      font-size: 14px;
+    }
+
+    &.has-error {
+
+      .form-control {
+        border-color: #e9402f;
+      }
+
+      > small {
+        display: block;
+        background: #FFF;
+        border: 1px solid #dcd4cb;
+        padding: 6px;
+        position: absolute;
+        right: 10px;
+        bottom: -20px;
+        font-size: 11px;
+        color: #666;
+        z-index: 99;
+        @include border-radius(3px);
+
+        &:before {
+          position: absolute;
+          top: -7px;
+          right: 9px;
+          display: inline-block;
+          border-right: 7px solid transparent;
+          border-bottom: 7px solid #dcd4cb;
+          border-left: 7px solid transparent;
+          border-bottom-color: rgba(0, 0, 0, 0.2);
+          content: '';
+        }
+
+        &:after {
+          position: absolute;
+          top: -6px;
+          right: 10px;
+          display: inline-block;
+          border-right: 6px solid transparent;
+          border-bottom: 6px solid #ffffff;
+          border-left: 6px solid transparent;
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+.benefits {
+  background: rgba(245,242,241, 0.2);
+  padding: 45px 60px;
+  @include border-radius(6px);
+
+  h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    color: #FFF;    margin: 0 0 20px;
+  }
+
+  ul.list-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 -18px;
+    @include clearfix();
+
+    > li {
+      background: rgba(245,242,241, 0.9);
+      @include border-radius(3px);
+      display: block;
+      float: left;
+      width: 30%;
+      height: 170px;
+      padding: 20px 16px 10px 16px;
+      text-align: center;
+      margin: 6px 1.65%;
+
+      strong {
+        display: block;
+        font-weight: normal;
+        font-family: $font-bold;
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+        font-family: $font-roman;
+      }
+    }
+  }
+}
+
+.sprite-benefit {
+  width: 58px;
+  height: 58px;
+  display: block;
+  margin: 0 auto 12px auto;
+  background: transparent asset_url('sprite-signup.png') 0 0 no-repeat;
+
+  &.img-1 {
+    background-position: 0 0;
+  }
+
+  &.img-2 {
+    background-position: 0 -58px;
+  }
+
+  &.img-3 {
+    background-position: 0 -116px;
+  }
+
+  &.img-4 {
+    background-position: -58px 0;
+  }
+
+  &.img-5 {
+    background-position: -58px -58px;
+  }
+
+  &.img-6 {
+    background-position: -58px -116px;
+  }
+}
+
+.btn-signup {
+  @include button-variant( #FFFFFF !important , #58c2f7,  #66CCFF );
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: $font-bold;
+  height: 42px;
+  min-width: 124px;
+}
+
+#signup-bg{
+  position: fixed; top: 0; left: 0;    z-index: -1;
+}
+
+.bgwidth {
+  width: 100%;
+}
+
+.bgheight {
+  height: 100%;
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+  .sign-up-block {
+    padding: 30px;
+    margin: 0;
+    min-height: auto;
+  }
+
+  .benefits {
+    padding: 30px;
+    margin: 0;
+  }
+
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+  body {
+    margin-bottom: 100px;
+  }
+
+  .sign-up-block {
+    padding: 20px 60px;
+    margin: 0 0 10px;
+    min-height: auto;
+  }
+
+  .benefits {
+    padding: 20px;
+    margin: 0 0 10px;
+  }
+
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .sign-up-block {
+    padding: 20px 30px;
+    margin: 0 0 10px;
+    min-height: auto;
+  }
+
+  .benefits {
+    padding: 20px;
+    margin: 0 0 10px;
+  }
+
+}

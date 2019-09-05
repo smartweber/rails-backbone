@@ -1,0 +1,74 @@
+{
+  "resource": "News",
+  "http_method": "GET",
+  "route": "/api/news_articles/ranged",
+  "description": "Retrieve news articles ranged by position",
+  "explanation": null,
+  "parameters": [
+    {
+      "require": true,
+      "name": "lowBorder",
+      "description": "Minimal position"
+    },
+    {
+      "require": true,
+      "name": "highBorder",
+      "description": "Maximal position"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "News article ID"
+    },
+    {
+      "name": "url",
+      "description": "Url to external news article"
+    },
+    {
+      "name": "title",
+      "description": "Title of news article"
+    },
+    {
+      "name": "summary",
+      "description": "Truncated summary of news article"
+    },
+    {
+      "name": "sanitized_summary",
+      "description": "Truncated sanitized(strict) summary of news article"
+    },
+    {
+      "name": "agency",
+      "description": "See app_config.yml for agency types"
+    },
+    {
+      "name": "slug",
+      "description": "Friendly URL"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/news_articles/ranged?lowBorder=1&highBorder=2",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "lowBorder": "1",
+        "highBorder": "2"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 11,\n    \"url\": \"http://pacocha.com/anjali.gottlieb\",\n    \"agency\": \"cnn\",\n    \"locally_hosted\": false,\n    \"news_thumbnail_carousel_list_url\": \"/uploads/general_news_item/news_thumbnail/11/carousel_list_default_medium.png\",\n    \"news_thumbnail_stretched_full_url\": \"/uploads/general_news_item/news_thumbnail/11/stretched_full_default_medium.png\",\n    \"slug\": \"debitis-minima-minus-fugit-aut-et-omnis\",\n    \"title\": \"Debitis minima minus fugit aut et omnis.\",\n    \"sanitized_summary\": \"Mollitia recusandae sed quas. Corrupti quia atque consectetur dicta provident. Vitae et veritatis. Perspiciatis ea sed et temporibus. Fuga quaerat et.\",\n    \"summary\": \"Mollitia recusandae sed quas. Corrupti quia atque consectetur dicta provident. Vitae et veritatis. Perspiciatis ea sed et temporibus. Fuga quaerat et.\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/news_articles/ranged?lowBorder=1&highBorder=2\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

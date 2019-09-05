@@ -1,0 +1,2 @@
+<a href="#" class="delete"><span class="icon icon-cancel"></span></a>
+<img class="img-responsive" src="<%- @url %>">

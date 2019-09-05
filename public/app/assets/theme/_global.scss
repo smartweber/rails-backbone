@@ -1,0 +1,506 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  /*padding top for header*/
+  padding-top: 100px;
+  /* Margin bottom by footer height */
+  margin-bottom: 92px;
+}
+.sh-header {
+  padding: 18px 0 0;
+  .navbar-right{
+    margin-right: 0!important;
+  }
+  .navbar-brand {
+    display: block;
+    margin-left: 0!important;
+    width: 230px;
+    background: transparent url("#{$img-path}logo.png") 0 0 no-repeat;
+    background-size: 100% auto;
+    padding: 36px 0 0 0;
+    overflow: hidden;
+    height: 0 !important;
+    height: 36px;
+  }
+  .navbar-nav > li {
+    > a{
+      padding: 0;
+    }
+    &.dropdown-profile{
+      position: relative;
+      margin: -6px 0;
+      padding-left: 30px;
+      > a {
+        padding: 0;
+        margin-right: 13px;
+        .avatar {
+          width: 48px;
+          height: 48px;
+          @include border-radius(4px);
+          margin: 0 5px;
+        }
+      }
+      .dropdown-menu > li > a{
+        padding: 7px 20px;
+      }
+    }
+    &.btn-icon{
+      font-size: 24px;
+      padding: 5px 16px;
+      > a{
+        position: relative;
+        .badge{
+          position: absolute;
+          right: -8px;
+          top: -6px;
+          font-size: 8px;
+          background-color: $red;
+          padding: 3px 5px;
+        }
+      }
+    }
+  }
+  .navbar-form {
+    margin: 0;
+    text-align: center;
+    .form-group{
+      width: 50%;
+      position: relative;
+      .form-control{
+        width: 100%;
+        height: 30px;
+        padding: 4px 12px 0 12px;
+        border: 0 none;
+      }
+      .icon-search{
+        position: absolute;
+        right: 8px;
+        top: 4px;
+        font-size: 20px;
+        color:$drk-blue;
+      }
+    }
+
+  }
+
+}
+.sh-header-right{
+  margin-left: 230px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 92px;
+  background-color: $drk-blue;//#2d3e50;
+  color: #FFF;
+}
+
+.well{
+  @include box-shadow(none);
+}
+
+.col-center{
+   padding: 0 5px;
+}
+
+.btn{
+  line-height: 1;
+}
+textarea {
+  resize: none;
+}
+
+.dropdown-menu{
+  &:before {
+    position: absolute;
+    top: -7px;
+    left: 9px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+  }
+  &:after {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    content: '';
+  }
+  &.dropdown-menu-right:before{
+    left: inherit;
+    right:9px
+  }
+  &.dropdown-menu-right:after{
+    left: inherit;
+    right:10px
+  }
+}
+.dropdown-friendreq .dropdown-menu.dropdown-menu-right:before,
+.dropdown-msgs .dropdown-menu.dropdown-menu-right:before,
+.dropdown-alerts .dropdown-menu.dropdown-menu-right:before,
+.dropdown-stock .dropdown-menu.dropdown-menu-right:before{
+  left: inherit;
+  right:19px
+}
+.dropdown-friendreq .dropdown-menu.dropdown-menu-right:after,
+.dropdown-msgs .dropdown-menu.dropdown-menu-right:after,
+.dropdown-alerts .dropdown-menu.dropdown-menu-right:after,
+.dropdown-stock .dropdown-menu.dropdown-menu-right:after{
+  left: inherit;
+  right:20px
+}
+
+ul.dropdown-menu.dropdown-menu-right, .navbar-nav > li > .dropdown-menu{
+  @include border-top-radius(4px);
+}
+
+
+.dropdown-friendreq{
+  .dropdown-menu{
+    width: 350px;
+
+    .dropdown-menu-content{
+      height: 270px;
+
+     > ul > li{
+        border-top: 1px solid #edeae5;
+        @include clearfix();
+        padding: 8px 8px 8px 22px;
+        > img{
+          height: 32px;
+          width: 32px;
+          float: left;
+          @include border-radius(4px);
+        }
+        >div{
+          margin-left: 42px;
+          padding-top: 4px;
+          position: relative;
+          .name{
+            font-size: 11px;
+            width: 70%;  padding-top: 6px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .action{
+            position: absolute;
+            right: 0;
+            top: 2px;
+            .btn{
+              padding: 5px 6px;
+              font-family: $font-light;
+            }
+          }
+
+        }
+        &:first-child{
+          border-top: 0 none;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-msgs{
+  padding-right: 14px !important;
+  .dropdown-menu{
+    width: 250px;
+    .dropdown-menu-content{
+      height: 270px;
+
+      > ul > li{
+        border-top: 1px solid #edeae5;
+        @include clearfix();
+        padding: 8px 8px 8px 22px;
+        > img{
+          height: 32px;
+          width: 32px;
+          float: left;
+          @include border-radius(4px);
+        }
+        >div{
+          margin-left: 42px;
+          padding-top: 4px;
+          position: relative;
+          .name{
+            font-size: 12px;
+            text-transform: uppercase;
+            width: 70%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .time{
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 9px;
+          }
+          .msg{
+            font-size: 9px;
+            width: 90%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .badge{
+            font-size: 8px;
+            padding: 3px 4px 2px 4px;
+
+            &.green{
+              background-color: $green;
+            }
+            &.red{
+              background-color: $red;
+            }
+          } //green
+          .icon-check{
+            font-size: 8px;
+
+          }
+
+        }
+        &:first-child{
+          border-top: 0 none;
+        }
+      }
+    }
+  }
+}
+.dropdown-alerts{
+  .dropdown-menu{
+    width: 350px;
+    .dropdown-menu-content{
+      height: 320px;
+
+      > ul > li{
+        border-top: 1px solid #edeae5;
+        @include clearfix();
+        padding: 8px 5px 8px 26px;
+        > img{
+          height: 42px;
+          width: 42px;
+          float: left;
+          @include border-radius(4px);
+        }
+        >div{
+          margin-left: 52px;
+          padding-top: 4px;
+        }
+        &:first-child{
+          border-top: 0 none;
+        }
+      }
+    }
+  }
+}
+.dropdown-stock{
+  padding-right: 20px !important;
+  .dropdown-menu {
+    width: 350px;
+
+    .dropdown-menu-content {
+      height: 295px;
+
+     > ul > li {
+        border-top: 1px solid #edeae5;
+        @include clearfix();
+        padding: 8px 8px 8px 22px;
+
+       strong{
+         color: $brand-primary;
+         font-size: 14px;
+         font-family: $font-hvcn;
+         font-weight: normal;
+       }
+        > div{
+          padding-top: 4px;
+          .ico{
+            font-size: 16px;
+            position: relative;
+            top: 2px;
+          }
+          &.up{
+            .ico{
+              color: $green;
+            }
+            >ul>li:nth-child(2){
+              color: $green;
+            }
+          }
+          &.down{
+            .ico{
+              color: $red;
+            }
+            >ul>li:nth-child(2){
+              color: $red;
+            }
+          }
+          >ul>li{
+            font-size: 13px;
+            font-family: $font-mdcn;
+            &:first-child{
+              width: 85px;
+            }
+
+          }
+          .date{
+            font-size: 9px;
+            color: #bfbdbd;
+            padding-top: 7px;
+          }
+        }
+
+        &:first-child{
+          border-top: 0 none;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu{
+  .dropdown-menu-content{
+   // overflow-y:scroll;
+  }
+  .dropdown-menu-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f6f2f1;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    @include border-bottom-radius(4px);
+  }
+}
+
+//for enscroll plugin
+
+.track3 {
+  width: 7px;
+  background: lighten(black, 90%);
+  background: rgba(0, 0, 0, 0.1);
+  @include border-radius(10px);
+  right: 5px;
+}
+
+.handle3 {
+  width: 7px;
+  background: lighten(black, 55%);
+  background: rgba(0, 0, 0, 0.45);
+  @include border-radius(7px);
+  right: 0;
+  -webkit-transition: width 250ms;
+  transition: width 250ms;
+}
+
+//header landing
+.form-login{
+  position: relative;
+  .form-control{
+    width: 172px;
+    height: 28px;
+    padding: 4px 12px 0 12px;
+    border: 0 none;
+  }
+  .btn{
+    padding: 8px 14px 6px;
+    width: 96px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: $font-bold;
+  }
+  .btn-login{
+    margin-left: 8px;
+  }
+  .link-password{
+    width: 172px;
+    text-align: center;
+    left: 174px;
+    position: relative;
+    top: 2px;
+
+    a{
+      font-size: 8px;
+      color: #FFF;
+      font-family: $font-light;
+      font-style: italic;
+    }
+
+  }
+}
+
+.footer-links{
+  padding: 22px 0;
+  text-align: center;
+  color: #ffffff;
+  a{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    &:hover, &:focus{
+
+    }
+  }
+}
+.link-social{
+  position: relative;
+  top: -5px;
+  a{
+    display: inline-block;
+    border: 1px solid #ffffff;
+    @include border-radius(3px);
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1px;
+    padding: 3px 4px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover,&:focus{
+      color: $brand-info;
+      border-color: $brand-info;
+    }
+  }
+}
+
+.panel-sh{
+  border: 0 none;
+  margin-bottom: 18px;
+  @include box-shadow(none);
+
+  .panel-heading{
+    border: 0 none;
+    background-color: #dad2c8;
+    font-size: 16px;
+    color: #666666;
+    text-transform: uppercase;
+    font-family: $font-bold;
+    padding: 12px 15px 7px;
+    letter-spacing: .5px;
+    text-align: center;
+    @include  border-top-radius(4px);
+  }
+  .panel-body{
+    padding: 6px 0;
+    background-color: #f5f2f1;
+    @include  border-bottom-radius(4px);
+  }
+}

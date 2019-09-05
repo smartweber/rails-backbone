@@ -1,0 +1,12 @@
+<div class="col-xs-8 market-index-item">
+  <a href="<%- Routes.company_path( @abbr ) %>">
+    <div class="market-index-block row">
+      <div class="col-xs-24 col-sm-8 col-lg-12">
+        <div class="trade-title"><%- @simplifiedName() %></div>
+      </div>
+      <div class="col-xs-24 col-sm-16 col-lg-12">
+        <div class="bb-essential-data"></div>
+      </div>
+    </div>
+  </a>
+</div>

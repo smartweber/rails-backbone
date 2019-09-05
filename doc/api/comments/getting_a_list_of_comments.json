@@ -1,0 +1,47 @@
+{
+  "resource": "Comments",
+  "http_method": "GET",
+  "route": "/api/comments",
+  "description": "Getting a list of comments",
+  "explanation": "response structure is the same as at comment creation",
+  "parameters": [
+    {
+      "required": true,
+      "name": "commentable_id",
+      "description": "ID of the object which comments are requested"
+    },
+    {
+      "required": true,
+      "name": "commentable_type",
+      "description": "Type of the object which comments are requested"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/comments?commentable_id=6&commentable_type=Post",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "commentable_id": "6",
+        "commentable_type": "Post"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"commentable_id\": 6,\n    \"commentable_type\": \"Post\",\n    \"created_at\": \"2016-09-01T16:03:29.000Z\",\n    \"reply_to_comment_id\": null,\n    \"user_id\": 26,\n    \"likes_count\": 0,\n    \"user\": {\n      \"email\": \"salvatore_boehm@stehr.com\",\n      \"created_at\": \"2016-09-01T16:03:29.000Z\",\n      \"following_users_count\": 0,\n      \"followers_count\": 0,\n      \"collections_count\": 0,\n      \"ideas_count\": 0,\n      \"following_companies_count\": 0,\n      \"id\": 26,\n      \"name\": \"Claudine Crona\",\n      \"username\": \"claudinecrona\",\n      \"gravatar_url\": \"https://secure.gravatar.com/avatar/84ffd00b5c505ace1773231627a2cdc7?s=50\",\n      \"relationship\": null,\n      \"friendship\": null\n    },\n    \"attachments\": [\n      {\n        \"id\": 1,\n        \"url\": null\n      }\n    ],\n    \"body\": \"Voluptate ratione architecto nemo illum neque omnis.\",\n    \"like\": null\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/comments?commentable_id=6&commentable_type=Post\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

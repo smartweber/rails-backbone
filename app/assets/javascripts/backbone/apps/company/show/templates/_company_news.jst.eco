@@ -1,0 +1,9 @@
+<div class="list-group-item heading">Company News</div>
+
+<div class="list-group-items bb-news-items">
+
+</div>
+
+<div class="more-headlines bb-see-more-news">
+  <a href="#">see more</a>
+</div>

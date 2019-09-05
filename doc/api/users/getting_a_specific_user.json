@@ -1,0 +1,88 @@
+{
+  "resource": "Users",
+  "http_method": "GET",
+  "route": "/api/users/:id",
+  "description": "Getting a specific User",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "Username of User to retrieve"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "User id"
+    },
+    {
+      "name": "name",
+      "description": "User name"
+    },
+    {
+      "name": "username",
+      "description": "User username"
+    },
+    {
+      "name": "gravatar_url",
+      "description": "User's gravatar image url"
+    },
+    {
+      "name": "email",
+      "description": "User email"
+    },
+    {
+      "name": "created_at",
+      "description": "DateTime at which user registered"
+    },
+    {
+      "name": "following_users_count",
+      "description": "Amount of users that this user is following"
+    },
+    {
+      "name": "followers_count",
+      "description": "Amount of users that following this user"
+    },
+    {
+      "name": "relationship[id]",
+      "description": "Relationship id(following entity, destroy to unfollow)"
+    },
+    {
+      "name": "friendship[id]",
+      "description": "Friendship id(friendship entity, destroy to unfriend)"
+    },
+    {
+      "name": "notifications[type]",
+      "description": "Type of notification"
+    },
+    {
+      "name": "notifications[arr]",
+      "description": "Array of notifications"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/users/brauliozboncak",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"email\": \"darian@heller.biz\",\n  \"created_at\": \"2016-09-01T16:03:36.000Z\",\n  \"following_users_count\": 0,\n  \"followers_count\": 0,\n  \"collections_count\": 0,\n  \"ideas_count\": 0,\n  \"following_companies_count\": 0,\n  \"id\": 77,\n  \"name\": \"Braulio Zboncak\",\n  \"username\": \"brauliozboncak\",\n  \"gravatar_url\": \"https://secure.gravatar.com/avatar/2e1073c6a1e615b6ba3fee4ba6a8155a?s=50\",\n  \"relationship\": null,\n  \"friendship\": null,\n  \"notifications\": null\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "max-age=0, private, must-revalidate"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/api/users/brauliozboncak\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\""
+    }
+  ]
+}

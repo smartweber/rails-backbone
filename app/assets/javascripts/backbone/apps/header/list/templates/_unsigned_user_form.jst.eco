@@ -1,0 +1,2 @@
+<button type="submit" class="btn btn-primary bb-login-btn">Log in</button>
+<button type="button" class="btn btn-info bb-signup-btn">Sign up</button>

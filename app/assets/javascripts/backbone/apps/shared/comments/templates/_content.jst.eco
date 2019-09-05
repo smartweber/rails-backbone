@@ -1,0 +1,10 @@
+<% if @currentUserCan('destroy', @): %>
+  <div class="dropdown pull-right ">
+    <a id="dLabel" href="#" class="bb-delete-comment"><span class="icon-close"></span></a>
+  </div>
+<% end %>
+<a href="<%- Routes.user_path(@user.username) %>" class="bb-user-link">
+  <span class="name"><%= @user.name %></span>
+</a>
+<p><%- @body %>
+</p>

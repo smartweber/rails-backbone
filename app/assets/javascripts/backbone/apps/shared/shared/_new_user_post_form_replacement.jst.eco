@@ -1,0 +1,7 @@
+<div class="panel-body sh-panel-body1 sign-in-to-share-banner">
+  <h3>Welcome to StockHarp</h3>
+  <p>Sign in to share your idea on <strong><%- "$#{s(@abbr).toUpperCase().value()}" %></strong> and other stocks.</p>
+
+  <a href="#" class="btn btn-sm btn-primary btn-info bb-signup-btn">Sign Up</a>
+  <a href="#" class="btn btn-sm btn-primary btn-login bb-login-btn">Log in</a>
+</div>

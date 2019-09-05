@@ -1,0 +1,1 @@
+attributes :id, :likeable_id, :likeable_type

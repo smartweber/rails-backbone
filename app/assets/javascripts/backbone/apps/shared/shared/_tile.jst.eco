@@ -1,0 +1,18 @@
+<div class="ci-title-wrap">
+  <div class="ci-title">
+    <div class="ci-content">
+      <span><%- @name %></span>
+    </div>
+  </div>
+</div>
+
+<div class="ci-square-logo">
+  <% if @logoPresent(): %>
+    <img src="<%- @logoPath() %>" class="img-responsive" alt="" />
+  <% end %>
+</div>
+
+<div class="ci-value bb-tile-last-price">
+</div>
+
+<%- @tile(@quote) %>

@@ -1,0 +1,10 @@
+<hr/>
+<ul class="pull-right list-inline">
+  <li><%- @popularityLinkFor @ %></li>
+  <li>&bullet;</li>
+  <li><a href="#">Save</a></li>
+  <li>&nbsp;</li>
+  <li><%- @likesCounter() %></li>
+  <li><%- @commentsCounter() %></li>
+</ul>
+<%- @timestampFor @created_at %>

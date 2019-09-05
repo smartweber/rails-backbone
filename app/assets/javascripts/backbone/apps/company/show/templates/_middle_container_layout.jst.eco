@@ -1,0 +1,6 @@
+<div class="col-center">
+  <div id="company-region"></div>
+  <div id="new-user-ui-region"></div>
+  <div id="new-post-region"></div>
+  <div id="feed-region"></div>
+</div>

@@ -1,0 +1,257 @@
+<header class="navbar navbar-default sh-header navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">StockHarp</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <div class="sh-header-right">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="btn-icon dropdown dropdown-friendreq">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="icon-group"></span><span class="badge">99</span></a>
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+              <div class="dropdown-menu-content">
+              <ul class="list-unstyled">
+
+                <li>
+                  <img src="app/assets/images/avatar.jpg" alt=""/>
+                  <div>
+                    <div class="name">John Malkovich asd</div>
+                    <div class="action">
+                      <a href="#" class="btn btn-sm btn-success"><span class="icon-check"></span> Accept</a>
+                      <a href="#" class="btn btn-sm btn-danger"><span class="icon-close"></span> Decline</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="app/assets/images/avatar.jpg" alt=""/>
+                  <div>
+                    <div class="name">John Malkovich asd</div>
+                    <div class="action">
+                      <a href="#" class="btn btn-sm btn-success"><span class="icon-check"></span> Accept</a>
+                      <a href="#" class="btn btn-sm btn-danger"><span class="icon-close"></span> Decline</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="app/assets/images/avatar.jpg" alt=""/>
+                  <div>
+                    <div class="name">John Malkovich asd</div>
+                    <div class="action">
+                      <a href="#" class="btn btn-sm btn-success"><span class="icon-check"></span> Accept</a>
+                      <a href="#" class="btn btn-sm btn-danger"><span class="icon-close"></span> Decline</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="app/assets/images/avatar.jpg" alt=""/>
+                  <div>
+                    <div class="name">John Malkovich asd</div>
+                    <div class="action">
+                      <a href="#" class="btn btn-sm btn-success"><span class="icon-check"></span> Accept</a>
+                      <a href="#" class="btn btn-sm btn-danger"><span class="icon-close"></span> Decline</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="app/assets/images/avatar.jpg" alt=""/>
+                  <div>
+                    <div class="name">John Malkovich asd</div>
+                    <div class="action">
+                      <a href="#" class="btn btn-sm btn-success"><span class="icon-check"></span> Accept</a>
+                      <a href="#" class="btn btn-sm btn-danger"><span class="icon-close"></span> Decline</a>
+                    </div>
+                  </div>
+                </li>
+
+              </ul></div><div class="dropdown-menu-footer"><a href="#">see more</a></div>
+            </div>
+          </li>
+
+          <li class="btn-icon dropdown dropdown-msgs">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="icon-inbox"></span><span class="badge">99</span></a>
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+              <div class="dropdown-menu-content">
+                <ul class="list-unstyled">
+
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div>
+                      <div class="name">John Malkovich asd</div>
+                      <div class="time">12:41 am</div>
+                      <div class="msg"><span class="badge green">R</span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div>
+                      <div class="name">John Malkovich asd</div>
+                      <div class="time">12:41 am</div>
+                      <div class="msg"><span class="badge red">D</span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                  </li>
+
+
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div>
+                      <div class="name">John Malkovich asd</div>
+                      <div class="time">12:41 am</div>
+                      <div class="msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div>
+                      <div class="name">John Malkovich asd</div>
+                      <div class="time">12:41 am</div>
+                      <div class="msg"><span class="badge"><span class="icon-check"></span></span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div>
+                      <div class="name">John Malkovich asd</div>
+                      <div class="time">12:41 am</div>
+                      <div class="msg"><span class="badge green">R</span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                  </li>
+
+
+
+                </ul>
+              </div>
+              <div class="dropdown-menu-footer"><a href="#">see more</a></div>            </div>
+          </li>
+
+          <li class="btn-icon dropdown dropdown-alerts">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="icon-bell"></span><span class="badge">9</span></a>
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+              <div class="dropdown-menu-content">
+                <ul class="list-unstyled">
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div><a href="#">John Malkovich</a> and 22 other friends have liked your <a href="#">post</a>.</div>
+                  </li>
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div><a href="#">John Malkovich</a> and 22 other friends have liked your <a href="#">post</a>.</div>
+                  </li>
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                   <div> <a href="#">John Malkovich</a> and 22 other friends have liked your <a href="#">post</a>.</div>
+                  </li>
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div><a href="#">John Malkovich</a> and 22 other friends have liked your <a href="#">post</a>.</div>
+                  </li>
+                  <li>
+                    <img src="app/assets/images/avatar.jpg" alt=""/>
+                    <div><a href="#">John Malkovich</a> and 22 other friends have liked your <a href="#">post</a>.</div>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="dropdown-menu-footer"><a href="#">see more</a></div>
+            </div>
+          </li>
+
+          <li class="btn-icon dropdown dropdown-stock">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span
+              class="icon-dollar"></span><span class="badge">8</span></a>
+
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+              <div class="dropdown-menu-content">
+                <ul class="list-unstyled">
+
+                  <li>
+                    <strong>Apple Inc.</strong> is below your target price
+                    <div class="down">
+                      <div class="pull-right date">02/04 12:42:24</div>
+                      <ul class="list-inline">
+                        <li><span class="icon-chevron-circle-up ico"></span> $ 99.85</li>
+                        <li> - 1.58 (0.81%)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>Google</strong> has exceeded your watch price
+                    <div class="up">
+                      <div class="pull-right date">02/04 12:42:24</div>
+                      <ul class="list-inline">
+                        <li><span class="icon-chevron-circle-down ico"></span> $ 99.85</li>
+                        <li> 1.58 (0.81%)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>Apple Inc.</strong> is below your target price
+                    <div class="down">
+                      <div class="pull-right date">02/04 12:42:24</div>
+                      <ul class="list-inline">
+                        <li><span class="icon-chevron-circle-up ico"></span> $ 99.85</li>
+                        <li> - 1.58 (0.81%)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>Google</strong> has exceeded your watch price
+                    <div class="up">
+                      <div class="pull-right date">02/04 12:42:24</div>
+                      <ul class="list-inline">
+                        <li><span class="icon-chevron-circle-down ico"></span> $ 99.85</li>
+                        <li> 1.58 (0.81%)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>Google</strong> has exceeded your watch price
+                    <div class="up">
+                      <div class="pull-right date">02/04 12:42:24</div>
+                      <ul class="list-inline">
+                        <li><span class="icon-chevron-circle-down ico"></span> $ 99.85</li>
+                        <li> 1.58 (0.81%)</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+              </div> <div class="dropdown-menu-footer"><a href="#">see more</a></div>
+            </div>
+          </li>
+
+          <li class="dropdown dropdown-profile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <img src="app/assets/images/avatar.jpg" class="avatar" alt="Avatar"/>
+              Emma <span class="icon-chevron-down"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">Vault</a></li>
+              <li><a href="#">Portfolio <small>beta</small></a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      <form class="navbar-form" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search in StockHarp">
+          <span class="icon-search"></span>
+        </div>
+      </form>
+
+
+    </div>
+
+    </div>
+  </div>
+</header>

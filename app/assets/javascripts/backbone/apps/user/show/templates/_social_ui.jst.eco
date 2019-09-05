@@ -1,0 +1,10 @@
+<%- @followingButton(@, 'userProfile') %>
+<div class='btn-group dropdown-user-options'>
+  <button type='button' class='btn btn-primary btn-following-options dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+    <span class='icon icon-bars'></span>
+  </button>
+  <ul class='dropdown-menu dropdown-menu-right'>
+    <li><a href='#'><span class='icon icon-envelope'></span> Message</a></li>
+    <li><a href='#'><span class='icon icon-blocked'></span> Block</a></li>
+  </ul>
+</div>

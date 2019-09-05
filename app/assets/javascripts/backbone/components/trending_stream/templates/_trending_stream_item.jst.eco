@@ -1,0 +1,7 @@
+<div class="box-profile">
+  <img src="<%- @user.gravatar_url %>" class="avatar" alt="">
+  <div class="profile-info">
+    <div class="time"><%- @timestampFor @created_at %></div>
+    <strong><%- @user.name %></strong> <%- @content %>
+  </div>
+</div>

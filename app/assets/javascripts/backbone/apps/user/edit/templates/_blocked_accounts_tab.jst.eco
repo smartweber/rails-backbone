@@ -1,0 +1,26 @@
+<div class="panel-title">
+  Blocked Accounts
+</div>
+
+<div class="panel-body">
+
+  <div class="row">
+    <div class="col-xs-24 col-sm-16 col-sm-offset-4">
+
+      <div class="blocked-users">
+        <div class="avatar">
+          <img src="/assets/avatar.jpg" class="img-responsive" alt=""/>
+        </div>
+
+        <div class="profile-info">
+          <div class="name">John Snow</div>
+          <div class="extra-info">John Snow</div>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn-lg btn-inactive">Blocked</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

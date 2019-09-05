@@ -1,0 +1,17 @@
+<div class="timestamp"><%- @messageDeliveryBadgeWithStatus @isSeen() %><%- @datetimeToHumanFormat @created_at %></div>
+
+<div class="row">
+  <div class="col-xs-3">
+    <div class="avatar">
+      <%- @gravatarImageFor @user, { htmlClass: "img-responsive" } %>
+    </div>
+  </div>
+  <div class="col-xs-21">
+
+    <div class="message-body">
+
+      <div class="message-body-region"></div>
+      <div class="attachments-region"></div>
+    </div>
+  </div>
+</div>
