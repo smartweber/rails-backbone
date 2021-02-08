@@ -44,7 +44,7 @@ gem 'nokogiri'
 # Url shortener
 gem 'shortener'
 # File attachments
-gem 'carrierwave', '0.10.0'
+gem 'carrierwave', '1.3.2'
 # Imageworks
 gem 'mini_magick', '3.8.0'
 # File storage
